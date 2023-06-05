@@ -5,6 +5,3 @@
 
 IntelliJ Idea Community Edition (latest version)
 https://www.jetbrains.com/idea/download/
-
-Git (latest version)
-https://git-scm.com/downloads
