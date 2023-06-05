@@ -1,4 +1,4 @@
-package lv.javaguru.java1.teacher;
+package lv.javaguru.java1.teacher.project_2;
 
 public class Test {
 
