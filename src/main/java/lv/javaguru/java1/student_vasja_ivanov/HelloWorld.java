@@ -1,4 +1,4 @@
-package lv.javaguru.java1.teacher.project_4.practice;
+package lv.javaguru.java1.student_vasja_ivanov;
 
 public class HelloWorld {
 
@@ -14,5 +14,7 @@ public class HelloWorld {
         System.out.println("Result: = " + result);
 
     }
+
+
 
 }
