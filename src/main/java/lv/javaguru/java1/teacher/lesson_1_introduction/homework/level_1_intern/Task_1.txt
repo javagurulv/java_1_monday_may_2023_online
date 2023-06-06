@@ -1,3 +1,4 @@
-Установить последнюю версию JDK на свой компьютер:
+Установить последнюю версию среды разработки
+(IntelliJ Idea Community Edition) на свой компьютер:
 
-https://adoptopenjdk.net/
+https://www.jetbrains.com/idea/
