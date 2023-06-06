@@ -1,6 +1,8 @@
-Скачайте на свой локальный компьютер проект из GitHub.
+Подключите к среде разработки IntelliJ Idea
+JDK версии 19:
 
-https://www.jetbrains.com/help/idea/manage-projects-hosted-on-github.html#clone-from-GitHub
+SDK: corretto-19 Amazon Corretto version 19.0.2
+Language level: SDK default (19 - No new language features)
 
-Если уже открывали какой-либо проект, то необходимо выбрать:
-File --> New --> Project From Version Control...
+
+https://www.jetbrains.com/help/idea/sdk.html#set-up-jdk
