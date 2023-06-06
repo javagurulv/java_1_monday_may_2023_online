@@ -1,7 +1,0 @@
-Цель данного проекта это установить программное обеспечение
-необходимое для изучения программирования на Java.
-
-В список необходимого программного обеспечения входит:
-
-IntelliJ Idea Community Edition (latest version)
-https://www.jetbrains.com/idea/download/
