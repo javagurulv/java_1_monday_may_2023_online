@@ -1,4 +1,4 @@
-What Is Variable Initialization? How Is It Different Than Assignment?
+What Is Variable Initialization? How Is It Different From Assignment?
 
 When we assign a value to a variable first time,
 it is known as variable initialization.

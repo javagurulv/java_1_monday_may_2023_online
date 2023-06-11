@@ -31,7 +31,8 @@ usually 0 and 1, to represent boolean data type.
 But in Java programming language numbers are not allowed
 to represent boolean data types.
 
-Char literals: char literals are represented by a single character in single quotes.
+Char literals: char literals are represented by a
+single character in single quotes.
 
 Example:
 //Decimal literal assigned to int data type
