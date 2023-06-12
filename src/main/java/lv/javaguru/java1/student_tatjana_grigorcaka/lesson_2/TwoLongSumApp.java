@@ -10,5 +10,6 @@ public class TwoLongSumApp {
         long result = number1 + number2;
         System.out.println("Sum result = " + result);
 
+
     }
 }

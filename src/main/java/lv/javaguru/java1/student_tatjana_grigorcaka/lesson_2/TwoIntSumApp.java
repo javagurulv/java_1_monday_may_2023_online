@@ -10,5 +10,6 @@ public class TwoIntSumApp {
         int result = number1 + number2;
         System.out.println("Sum result = " + result);
         System.out.println(result);
+
     }
 }
