@@ -9,6 +9,7 @@ public class TwoDoubleSumApp {
         double reduceResult = number1 - number2;
         double multiplyResult = number1 * number2;
         double divisionResult = number1 / number2;
+
         System.out.println("Sum result = " + sumResult);
         System.out.println("Reduce result = " + reduceResult);
         System.out.println("Multiply result = " + multiplyResult);

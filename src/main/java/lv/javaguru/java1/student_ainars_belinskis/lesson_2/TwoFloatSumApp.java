@@ -9,6 +9,7 @@ public class TwoFloatSumApp {
         float reduceResult = number1 - number2;
         float multiplyResult = number1 * number2;
         float divisionResult = number1 / number2;
+
         System.out.println("Sum result = " + sumResult);
         System.out.println("Reduce result = " + reduceResult);
         System.out.println("Multiply result = " + multiplyResult);

@@ -9,6 +9,7 @@ public class TwoIntArifmeticApp {
         int reduceResult = number1 - number2;
         int multiplyResult = number1 * number2;
         int divisionResult = number1 / number2;
+
         System.out.println("Sum result = " + sumResult);
         System.out.println("Reduce result = " + reduceResult);
         System.out.println("Multiply result = " + multiplyResult);
