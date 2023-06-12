@@ -5,6 +5,7 @@ public class ConcatenateTextApp {
     public static void main(String[] args) {
        String firstName = "Ainars";
         String lastName = "Belinskis";
+
         String fulltName = firstName + " " + lastName;
 
 
