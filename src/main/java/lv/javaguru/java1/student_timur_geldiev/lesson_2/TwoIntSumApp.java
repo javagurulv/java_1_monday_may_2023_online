@@ -7,8 +7,8 @@ public class TwoIntSumApp {
         int number1 = 100;
         int number2 = 200;
         int result = number1 + number2;
-        int average = result / 2;
+        //int average = result / 2;
         System.out.println("Result is " + result);
-        System.out.println("Average number is " + average);
+        //System.out.println("Average number is " + average);
     }
 }
