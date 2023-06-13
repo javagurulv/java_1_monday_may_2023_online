@@ -31,7 +31,7 @@
 
 #### Домашние задания
 
-**Лекция 1**
+**Лекция 1 - Introduction**
 * [day_1](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_1_introduction/homework/day_1)
 * [day_2](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_1_introduction/homework/day_2)
 * [day_3](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_1_introduction/homework/day_3)
@@ -40,7 +40,7 @@
 * [day_6](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_1_introduction/homework/day_6)
 * [day_7](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_1_introduction/homework/day_7)
 
-**Лекция 2**
+**Лекция 2 - Variables**
 * [day_1](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_2_variables/homework/day_1)
 * [day_2](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_2_variables/homework/day_2)
 * [day_3](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_2_variables/homework/day_3)
@@ -49,7 +49,7 @@
 * [day_6](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_2_variables/homework/day_6)
 * [day_7](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_2_variables/homework/day_7)
 
-**Лекция 3**
+**Лекция 3 - OOP First Look**
 * [day_1](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_3_oop_first_look/homework/day_1)
 * [day_2](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_3_oop_first_look/homework/day_2)
 * [day_3](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_3_oop_first_look/homework/day_3)
