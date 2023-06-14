@@ -11,15 +11,15 @@ public class Average {
 
             System.out.print("Введите три целых числа!\n");
             System.out.print("Число 1: ");
-            float number1 = in.nextInt();
+            double number1 = in.nextDouble();
 
             System.out.print("Число 2: ");
-            float number2 = in.nextInt();
+            double number2 = in.nextDouble();
 
             System.out.print("Число 3: ");
-            float number3 = in.nextInt();
+            double number3 = in.nextDouble();
 
-            float average = (number1 + number2 + number3) / 3;
+            double average = (number1 + number2 + number3) / 3;
             System.out.println("Среднее арифметическое = " + average);
 
 
