@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_timur_geldiev.lesson_2;
+package lv.javaguru.java1.student_timur_geldiev.lesson_2.classwork;
 
 public class TwoSumLongApp {
 

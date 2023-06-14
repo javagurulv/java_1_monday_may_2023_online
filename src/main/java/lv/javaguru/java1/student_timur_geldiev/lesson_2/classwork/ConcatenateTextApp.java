@@ -1,6 +1,4 @@
-package lv.javaguru.java1.student_timur_geldiev.lesson_2;
-
-import java.sql.SQLOutput;
+package lv.javaguru.java1.student_timur_geldiev.lesson_2.classwork;
 
 public class ConcatenateTextApp {
 
