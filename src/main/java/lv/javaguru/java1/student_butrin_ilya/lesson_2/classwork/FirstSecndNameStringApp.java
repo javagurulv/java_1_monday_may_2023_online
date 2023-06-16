@@ -5,7 +5,7 @@ public class FirstSecndNameStringApp {
     public static void main(String[] args) {
 String firstName =  "Ilya ";
 
-        String lastName =  "butrin ";
+        String lastName =  "butrin";
         System.out.println(firstName+lastName);
 
     }
