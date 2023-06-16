@@ -7,6 +7,7 @@ public class MultiplicationTable {
         Scanner in = new Scanner(System.in);
         System.out.print("Please, write number: ");
 
+
         int num = in.nextInt();
         System.out.println(num + " * 1 = " + (num * 1));
         System.out.println(num + " * 2 = " + (num * 2));

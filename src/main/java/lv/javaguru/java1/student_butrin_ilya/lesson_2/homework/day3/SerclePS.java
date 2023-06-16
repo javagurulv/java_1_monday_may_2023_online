@@ -9,7 +9,8 @@ System.out.print("Sercle radius: ");
         float radius = in.nextFloat();
        float perimetr = 2 * 3.14F * radius ;
         float area = 3.14F * radius * radius;
-             System.out.println("Perimeter is = " + perimetr);
+             System.out.
+                     println("Perimeter is = " + perimetr);
              System.out.print("Area is = " + area);
     }
 }

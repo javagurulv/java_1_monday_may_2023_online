@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class ArithmeticMean {
 
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Select num1 ");
