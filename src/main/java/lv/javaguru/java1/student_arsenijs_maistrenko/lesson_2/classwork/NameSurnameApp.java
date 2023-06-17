@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_arsenijs_maistrenko.lesson_2;
+package lv.javaguru.java1.student_arsenijs_maistrenko.lesson_2.classwork;
 
 public class NameSurnameApp {
 
