@@ -5,7 +5,7 @@
 PS: подсказка - инкапсулируйте алгоритм в класс Calculator в виде метода.
 
 class Calculator {
-    boolean isOdd(int number);
+    boolean isOdd(int number) { ... }
 }
 
 
