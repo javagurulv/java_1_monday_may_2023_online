@@ -11,6 +11,7 @@ public class BMIcalk {
         System.out.println("Введите ваш вес (кг):");
         float vesKg = in.nextFloat();
 
+
         System.out.println("Введите ваш рост (сm):");
         float rostSm = in.nextFloat();
 
