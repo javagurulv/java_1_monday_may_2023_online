@@ -1,0 +1,13 @@
+What is body mass index (BMI)?
+
+The body mass index (BMI) is a measure that uses your height and weight to work out if your weight is healthy.
+Body mass index (BMI) is calculated from your weight and height.
+
+The formula is BMI = kg/m2 where kg is a person's weight in kilograms and m2 is their height in metres squared.
+
+For adults, the BMI ranges and classifications are:
+
+BMI under 18.5: underweight
+BMI between 18.5 and 24.9: healthy weight range
+BMI between 25.0 and 29.9: overweight
+BMI equal to 30.0 or above: obese
