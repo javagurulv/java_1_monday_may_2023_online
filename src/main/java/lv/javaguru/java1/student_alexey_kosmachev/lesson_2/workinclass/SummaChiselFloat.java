@@ -14,8 +14,10 @@ public class SummaChiselFloat {
         float multiplyResult = number1 * number2;
         float divisionResult = number1 / number2;
 
-        System.out.println("Sum result = " + result);
-        System.out.println(result);
+        System.out.println("Sum result = " + sumResult);
+        System.out.println("Reduce result = " + reduceResult);
+        System.out.println("Multiply result = " + multiplyResult);
+        System.out.println("Division result = " + divisionResult);
 
     }
 }
