@@ -7,7 +7,6 @@ public class SummaChiselFloat {
 
         float number1 = 1.5F;
         float number2 = 3.2F;
-        float result = number1 + number2;
 
         float sumResult = number1 + number2;
         float reduceResult = number1 - number2;
