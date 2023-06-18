@@ -1,12 +1,11 @@
-package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_2;
+package lv.javaguru.java1.student_arsenijs_maistrenko.lesson_2.classwork;
 
 import java.util.Scanner;
 
-public class TriangleSquare {
+public class TriangeSquareApp {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-
         System.out.print("Input a: ");
         int aSide = in.nextInt();
 
@@ -16,14 +15,9 @@ public class TriangleSquare {
         System.out.print("Input c: ");
         int cSide = in.nextInt();
 
-        System.out.println("A side = " + aSide);
-        System.out.println("B side = " + bSide);
-        System.out.println("C side = " + cSide);
-
         double p = (aSide + bSide + cSide) / 2;
-        double square = Math.sqrt(p * (p - aSide) * (p - bSide) * (p - cSide));
+        double square = Math.sqrt(p * (p - aSide)*(p- bSide)*(p-cSide));
 
-        System.out.println("Triangle square = " + square);
+        System.out.print("Triangle side: " + square);
     }
-
 }
