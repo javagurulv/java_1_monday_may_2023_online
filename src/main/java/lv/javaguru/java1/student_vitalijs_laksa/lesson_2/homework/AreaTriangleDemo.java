@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_vitalijs_laksa.test_apps;
+package lv.javaguru.java1.student_vitalijs_laksa.lesson_2.homework;
 import java.util.Scanner;
 
 public class AreaTriangleDemo {
