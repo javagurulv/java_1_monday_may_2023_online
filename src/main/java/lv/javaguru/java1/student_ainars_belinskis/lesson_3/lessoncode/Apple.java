@@ -4,7 +4,7 @@ public class Apple {
 
     String sort;
     String color;
-    int ves;
+    int weight;
 
 
 }
