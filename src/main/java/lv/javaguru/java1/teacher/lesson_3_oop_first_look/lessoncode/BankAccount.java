@@ -5,8 +5,8 @@ public class BankAccount {
     String owner;
     int moneyAmount;
 
-    public BankAccount(String newOwner, int newMoneyAmount) {
-        owner = newOwner;
-        moneyAmount = newMoneyAmount;
+    public BankAccount(String owner, int moneyAmount) {
+        this.owner = owner;
+        this.moneyAmount = moneyAmount;
     }
 }

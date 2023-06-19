@@ -8,11 +8,11 @@ public class BankAccountApp {
 
 //        alexBankAccount.owner = "Aleksandrs Ivanovs";
 //        alexBankAccount.moneyAmount = 1000;
-        System.out.println("Alex Account");
+        System.out.println("Alex Account values are:");
         System.out.println(alexBankAccount.owner);
         System.out.println(alexBankAccount.moneyAmount);
 
-        System.out.println("Viktors Account");
+        System.out.println("Viktors Account values are:");
         System.out.println(viktorsBankAccount.owner);
         System.out.println(viktorsBankAccount.moneyAmount);
     }
