@@ -12,8 +12,8 @@ public class CircleAreaPerimeter {
         double perimeter = 2 * 3.1415926535897932384626433 * radius;
         double area = (3.1415926535897932384626433 * (radius * radius));
 
-        System.out.print("Perimeter of Circle : " + perimeter);
-        System.out.print("Area of Circle : " + area);
+        System.out.print("Perimeter of Circle : " + perimeter );
+        System.out.print("\nArea of Circle : " + area);
 
     }
 }
