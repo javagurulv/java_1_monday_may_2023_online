@@ -24,6 +24,5 @@ public class TriangleSquare {
 
         System.out.println("Triangle Square = "+ square);
 
-
     }
 }
