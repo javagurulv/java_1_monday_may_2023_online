@@ -6,10 +6,10 @@ public class ConcatenateTextApp {
        String firstName = "John";
         String lastName = "Doe";
 
-        String fulltName = firstName + " " + lastName;
+        String fullName = firstName + " " + lastName;
 
 
-        System.out.println(fulltName);
+        System.out.println(fullName);
     }
 
 
