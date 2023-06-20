@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3;
+package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.lessoncode;
 
 //task 1-4
 public class BankAccount {
