@@ -28,11 +28,4 @@ public class Book {
         return releaseYear;
     }
 
-    public Chapter getChapter1() {
-        return chapter1;
-    }
-
-    public Chapter getChapter2() {
-        return chapter2;
-    }
 }
