@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_3.homework.day3;
 
-public class Chapter {
+class Chapter {
 
     String title;
     String chapterText;

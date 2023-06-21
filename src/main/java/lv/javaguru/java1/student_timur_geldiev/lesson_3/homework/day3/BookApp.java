@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_3.homework.day3;
 
-public class BookApp {
+class BookApp {
     public static void main(String[] args) {
         Chapter chapter1OfBook1 = new Chapter("Chapter One", "To the red country and part of the gray country of Oklahoma, the last rains came\n" +
                 "gently, and they did not cut the scarred earth.");

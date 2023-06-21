@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_3.homework.day5;
 
-public class BankAccount {
+class BankAccount {
     String ownerFirstName;
     String ownerLastName;
     int moneyAmount;

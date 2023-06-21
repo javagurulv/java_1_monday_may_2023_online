@@ -1,10 +1,9 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_3.homework.day4;
 
 import java.sql.Time;
-import java.util.Date;
 import java.time.LocalDate;
 
-public class RegToDoc {
+class RegToDoc {
 
     String docName;
     String speciality;

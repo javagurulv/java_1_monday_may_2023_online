@@ -2,10 +2,8 @@ package lv.javaguru.java1.student_timur_geldiev.lesson_3.homework.day4;
 
 import java.sql.Time;
 import java.time.LocalDate;
-import java.util.GregorianCalendar;
-import java.util.Locale;
 
-public class DoctorDayVisitApp {
+class DoctorDayVisitApp {
     public static void main(String[] args) {
         Registration ticket1 = new Registration("John Smith", "Flu", 199.99);
         LocalDate appointmentDate1 = LocalDate.of(2024, 5, 12);

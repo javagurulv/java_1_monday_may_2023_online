@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_3.homework.day4;
 
-public class Registration {
+class Registration {
 
     String nameLastName;
     String diagnosis;

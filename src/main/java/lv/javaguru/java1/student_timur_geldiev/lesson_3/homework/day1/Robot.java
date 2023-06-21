@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_3.homework.day1;
 
-public class Robot {
+class Robot {
 
     String name;
 

@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_3.homework.day1;
 
-public class RobotApp {
+class RobotApp {
 
     public static void main(String[] args) {
         Robot T800 = new Robot();
