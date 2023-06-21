@@ -6,4 +6,14 @@ public class Country {
     String ISOCode;
     int population;
 
+
+    //constructor
+    public Country(String name, String ISOCode, int population) {
+        this.name = name;
+        this.ISOCode = ISOCode;
+        this.population = population;
+    }
 }
+
+
+
