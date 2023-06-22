@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_ainars_belinskis.lesson_2.homework.day_3;
 
 import java.util.Scanner;
 
-public class Multiplication {
+class Multiplication {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);

@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_3.homework.day_2;
 
-public class CarList {
+class CarList {
     private String autoBrand;
     private String color;
     private double autoPr;

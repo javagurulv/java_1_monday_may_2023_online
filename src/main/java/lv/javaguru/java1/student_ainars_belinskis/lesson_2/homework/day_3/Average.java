@@ -3,7 +3,7 @@ package lv.javaguru.java1.student_ainars_belinskis.lesson_2.homework.day_3;
 
 import java.util.Scanner;
 
-public class Average {
+class Average {
 
         public static void main(String[] args) {
 

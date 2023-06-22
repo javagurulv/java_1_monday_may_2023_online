@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_3.homework.day_4;
 
-public class Doctor {
+class Doctor {
     private String docNameSurname;
     private String specialty;
     private CalendarDay dayRecording;

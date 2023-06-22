@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_2.homework.weekly_challenges.task_3;
 
-public class CorrectDataTypes {
+class CorrectDataTypes {
 
     public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_3.homework.day_4;
 
-public class DoctorDayVisitApp {
+class DoctorDayVisitApp {
     public static void main(String[] args) {
         CalendarDay docOne = new CalendarDay(20, 07, 2023);
         CalendarDay docTwo = new CalendarDay(23, 07, 2023);

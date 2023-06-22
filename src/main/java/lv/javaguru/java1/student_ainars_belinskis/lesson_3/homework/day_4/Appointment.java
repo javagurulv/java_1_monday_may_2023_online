@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_3.homework.day_4;
 
-public class Appointment {
+class Appointment {
     private String time1;
     private String time2;
 

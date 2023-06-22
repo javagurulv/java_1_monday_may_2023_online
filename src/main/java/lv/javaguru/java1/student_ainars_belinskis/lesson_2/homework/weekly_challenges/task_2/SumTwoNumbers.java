@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_2.homework.weekly_challenges.task_2;
 
-public class SumTwoNumbers {
+class SumTwoNumbers {
     public static void main(String[] args) {
 
         int numberOne = 10;

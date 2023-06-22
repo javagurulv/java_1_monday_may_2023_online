@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_3.homework.day_4;
 
-public class Pacient {
+class Pacient {
     String pacNameSurn;
     String diagnosis;
     double cost;
