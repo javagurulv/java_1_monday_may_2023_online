@@ -3,16 +3,15 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.homework.day_1;
 public class RobotApp {
 
     public static void main(String[] args) {
-        Robot alphaRobot = new Robot("Alpha");
-        Robot jarvisRobot = new Robot("Jarvis");
+        Robot robotOne = new Robot("Alpha-1");
+        Robot robotTwo = new Robot("Jarvis-1");
 
-        System.out.println("Robot name is:");
-        System.out.println(alphaRobot.getName());
-        alphaRobot.setName("Ug");
+        robotOne.setName("Alpha-2");
+        System.out.println(robotOne.getName());
 
-        System.out.println("Robot name is:");
-        System.out.println(jarvisRobot.getName());
-        jarvisRobot.setName("Jet");
+        robotTwo.setName("Jarvis-2");
+        System.out.println(robotTwo.getName());
+
     }
 
     }
