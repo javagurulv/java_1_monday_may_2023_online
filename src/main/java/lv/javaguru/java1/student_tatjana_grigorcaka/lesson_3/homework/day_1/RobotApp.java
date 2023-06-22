@@ -4,12 +4,15 @@ public class RobotApp {
 
     public static void main(String[] args) {
         Robot alphaRobot = new Robot("Alpha");
-        alphaRobot.setName("Ug");
-        System.out.println(alphaRobot.getName());
-
         Robot jarvisRobot = new Robot("Jarvis");
-        jarvisRobot.setName("Jet");
+
+        System.out.println("Robot name is:");
+        System.out.println(alphaRobot.getName());
+        alphaRobot.setName("Ug");
+
+        System.out.println("Robot name is:");
         System.out.println(jarvisRobot.getName());
+        jarvisRobot.setName("Jet");
     }
 
     }
