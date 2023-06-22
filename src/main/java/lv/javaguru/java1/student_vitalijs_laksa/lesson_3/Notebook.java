@@ -4,5 +4,6 @@ public class Notebook {
 
     String model;
     double price;
-    double price;
+    double diagonal;
+
 }
