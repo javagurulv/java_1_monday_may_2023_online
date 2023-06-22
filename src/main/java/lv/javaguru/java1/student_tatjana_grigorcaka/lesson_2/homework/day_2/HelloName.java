@@ -1,7 +1,7 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_2.homework.day_2;
 
 import java.util.Scanner;
-public class HelloUserName {
+public class HelloName {
     public static void main(String[] args) {
 
         System.out.println("Please enter your name:");
@@ -9,7 +9,7 @@ public class HelloUserName {
         Scanner input = new Scanner(System.in);
         String name = input.next();
 
-        System.out.println("Hello " + "Tatjana!");
+        System.out.println("Hello " + name + "!");
 
     }
 
