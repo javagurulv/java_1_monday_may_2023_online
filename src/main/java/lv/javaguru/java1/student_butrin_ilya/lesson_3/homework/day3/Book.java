@@ -5,15 +5,16 @@ public class Book {
     String author;
     int year;
 
-    BookChapter1 chapter1;
-    BookChapter2 chapter2;
+    BookChapter chapter1;
+    BookChapter chapter2;
 
-    public Book (String name, String author, int year) {
+    public Book (String name, String author, int year, BookChapter chapter1, BookChapter chapter2) {
+
         this.name = name;
         this.author = author;
         this.year = year;
-       //this.chapter1=chapter1;
-        // this.chapter2=chapter2;
+       this.chapter1=chapter1;
+       this.chapter2=chapter2;
 
     }
     public String getName () {
