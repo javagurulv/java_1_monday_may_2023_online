@@ -6,7 +6,7 @@ import java.util.Scanner;
 // Вопрос 1: при вводе данных радиусаб принимает цифры разделённыке запитой "," (пример 7,5),
 // как можно менять локализацию, чтоб работал ввод данных с точкой ".", (пример 7.5)?
 
-public class Radius2 {
+class Radius2 {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);

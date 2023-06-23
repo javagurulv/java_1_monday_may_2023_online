@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_2.homework.weekly_challenges.task_5;
 
-public class CommentsExample {
+class CommentsExample {
 
     /*
       Following is the main method here,

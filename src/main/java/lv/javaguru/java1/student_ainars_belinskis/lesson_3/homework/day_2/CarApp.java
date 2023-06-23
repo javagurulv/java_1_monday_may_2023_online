@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_3.homework.day_2;
 
-public class CarApp {
+class CarApp {
     public static void main(String[] args) {
         CarList carOne = new CarList("Audi", "Red", 25000);
         CarList carTwo = new CarList("VW", "Blue", 15000);

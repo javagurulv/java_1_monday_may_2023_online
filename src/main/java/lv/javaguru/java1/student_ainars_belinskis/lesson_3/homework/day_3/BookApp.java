@@ -1,5 +1,5 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_3.homework.day_3;
-public class BookApp {
+class BookApp {
     public static void main(String[] args) {
         Chapter bookOneCh1 = new Chapter("Book1 Ch1 name", "Bk1 Ch1 text!!!");
         Chapter bookOneCh2 = new Chapter("Book1 Ch2 name", "Bk1 Ch2 text!!!");

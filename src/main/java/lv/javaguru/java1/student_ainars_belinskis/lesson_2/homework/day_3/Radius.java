@@ -10,7 +10,7 @@ import java.util.Scanner;
 //Perimeter is = 47.12388 (как увеличить число цифр после запетой?)
 //Area is = 176.71455 (как увеличить число цифр после запетой?)
 
-public class Radius {
+class Radius {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
