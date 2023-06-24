@@ -10,7 +10,7 @@ public class PerimetrPlosadKruga {
         Scanner in = new Scanner(System.in);
 
         System.out.print("Input Radius: ");
-        double Radius = in.nextDouble(); // не читает вещественное число
+        double Radius = in.nextDouble(); //
 
         double C = 2 * 3.14 * Radius;
         double A = 3.14 * Radius * Radius;
