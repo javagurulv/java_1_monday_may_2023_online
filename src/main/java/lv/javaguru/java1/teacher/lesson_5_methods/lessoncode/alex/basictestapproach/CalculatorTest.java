@@ -1,4 +1,4 @@
-package lv.javaguru.java1.teacher.lesson_4_if_statement.lessoncode.alex.basictestapproach;
+package lv.javaguru.java1.teacher.lesson_5_methods.lessoncode.alex.basictestapproach;
 
 public class CalculatorTest {
 
