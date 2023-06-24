@@ -1,4 +1,4 @@
-package lv.javaguru.java1.teacher.lesson_4_if_statement.lessoncode.alex;
+package lv.javaguru.java1.teacher.lesson_5_methods.lessoncode.alex;
 
 public class Car {
 
