@@ -3,7 +3,7 @@ package lv.javaguru.java1.student_butrin_ilya.lesson_3.homework.day4;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-public class DoctorDayVisitApp {
+class DoctorDayVisitApp {
     public static void main(String[] args) {
         Calendar andreyDate = new GregorianCalendar(2022, 0, 25);
         Calendar ilyaDate = new GregorianCalendar(2022, 1, 25);

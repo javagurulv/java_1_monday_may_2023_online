@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_butrin_ilya.lesson_3.homework.day2;
 
-public class CarApp {
+class CarApp {
     public static void main(String[] args) {
         Car car1 = new Car("opel", "red", 1000);
         Car car2 = new Car("ford", "blue", 2000);
@@ -17,9 +17,9 @@ System.out.println("car3 type - " + car3.getType() + ", car 3 color - " + car3.g
     car3.setType("NEW bmv");
     car3.setColor("NEW green");
     car3.setPrice(500000000);
-         System.out.println("car1 type - " + car1.getType() + ", car 1 color - " + car1.getColor() + ", car1 price - " + car1.getPrice());
-        System.out.println("car2 type - " + car2.getType() + ", car 2 color - " + car2.getColor() + ", car2 price - " + car2.getPrice());
-        System.out.println("car3 type - " + car3.getType() + ", car 3 color - " + car3.getColor() + ", car3 price - " + car3.getPrice());
+    System.out.println("car1 type - " + car1.getType() + ", car 1 color - " + car1.getColor() + ", car1 price - " + car1.getPrice());
+    System.out.println("car2 type - " + car2.getType() + ", car 2 color - " + car2.getColor() + ", car2 price - " + car2.getPrice());
+    System.out.println("car3 type - " + car3.getType() + ", car 3 color - " + car3.getColor() + ", car3 price - " + car3.getPrice());
 
 
 

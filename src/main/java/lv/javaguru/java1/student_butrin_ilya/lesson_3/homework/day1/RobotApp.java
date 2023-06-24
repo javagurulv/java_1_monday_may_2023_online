@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_butrin_ilya.lesson_3.homework.day1;
 
-public class RobotApp {
+class RobotApp {
 
     public static void main(String[] args) {
         Robot rob1 = new Robot("Mers");
@@ -12,8 +12,8 @@ System.out.println(rob1.robotName);
 rob1.setName("NEW_Mers");
 System.out.println(rob2.robotName);
 rob2.setName("NEW_Mers2");
-        System.out.println(rob1.robotName);
-        System.out.println(rob2.robotName);
+System.out.println(rob1.robotName);
+System.out.println(rob2.robotName);
 
     }
 }

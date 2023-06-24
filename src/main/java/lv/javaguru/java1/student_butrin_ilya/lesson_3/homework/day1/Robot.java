@@ -1,17 +1,16 @@
 package lv.javaguru.java1.student_butrin_ilya.lesson_3.homework.day1;
 
-public class Robot {
+class Robot {
     String robotName;
 
-    public Robot (String x) {
-       robotName = x;
-
+    public Robot (String robotName) {
+       this.robotName = robotName;
     }
 public String getName () {
         return robotName;
 }
-public void setName (String x) {
-        robotName = x;
+public void setName (String robotName) {
+        this.robotName = robotName;
 
 }
 }

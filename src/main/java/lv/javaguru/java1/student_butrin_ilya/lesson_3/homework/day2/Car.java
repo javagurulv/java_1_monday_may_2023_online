@@ -1,14 +1,14 @@
 package lv.javaguru.java1.student_butrin_ilya.lesson_3.homework.day2;
 
-public class Car {
-    String type;
-    String color;
-    int price;
+ class Car {
+    private String type;
+    private String color;
+    private int price;
 
-    public Car(String x, String y, int z) {
-        type  = x;
-        color = y;
-        price = z;
+    public Car(String type, String color, int price) {
+        this.type  = type;
+        this.color = color;
+        this.price = price;
 
     }
 
@@ -23,13 +23,13 @@ public class Car {
     public int getPrice() {
         return price;
     }
-    public void setType(String x){
-        this.type = x;
+    public void setType(String type){
+        this.type = type;
     }
-    public void setColor(String y){
-        this.color = y;
+    public void setColor(String color){
+        this.color = color;
     }
-    public void setPrice(int z){
-        this.price = z;
+    public void setPrice(int price){
+        this.price = price;
     }
 }

@@ -1,10 +1,10 @@
 package lv.javaguru.java1.student_butrin_ilya.lesson_3.homework.day4;
 
-public class Patient {
+class Patient {
 
     private String patientName;
     private String diagnosis;
-    int price;
+    private int price;
     private DoctorAppointment doctorAppointment;
 
     public Patient (String patientName, String diagnosis, int price, DoctorAppointment doctorAppointment){

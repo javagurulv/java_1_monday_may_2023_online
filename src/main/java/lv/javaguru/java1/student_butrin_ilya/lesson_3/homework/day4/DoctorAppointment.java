@@ -3,7 +3,7 @@ package lv.javaguru.java1.student_butrin_ilya.lesson_3.homework.day4;
 import java.util.Calendar;
 import java.util.Date;
 
-public class DoctorAppointment {
+class DoctorAppointment {
 
     private String doctorName;
     private String doctorSpeciality;

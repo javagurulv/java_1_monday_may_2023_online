@@ -1,9 +1,9 @@
 package lv.javaguru.java1.student_butrin_ilya.lesson_3.homework.day3;
 
-public class Book {
-    String name;
-    String author;
-    int year;
+class Book {
+    private String name;
+    private String author;
+    private int year;
 
     BookChapter chapter1;
     BookChapter chapter2;
