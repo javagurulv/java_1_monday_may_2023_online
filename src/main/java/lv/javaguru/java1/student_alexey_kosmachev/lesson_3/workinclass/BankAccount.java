@@ -12,7 +12,18 @@ public class BankAccount {
     public String getOwner() {
         return owner;
     }
+
+    public void setOwner(String Owner) {
+       this.owner = owner;
+
+    }
+
     public int getMoneyAmount() {
         return moneyAmount;
+    }
+
+    public void setMoneyAmount(int moneyAmount) {
+        this.moneyAmount = moneyAmount;
+
     }
 }
