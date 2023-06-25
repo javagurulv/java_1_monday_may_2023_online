@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.homework;
+package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.workinclass;
 
 public class CalculateTime {
     //привести колличество секунд 3665 в формате часы:минуты:секунды

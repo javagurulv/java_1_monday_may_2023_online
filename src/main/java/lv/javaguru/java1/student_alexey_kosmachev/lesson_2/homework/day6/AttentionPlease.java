@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.homework.Day6;
+package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.homework.day6;
 //Заставьте эту программу работать!
 //
 //class AttentionPlease {
