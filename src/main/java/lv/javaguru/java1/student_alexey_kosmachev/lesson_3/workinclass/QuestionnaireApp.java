@@ -7,6 +7,7 @@ public class QuestionnaireApp {
         Question questionAboutLesson = new Question("Do you follow my mind?");
         Questionare questionare = new Questionare("Alexey", questionAboutLesson, questionAboutYourself);
 
+        questionare.firstQuestion.answer = true;
         System.out.println(questionare.firstQuestion.questionText);
         System.out.println(questionare.firstQuestion.answer);
 
