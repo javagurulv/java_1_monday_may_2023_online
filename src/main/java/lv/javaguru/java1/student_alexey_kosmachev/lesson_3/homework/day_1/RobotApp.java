@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework;
+package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day_1;
 
 import lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day_1.Robot;
 
