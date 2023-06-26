@@ -17,7 +17,7 @@ class BankAccount {
     String getMoney() {
 
         this.moneyAmound = moneyAmound;
-        String moneyString = Integer.toString(moneyAmound);
+            String moneyString = Integer.toString(moneyAmound);
         return moneyString;
 
     }
