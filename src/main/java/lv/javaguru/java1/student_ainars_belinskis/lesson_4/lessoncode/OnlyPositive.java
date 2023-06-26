@@ -8,8 +8,8 @@ public class OnlyPositive {
         System.out.println("Enter number: ");
         int number = scanner.nextInt();
         boolean isPositive = number > 0;
-        if (isPositive == true){
-        System.out.println("Number is positive = " + isPositive);}
+        if (isPositive){
+        System.out.println("Number is positive!!");}
 
     }
 }
