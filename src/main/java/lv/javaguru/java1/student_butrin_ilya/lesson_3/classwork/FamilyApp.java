@@ -10,7 +10,9 @@ public class FamilyApp {
         Person fatherFamilyTwo = new Person("Toomash", "Ivanov", 29);
         Person childrenFamilyTwo = new Person("Drey", "Ivanovvv", 4);
 
-    Family Butrin = new Family(fatherFamilyOne, motherFamilyOne, childrenFamilyOne);
-    Family ivanov = new Family(fatherFamilyTwo, motherFamilyTwo, childrenFamilyTwo);
+        Family Butrin = new Family(fatherFamilyOne, motherFamilyOne, childrenFamilyOne);
+        Family ivanov = new Family(fatherFamilyTwo, motherFamilyTwo, childrenFamilyTwo);
+
+        Family ivashko = new Family(fatherFamilyTwo, motherFamilyTwo);
     }
-        }
+}
