@@ -5,7 +5,16 @@ public class Family {
     Person Mather;
     Person Children;
 
-    public Family(Person father, Person mather, Person children) {
+    public Family(Person father,
+                  Person mather) {
+        Father = father;
+        Mather = mather;
+        Children = null;
+    }
+
+    public Family(Person father,
+                  Person mather,
+                  Person children) {
         Father = father;
         Mather = mather;
         Children = children;
