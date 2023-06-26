@@ -19,6 +19,14 @@ class Speaker {
             volumeLvl += 1;
         } else System.out.println("The speaker is turned off.");
     }
+    public void decreaseVol(){
+        if(isOn == true && volumeLvl < 10 && volumeLvl > 0) {
+            volumeLvl -= 1;
+            if(volumeLvl <= 0){
+                isOn = false;
+            }
+        } else System.out.println("The speaker is turned off.");
+    }
     public void turnOff(){
         this.isOn = false;
         this.volumeLvl = 0;
