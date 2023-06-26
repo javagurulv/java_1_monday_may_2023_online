@@ -1,0 +1,45 @@
+Написать автоматические тесты на класс Calculator методы:
+
+    boolean isOdd(int number) {...}
+
+Для этого создайте класс CalculatorTest.
+
+Набросок решения:
+
+class CalculatorTest {
+
+    public static void main(String[] args) {
+        CalculatorTest test = new CalculatorTest();
+        test.shouldBeOdd();
+        test.shouldNotBeOdd();
+    }
+
+    public void shouldBeOdd() {
+        Calculator calculator = new Calculator();
+        boolean isOdd = calculator.isEven(11);
+        if (isOdd) {
+            System.out.println("TEST IS OK!");
+        } else {
+            System.out.println("TEST IS FAIL!");
+        }
+    }
+
+    public void shouldNotBeOdd() {
+        Calculator calculator = new Calculator();
+        boolean notOdd = calculator.isEven(12);
+        if (notOdd) {
+            System.out.println("TEST IS OK!");
+        } else {
+            System.out.println("TEST IS FAIL!");
+        }
+    }
+}
+
+
+Цели:
+- познакомиться с написанием автоматических тестов;
+- научиться генерировать тестовые варианты;
+- три шага в написании автоматического теста:
+    подготовка тестовых данных,
+    вызов продакшн кода,
+    проверка результата.
