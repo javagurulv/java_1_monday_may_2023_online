@@ -1,45 +1,24 @@
-Написать автоматические тесты на класс Calculator методы:
-    boolean isEven(int number);
-    boolean isOdd(int number).
+Спроектировать решение задачи нахождения корней
+квадратного уравнения разложив ее на отдельные методы.
 
-Для этого создайте класс CalculatorTest.
+Подсказка: в решении должны присутствовать:
+- метод нахождения дискриминанта;
+- метод отвечающий на вопрос есть ли корни
+  у квадратного уравнения или нет;
+- метод нахождения первого корня;
+- метод нахождения второго корня.
 
-Набросок решения:
+Реализуйте методы в классе SquareEquation.
 
-class CalculatorTest {
-
-    public static void main(String[] args) {
-        CalculatorTest test = new CalculatorTest();
-        test.shouldBeEven();
-        test.shouldBeOdd();
-    }
-
-    public void shouldBeEven() {
-        Calculator calculator = new Calculator();
-        boolean isEven = calculator.isEven(10);
-        if (isEven) {
-            System.out.println("TEST IS OK!");
-        } else {
-            System.out.println("TEST IS FAIL!");
-        }
-    }
-
-    public void shouldBeOdd() {
-        Calculator calculator = new Calculator();
-        boolean isOdd = calculator.isEven(11);
-        if (isOdd) {
-            System.out.println("TEST IS OK!");
-        } else {
-            System.out.println("TEST IS FAIL!");
-        }
-    }
-}
+Создайте класс SquareEquationApp и в его main() методе
+соберите полное решение задачи используя для этого методы
+из класса SquareEquation. Параметры квадратного уравнения
+можно запрашивать у пользователя через консоль или
+использовать заранее заданные их значения в виде переменных
+(int a = 10; int b = 2; int c = 5).
 
 
 Цели:
-- научиться генерировать тестовые варианты;
-- познакомиться с писанием автоматических тестов;
-- три шага в написании автоматического теста:
-    подготовка тестовых данных,
-    вызов продакшн кода,
-    проверка результата.
+- продемонстрировать деление задачи на подзадачи;
+- продемонстрировать реализацию подзадач в виде методов;
+- продемонстрировать использование подзадач при решении целой задачи.
