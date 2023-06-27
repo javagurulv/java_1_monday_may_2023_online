@@ -12,6 +12,7 @@ public class ThreeNumbers {
         System.out.println("Enter number3: ");
         int number3 = scanner.nextInt();
 
+
         if ((number1 > number2) || (number1 > number3)) {
             System.out.println("Biggest number is " + number1);
             }
