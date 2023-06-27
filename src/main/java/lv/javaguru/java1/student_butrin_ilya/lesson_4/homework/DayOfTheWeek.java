@@ -24,7 +24,7 @@ public class DayOfTheWeek {
             }
             else if (day == 6) {System.out.println("Saturday");
             }
-            else if (day == 7) {System.out.println("friday");
+            else if (day == 7) {System.out.println("Sunday");
              }
         }
     }
