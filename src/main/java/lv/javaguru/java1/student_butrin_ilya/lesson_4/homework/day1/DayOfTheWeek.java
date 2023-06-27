@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_butrin_ilya.lesson_4.homework;
+package lv.javaguru.java1.student_butrin_ilya.lesson_4.homework.day1;
 
 import java.util.Scanner;
 
@@ -8,12 +8,14 @@ public class DayOfTheWeek {
         System.out.println("Please enter number from 1 to 7");
         int day = days.nextInt();
         boolean isOneToSeven = day > 0 && day <= 7;
-        while (isOneToSeven == false){
+        while (isOneToSeven == false) {
             System.out.println("Are you stupid? From 1 to 7");
             day = days.nextInt();
             isOneToSeven = day > 0 && day <= 7;
         }
-            if (day == 1) System.out.println("monday");
+            if (day == 1) {
+                System.out.println("monday");
+            }
             else if (day == 2) {System.out.println("Tuesday");
             }
             else if (day == 3) {System.out.println("Wednesday");
