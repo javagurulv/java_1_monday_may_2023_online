@@ -13,11 +13,22 @@ public class Stock {
     }
 
     public void updatePrice(double currentPrice, double minPrice, double maxPrice) {
-        this.currentPrice = currentPrice;
-        this.minPrice = minPrice;
-        this.maxPrice = maxPrice;
 
+        if (currentPrice >= maxPrice) {
+            this.currentPrice = maxPrice;
+            this.maxPrice=maxPrice;
+            this.minPrice = minPrice;
+        } else if (currentPrice <= minPrice) {
+            this.currentPrice = minPrice;
+            this.minPrice = minPrice;
+            this.maxPrice = maxPrice;
+        } else {
+            this.minPrice = minPrice;
+            this.maxPrice = maxPrice;
+            this.currentPrice = currentPrice;
+        }
     }
+
 
     public String getPriceInformation() {
         return "Company: " + companyName +
@@ -26,3 +37,4 @@ public class Stock {
                 "\nMaximum Price: " + maxPrice;
     }
 }
+
