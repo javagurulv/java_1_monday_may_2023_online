@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_3.lessoncode;
 
-public class BankAccountApp {
+class BankAccountApp {
 
     public static void main(String[] args) {
         BankAccount alexBankAccount = new BankAccount("Aleksandrs Ivanovs", 1000);

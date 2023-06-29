@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_4.homework.day_4;
 
-public class Stock {
+class Stock {
     private String kompanyName;
     private double presentPrice;
     private double minPrice;

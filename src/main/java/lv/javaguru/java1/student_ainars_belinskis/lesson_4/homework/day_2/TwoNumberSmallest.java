@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_ainars_belinskis.lesson_4.homework.day_2;
 
 import java.util.Scanner;
 
-public class TwoNumberSmallest {
+class TwoNumberSmallest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number1: ");

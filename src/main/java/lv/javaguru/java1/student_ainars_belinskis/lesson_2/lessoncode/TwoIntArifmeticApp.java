@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_2.lessoncode;
 
-public class TwoIntArifmeticApp {
+class TwoIntArifmeticApp {
 
     public static void main(String[] args) {
         int number1 = 10000;

@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_ainars_belinskis.lesson_2.lessoncode;
 
 import java.util.Scanner;
 
-public class BMIcalk {
+class BMIcalk {
 
     public static void main(String[] args) {
 

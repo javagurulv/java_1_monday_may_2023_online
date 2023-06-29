@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_ainars_belinskis.lesson_2.lessoncode;
 
 import java.util.Scanner;
 
-public class TimeConvert {
+class lass TimeConvert {
 
     //как задать значение вводимого числа (секунд), чтоб можно было вводить много симвалов
 

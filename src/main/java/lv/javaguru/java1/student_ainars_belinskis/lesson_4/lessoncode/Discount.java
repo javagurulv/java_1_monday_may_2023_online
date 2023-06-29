@@ -3,7 +3,7 @@ package lv.javaguru.java1.student_ainars_belinskis.lesson_4.lessoncode;
 import java.util.Scanner;
 
 public class Discount {
-    public static void main(String[] args) {
+static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter amount: ");
         double amount = scanner.nextDouble();

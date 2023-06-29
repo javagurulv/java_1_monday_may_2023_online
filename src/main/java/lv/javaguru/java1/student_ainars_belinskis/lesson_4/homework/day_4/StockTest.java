@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_4.homework.day_4;
 
-public class StockTest {
+class StockTest {
     public static void main(String[] args) {
         Stock bigBank = new Stock("BigBank", 10);
         bigBank.updatePrice();

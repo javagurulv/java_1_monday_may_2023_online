@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_ainars_belinskis.lesson_2.lessoncode;
 
 import java.util.Scanner;
 
-public class CheckEvenOdd {
+class CheckEvenOdd {
        public static void main(String[] args) {
                System.out.println("Введите число: ");
 

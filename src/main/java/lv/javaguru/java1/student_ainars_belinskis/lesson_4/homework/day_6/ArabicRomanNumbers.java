@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_ainars_belinskis.lesson_4.homework.day_6;
 
 import java.util.Scanner;
 
-public class ArabicRomanNumbers {
+class ArabicRomanNumbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter arabic number (1-10): ");

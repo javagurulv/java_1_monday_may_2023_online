@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_3.lessoncode;
 
-public class FamilyApp {
+class FamilyApp {
     public static void main(String[] args) {
         Person fatheOneFamily = new Person("Aleks", "Denisov", 45);
         Person matherOneFamily = new Person("Marija", "Denisova", 37);

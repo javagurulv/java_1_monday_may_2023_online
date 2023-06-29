@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_3.homework.day_7;
 
-public class SpeakerApp {
+class SpeakerApp {
     public static void main(String[] args) {
         Speaker speak1 = new Speaker("SONY", 2, true);
 

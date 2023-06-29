@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_2.lessoncode;
 
-public class TwoLongSumApp {
+class TwoLongSumApp {
 
     public static void main(String[] args) {
         long number1 = 22222222222222L;
