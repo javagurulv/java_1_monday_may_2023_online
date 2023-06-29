@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.homework.day4;
+package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.homework.day_4;
 
 //Команда System.out.println("text"); выводит указанный "text"
 //на консоль, и переводит курсор на новую строку.

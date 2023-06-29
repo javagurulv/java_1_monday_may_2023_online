@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.homework.day2;
+package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.homework.day_2;
 
 import java.util.Scanner;
 

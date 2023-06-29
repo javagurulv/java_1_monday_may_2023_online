@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.homework.day5;
+package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.homework.day_5;
 // Заставьте эту программу работать!
 //
 //class SizeMatters {
