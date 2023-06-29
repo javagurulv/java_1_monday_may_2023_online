@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_timur_geldiev.lesson_4.homework.day_6;
 
 import java.util.Scanner;
 
-public class SeasonDetector {
+class SeasonDetector {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your number: ");

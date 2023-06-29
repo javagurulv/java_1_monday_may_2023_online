@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_timur_geldiev.lesson_4.homework.day_5;
 
 import java.util.Scanner;
 
-public class CommissionCalculator {
+class CommissionCalculator {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

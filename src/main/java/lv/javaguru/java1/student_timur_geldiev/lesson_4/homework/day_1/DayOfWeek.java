@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_timur_geldiev.lesson_4.homework.day_1;
 
 import java.util.Scanner;
 
-public class DayOfWeek {
+class DayOfWeek {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your number: ");

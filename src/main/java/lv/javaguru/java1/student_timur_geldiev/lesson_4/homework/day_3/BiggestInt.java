@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_timur_geldiev.lesson_4.homework.day_3;
 
 import java.util.Scanner;
 
-public class BiggestInt {
+class BiggestInt {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter first number: ");
