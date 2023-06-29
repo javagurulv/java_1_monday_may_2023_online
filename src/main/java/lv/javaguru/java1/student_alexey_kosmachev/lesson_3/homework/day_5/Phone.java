@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day5;
+package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day_5;
 
 //Найти ошибку в коде.
 //Исправить и запустить программу.
