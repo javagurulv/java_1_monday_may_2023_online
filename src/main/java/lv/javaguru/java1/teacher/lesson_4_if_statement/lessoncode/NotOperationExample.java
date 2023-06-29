@@ -1,4 +1,4 @@
-package lv.javaguru.java1.teacher.lesson_5_methods.lessoncode;
+package lv.javaguru.java1.teacher.lesson_4_if_statement.lessoncode;
 
 class NotOperationExample {
 
