@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_4.homework;
+package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_4.homework.day_1;
 
 import java.util.Scanner;
 
@@ -10,36 +10,28 @@ public class DayOfWeek {
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter a number: ");
         number=sc.nextInt();
-        if(number==1)
-        {
+        if(number==1) {
             System.out.print("Monday");
         }
-        else if(number==2)
-        {
+        else if(number==2) {
             System.out.print("Tuesday");
         }
-        else if(number==3)
-        {
+        else if(number==3) {
             System.out.print("Wednesday");
         }
-        else if(number==4)
-        {
+        else if(number==4) {
             System.out.print("Thursday");
         }
-        else if(number==5)
-        {
+        else if(number==5) {
             System.out.print("Friday");
         }
-        else if(number==6)
-        {
+        else if(number==6) {
             System.out.print("Saturday");
         }
-        else if(number==7)
-        {
+        else if(number==7) {
             System.out.print("Sunday");
         }
-        else
-        {
+        else {
             System.out.print("Invalid number");
         }
     }
