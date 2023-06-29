@@ -1,0 +1,9 @@
+
+Lesson_3 Homework day_7 SpeakerApp
+
+Я задал параметр speak1:
+Speaker speak1 = new Speaker("SONY", 2, true);
+
+Почему, когда запускаю программу, первый запрос показывает параметры класса Speaker, а не заданные параметры объекта speak1?
+
+SONY Sound level = 0 Switch position is: false
