@@ -2,17 +2,17 @@ package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day_4;
 
 class Pacient {
 
-    String FullnamePacient;
-    String Diagnoz;
-    double Cost;
+    String fullnamepacient;
+    String diagnosis;
+    double cost;
 
     public Pacient(String fullnamePacient, String diagnoz, double cost) {
-        FullnamePacient = fullnamePacient;
-        Diagnoz = diagnoz;
-        Cost = cost;
+        this.fullnamepacient = fullnamePacient;
+        this.diagnosis = diagnoz;
+        this.cost = cost;
     }
 
-    public String getFullnamePacient() { return FullnamePacient; }
-    public String getDiagnoz() { return Diagnoz; }
-    public double getCost() { return Cost; }
+    public String getFullnamePacient() { return fullnamepacient; }
+    public String getDiagnoz() { return diagnosis; }
+    public double getCost() { return cost; }
 }

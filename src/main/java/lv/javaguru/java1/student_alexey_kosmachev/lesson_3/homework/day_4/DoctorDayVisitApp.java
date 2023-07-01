@@ -14,9 +14,9 @@ class DoctorDayVisitApp {
         LocalDate date1 = LocalDate.of(2023,06,30);
         VisitDoctor doctor = new VisitDoctor("Vija Babicka", "Terapeut", date1, timeMorning10, timeMorning12, timeAfternoon14, timeAfternoon16 );
 
-        Pacient Pacient2 = new Pacient("Nadezda Babkina", "broken finger", 15.10);
-        LocalDate Date2 = LocalDate.of(2023,07,05);
-        VisitDoctor Doctor2 = new VisitDoctor("Petja Vasechkin", "surgeon", Date2, timeMorning10, timeMorning12, timeAfternoon14, timeAfternoon16 );
+        Pacient pacient2 = new Pacient("Nadezda Babkina", "broken finger", 15.10);
+        LocalDate date2 = LocalDate.of(2023,07,05);
+        VisitDoctor doctor2 = new VisitDoctor("Petja Vasechkin", "surgeon", date2, timeMorning10, timeMorning12, timeAfternoon14, timeAfternoon16 );
 
         System.out.println("Visit Card number1: " );
         System.out.println("Pacient Name: " + pacient1.getFullnamePacient());
@@ -30,17 +30,13 @@ class DoctorDayVisitApp {
         System.out.println();
 
         System.out.println("Visit Card number2: " );
-        System.out.println("Pacient Name: " + Pacient2.getFullnamePacient());
-        System.out.println("Your Diagnoz: " + Pacient2.getDiagnoz());
-        System.out.println("Date of Visit: " + Date2);
+        System.out.println("Pacient Name: " + pacient2.getFullnamePacient());
+        System.out.println("Your Diagnoz: " + pacient2.getDiagnoz());
+        System.out.println("Date of Visit: " + date2);
         System.out.println("Time of Visit: " + "From " + timeAfternoon14 + " to " + timeAfternoon16);
-        System.out.println("Your Doctor: " + Doctor2.getFullname());
-        System.out.println("Your Doctor Proffesion: " + Doctor2.getProffesion());
-        System.out.println("Price of Visit: " + Pacient2.getCost());
-
-
-
-
+        System.out.println("Your Doctor: " + doctor2.getFullname());
+        System.out.println("Your Doctor Proffesion: " + doctor2.getProffesion());
+        System.out.println("Price of Visit: " + pacient2.getCost());
 
     }
 }

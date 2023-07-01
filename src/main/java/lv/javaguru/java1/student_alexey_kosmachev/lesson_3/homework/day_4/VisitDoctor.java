@@ -8,28 +8,28 @@ class VisitDoctor {
 
     String fullname;
     String proffesion;
-    LocalDate Date;
-    LocalTime TimeMorning10;
-    LocalTime TimeMorning12;
-    LocalTime TimeAfternoon14;
-    LocalTime TimeAfternoon16;
+    LocalDate date;
+    LocalTime timeMorning10;
+    LocalTime timeMorning12;
+    LocalTime timeAfternoon14;
+    LocalTime timeAfternoon16;
 
     public VisitDoctor(String fullname, String proffesion, LocalDate date, LocalTime timeMorning10, LocalTime timeMorning12, LocalTime timeAfternoon14, LocalTime timeAfternoon16) {
         this.fullname = fullname;
         this.proffesion = proffesion;
-        Date = date;
-        TimeMorning10 = timeMorning10;
-        TimeMorning12 = timeMorning12;
-        TimeAfternoon14 = timeAfternoon14;
-        TimeAfternoon16 = timeAfternoon16;
+        this.date = date;
+        this.timeMorning10 = timeMorning10;
+        this.timeMorning12 = timeMorning12;
+        this.timeAfternoon14 = timeAfternoon14;
+        this.timeAfternoon16 = timeAfternoon16;
     }
 
     public String getFullname() { return fullname; }
     public String getProffesion() { return proffesion; }
-    public LocalDate getDate() { return Date; }
-    public LocalTime getTimeMorning10() { return TimeMorning10; }
-    public LocalTime getTimeMorning12() { return TimeMorning12; }
-    public LocalTime getTimeAfternoon14() { return TimeAfternoon14; }
-    public LocalTime getTimeAfternoon16() { return TimeAfternoon16; }
+    public LocalDate getDate() { return date; }
+    public LocalTime getTimeMorning10() { return timeMorning10; }
+    public LocalTime getTimeMorning12() { return timeMorning12; }
+    public LocalTime getTimeAfternoon14() { return timeAfternoon14; }
+    public LocalTime getTimeAfternoon16() { return timeAfternoon16; }
 
 }

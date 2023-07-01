@@ -9,10 +9,10 @@ class HelloAlexey {
     public static void main(String[]args) {
         Scanner sk = new Scanner(System.in);  //Задаем запрос текстовых данных от пользователя Scanner sk
 
-        String Myname; // Задаем переменную
+        String myname; // Задаем переменную
         System.out.print("input Name: "); // Получаем данные
-        Myname = sk.nextLine();
+        myname = sk.nextLine();
 
-        System.out.println("Hello " + Myname); // Вывод
+        System.out.println("Hello " + myname); // Вывод
     }
 }
