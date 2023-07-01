@@ -11,13 +11,13 @@ public class CommissionCalculator {
         double amount = scanner.nextInt();
 
 
-        if (amount <= 1000) {
+        if (amount < 1000) {
             double commission1 = (amount * 3) / 100;
             System.out.println("Commission amount is: " + commission1);
-        }else if (amount <= 5000) {
+        }else if ((amount >= 1000) && (amount < 5000)) {
             double commission2 = (amount * 4) / 100;
             System.out.println("Commission amount  is: " + commission2);
-        }else {
+        }else if (amount >= 5000) {
             double commission3 = (amount * 5) / 100;
             System.out.println("Commission amount is: " + commission3);
 
