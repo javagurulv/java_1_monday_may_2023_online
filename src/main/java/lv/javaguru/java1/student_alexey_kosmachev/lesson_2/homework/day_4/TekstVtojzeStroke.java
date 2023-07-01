@@ -10,7 +10,7 @@ package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.homework.day_4;
 //
 //Напишите программу, которая демонстрирует использование команды
 //    System.out.print("text");
-public class TekstVtojzeStroke {
+class TekstVtojzeStroke {
     public static void main(String[]args) {
         System.out.print("Жить, как говорится, хорошо."); // Совмещаем логически связанный текст в одну строку.
         System.out.print(" А хорошо жить еще лучше.");

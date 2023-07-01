@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.workinclass;
 
-public class LongSummaChisel {
+class LongSummaChisel {
 
     // -2(64) do 2(64)
     public static void main(String[]args) {

@@ -4,7 +4,7 @@ import lv.javaguru.java1.student_butrin_ilya.lesson_2.classwork.Second;
 
 import java.util.concurrent.Callable;
 
-public class CarApp {
+class CarApp {
     public static void main(String[] args) {
         Car FirstCar = new Car("Saab","Black",2000);  //Значения первой машины
         Car SecondCar = new Car("Skoda","White", 1000 ); //Значения второй машины

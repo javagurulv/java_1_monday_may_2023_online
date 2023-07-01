@@ -3,7 +3,7 @@ package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day_5;
 //Найти ошибку в коде.
 //Исправить и запустить программу.
 //Менять можно только класс Phone.
-public class Phone {
+class Phone {
     String model;
 
     Phone(String newModel) { // Book to Phone

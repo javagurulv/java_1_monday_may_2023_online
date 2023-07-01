@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.workinclass;
 
-public class Country {
+class Country {
     String Name;
     String ISOCode;
     long population;

@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day_3;
 
-public class BookApp {
+class BookApp {
     public static void main(String[] args) {
         Chapter book1chapter1 = new Chapter("Начало", "Это книга обо всем хорошем, против всего плохого");
         Chapter book1chapter2 = new Chapter("Конец", "Наши всех победили");

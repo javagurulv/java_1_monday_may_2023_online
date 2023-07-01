@@ -5,7 +5,7 @@ import java.util.Scanner;
 //Напишите программу, которая запрашивает у пользователя
 //три целых числа и выводит их среднее арифметическое
 //(складывает все числа и делит на их количество).
-public class SredneeArifmet {
+class SredneeArifmet {
     public static void main(String[]args) {
         Scanner in = new Scanner(System.in);
 

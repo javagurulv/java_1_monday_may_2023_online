@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.workinclass;
 
-public class TwoInArifmetica {
+class TwoInArifmetica {
     public static void main(String[]args) {
 
     int number1 = 300;

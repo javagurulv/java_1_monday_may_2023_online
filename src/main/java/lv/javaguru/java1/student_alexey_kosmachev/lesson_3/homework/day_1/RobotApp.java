@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day_1;
 
 import lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day_1.Robot;
 
-public class RobotApp {
+class RobotApp {
     public static void main(String[] args) {
         Robot Fedor = new Robot("Fedor"); //Задаем имя первому роботу
         Robot Peter = new Robot("Peter"); //Задаем имя второму роботу

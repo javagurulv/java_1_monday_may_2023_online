@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day_2;
 
-public class Car {
+class Car {
     String type; //описание марки машины
     String colour; //описание цвета машины
     double price; //описание цены машины

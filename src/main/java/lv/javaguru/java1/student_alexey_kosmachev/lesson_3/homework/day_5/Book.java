@@ -3,7 +3,7 @@ package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day_5;
 //Найти ошибку в коде.
 //Исправить и запустить программу.
 //Менять можно только класс Book.
-public class Book {
+class Book {
 
     String title; //добавить кавычки
 

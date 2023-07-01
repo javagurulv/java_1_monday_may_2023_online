@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.workinclass;
 
 import java.util.Scanner;
 //Формула запроса данных и расчета площади треугольника
-public class TriangleSqare {
+class TriangleSqare {
     public static void main(String[]args) {
         //Ищем в гугле код для получения числовых данных от пользователя
         Scanner in = new Scanner(System.in);

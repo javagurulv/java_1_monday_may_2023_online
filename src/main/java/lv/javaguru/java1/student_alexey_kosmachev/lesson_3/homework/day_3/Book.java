@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day_3;
 
 import java.time.Year;
 
-public class Book {
+class Book {
 
     String name;   //название книги
     String author;  //автор книги

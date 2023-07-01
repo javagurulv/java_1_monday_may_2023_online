@@ -5,7 +5,7 @@ import lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.homework.day_4.Doct
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class DoctorDayVisitApp {
+class DoctorDayVisitApp {
     public static void main(String[] args) {
 
         LocalTime TimeMorning10 = LocalTime.of(10, 00);

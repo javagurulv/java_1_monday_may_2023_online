@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.workinclass;
 
 import java.util.Date;
 
-public class FlightTicket {
+class FlightTicket {
 
     String departure;
     String destination;

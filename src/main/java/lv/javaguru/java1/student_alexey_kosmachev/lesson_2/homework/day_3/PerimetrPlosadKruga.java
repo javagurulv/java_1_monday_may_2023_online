@@ -5,7 +5,7 @@ import java.util.Scanner;
 // Напишите программу, которая запрашивает у пользователя
 //радиус круга (вещественное число) и печатает на консоль
 //периметр и площадь круга.
-public class PerimetrPlosadKruga {
+class PerimetrPlosadKruga {
     public static void main(String[]args) {
         Scanner in = new Scanner(System.in);
 

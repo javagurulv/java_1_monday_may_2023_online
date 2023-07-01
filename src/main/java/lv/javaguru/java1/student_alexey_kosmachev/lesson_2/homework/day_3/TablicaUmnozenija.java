@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //Напишите программу, которая запрашивает у пользователя целое число
 //и печатает на консоль таблицу умножения.
-public class TablicaUmnozenija {
+class TablicaUmnozenija {
     public static void main(String[]args) {
         Scanner in = new Scanner(System.in);
 
