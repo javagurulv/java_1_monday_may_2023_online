@@ -25,11 +25,11 @@ public class BiggestNumber {
         else if (number1 > number2 && number1 == number3) {
             System.out.println("Two equal biggest numbers: " + number1 + " and " + number3);
         }
-        else if (number2 > number3) {
+        else if (number2 > number3  && number2 == number1) {
             System.out.println("Two equal biggest numbers: " + number2 + " and " +  number1);
         }
-        else if (number3 == number2) {
-            System.out.println("Two equal biggest numbers: " + number3 + " and " +  number2);
+        else if (number2 > number1 && number2 == number3) {
+            System.out.println("Two equal biggest numbers: " + number2 + " and " +  number3);
         }
         else
             System.out.println("The biggest number is: "  + number3);
