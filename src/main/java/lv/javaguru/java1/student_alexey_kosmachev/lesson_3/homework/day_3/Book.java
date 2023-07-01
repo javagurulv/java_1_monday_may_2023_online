@@ -1,7 +1,5 @@
 package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day_3;
 
-import java.time.Year;
-
 class Book {
 
     String name;   //название книги

@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day_4;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Date;
+
 
 class VisitDoctor {
 
