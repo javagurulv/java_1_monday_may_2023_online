@@ -7,10 +7,10 @@ class DogDemo {
 
         Dog dogOne = new Dog("Rex", 3);
 
-        dogOne.name();
+        dogOne.sayName();
         dogOne.sayAge();
         System.out.println("Birthday party!!!");
-        dogOne.celebration();
+        dogOne.getCelebration();
         dogOne.sayAge();
 
 
