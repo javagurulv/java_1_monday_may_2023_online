@@ -3,7 +3,7 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_4.homework.day_4;
 class StockTest {
 
     public static void main(String[] args) {
-        Stock amazon = new Stock("Amazon", 10);
+        Stock amazon = new Stock("Amazon", 10, 10, 10);
             String priceInformation = amazon.getPriceInformation();
             System.out.println(priceInformation);
             amazon.updatePrice(12);
