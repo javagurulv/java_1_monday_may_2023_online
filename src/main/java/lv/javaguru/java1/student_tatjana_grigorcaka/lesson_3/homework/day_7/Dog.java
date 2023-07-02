@@ -9,8 +9,8 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.homework.day_7;
     this.name = name;
     this.age = age;
     }
-     public void getName() {System.out.println ("My nickname is: " + name);}
-     public int getCelebration() {return age = age + 1;}
-     public int getAge() {System.out.println ("I am " + age + " years old"); return age;}
+     public void name() {System.out.println("My nickname is: " + name);}
+     public int celebration() {return age = age + 1;}
+     public void sayAge() {System.out.println("I am " + age + " years old");}
     }
 
