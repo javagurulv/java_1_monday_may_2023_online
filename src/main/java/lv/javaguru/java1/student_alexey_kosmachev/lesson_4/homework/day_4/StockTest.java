@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_alexey_kosmachev.lesson_4.homework.day_4;
 
-public class StockTest {
+class StockTest {
     public static void main(String[] args) { //изначальные переменные
         Stock burgerking = new Stock("Burger King", 5.25, 2.45, 8.67);
         String information = burgerking.getPriceInformation();
