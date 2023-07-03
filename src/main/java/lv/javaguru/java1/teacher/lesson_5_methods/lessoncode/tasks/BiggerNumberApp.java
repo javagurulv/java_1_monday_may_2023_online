@@ -7,6 +7,8 @@ class BiggerNumberApp {
         System.out.println("Bigger number: " + biggerNumber.findBiggerNumber(12, 2));
         System.out.println("Bigger number: " + biggerNumber.findBiggerNumberV2(12, 2));
         System.out.println("Bigger number: " + biggerNumber.findBiggerNumberV3(12, 2));
+
+        System.out.println("Bigger number: " + biggerNumber.findMax(12, 2, 777));
     }
 
 }
