@@ -4,15 +4,17 @@ class Dog {
     String name;
     int age;
 
-    public Dog(String name, int age){
+    public Dog(String name, int age) {
         this.name = name;
         this.age = age;
     }
+
     public String voice() {
-       return "My nickname is " + name;
+        return "My nickname is " + name;
     }
-    public int celebration(){
-       return age = age + 1;
+
+    public int celebration() {
+        return age = age + 1;
     }
 
     public int getAge() {
