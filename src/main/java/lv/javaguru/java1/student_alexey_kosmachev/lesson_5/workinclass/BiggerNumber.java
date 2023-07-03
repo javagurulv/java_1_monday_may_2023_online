@@ -1,19 +1,6 @@
-package lv.javaguru.java1.teacher.lesson_5_methods.lessoncode.tasks;
-
-// BiggerNumber
-// FindBigerNumber
-// BigNumberAlgoritm
-// WhichNumberIsBigger
-// MaxNumberDetector
+package lv.javaguru.java1.student_alexey_kosmachev.lesson_5.workinclass;
 
 class BiggerNumber {
-
-    // findBiggerNumber
-    // findMax
-    // findMaxNumber
-    // findBigger
-    // biggerNumber
-
     public int findBiggerNumber(int number1, int number2) {
         if (number1 > number2) {
             return number1;
@@ -31,14 +18,12 @@ class BiggerNumber {
         return result;
     }
 
-    public int findBiggerNumberV3(int number1, int number2) {
-        return (number1 > number2) ? number1 : number2;
-    }
+
+    public int findBiggerNumberV3(int number1, int number2) {return(number1 > number2) ? number1 : number2;}
 
     public int findMax(int number1, int number2, int number3) {
         int max = findBiggerNumber(number1, number2);
         max = findBiggerNumber(max, number3);
         return max;
     }
-
 }

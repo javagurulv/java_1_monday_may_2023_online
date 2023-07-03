@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_5.classwork;
 
-public class EvenNumberApp {
+class EvenNumberApp {
     public static void main(String[] args) {
         EvenNumberDetector calc1 = new EvenNumberDetector();
         OddNumberDetector calc2 = new OddNumberDetector();
