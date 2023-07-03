@@ -3,8 +3,8 @@ package lv.javaguru.java1.student_kristina_kisiluka.lesson_2.classwork;
 public class TwoIntArifmeticApp {
 
     public static void main(String[] args) {
-        int number1 = 1000;
-        int number2 = 200;
+        int number1 = 10000;
+        int number2 = 2000;
         int sumResult = number1 + number2;
         int reduceResult = number1 - number2;
         int multiplyResult = number1 * number2;
