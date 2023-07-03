@@ -5,18 +5,27 @@ class Speaker {
     int soundLevel;
     boolean switchOn;
 
+    public Speaker(String model) {
+        this.model = model;
+        this.soundLevel = 0;
+        this.switchOn = false;
+    }
+
+    public Speaker(String model,
+                   int soundLevel,
+                   boolean switchOn) {
+        this.model = model;
+        this.soundLevel = soundLevel;
+        this.switchOn = switchOn;
+    }
+
+
     public String getModel() { return model; }
 
     public int getSoundLevel() { return soundLevel; }
 
     public boolean getSwitchOn() { return switchOn; }
 
-
-    public Speaker(String model, int soundLevel, boolean switchOn) {
-        this.model = model;
-        this.soundLevel = 0;
-        this.switchOn = false;
-        }
 
    public void speakerON(){ this.switchOn = true;}
    public void speakerOFF(){ this.soundLevel = 0; this.switchOn = false;}
