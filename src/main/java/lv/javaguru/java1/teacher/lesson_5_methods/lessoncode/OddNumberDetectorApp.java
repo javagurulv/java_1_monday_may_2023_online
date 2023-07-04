@@ -1,4 +1,4 @@
-package lv.javaguru.java1.teacher.lesson_5_methods.lessoncode.tasks;
+package lv.javaguru.java1.teacher.lesson_5_methods.lessoncode;
 
 class OddNumberDetectorApp {
 
