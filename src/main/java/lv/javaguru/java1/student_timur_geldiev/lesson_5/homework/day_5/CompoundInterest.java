@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_timur_geldiev.lesson_5.homework.day_5;
 
 import java.util.Scanner;
 
-public class CompoundInterest {
+class CompoundInterest {
     public double compound(double income) {
         double r = 0.1; // Годовая процентная ставка 10%
         double n = 4; // Сколько раз в год учитывается процентная ставка - 4 раза в год
