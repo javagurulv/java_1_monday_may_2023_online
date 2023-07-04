@@ -6,7 +6,7 @@ class Speaker {
     int volumeLvl;
     boolean isOn;
 
-    public Speaker(String model, int volumeLvl, boolean isOn){
+    public Speaker(String model){
         this.model = model;
         this.volumeLvl = 0;
         this.isOn = false;
