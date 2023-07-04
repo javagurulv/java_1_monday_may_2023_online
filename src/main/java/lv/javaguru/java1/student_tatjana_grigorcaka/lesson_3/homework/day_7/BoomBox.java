@@ -11,11 +11,6 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.homework.day_7;
          this.switchOn = false;
      }
 
-    public BoomBox(String model, int volumeLevel, boolean switchOn) {
-        this.model = model;
-        this.volumeLevel = volumeLevel;
-        this.switchOn = switchOn;
-    }
     public void switchOn() {this.switchOn = true;
         System.out.println("BoomBox is ON");
     }
