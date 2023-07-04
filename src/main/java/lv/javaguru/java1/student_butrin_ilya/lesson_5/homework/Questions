@@ -1,0 +1,10 @@
+не догадался, как в этом методе использовать конструкции других, более простых методов,
+созданных ранее (отдельный метод деления на 3, на 5)
+ public String translateNumberToString(int number) {
+        String result;
+        if (number % 3 == 0 && number % 5 == 0) result = "fizzBuzz";
+        else if (number % 3 == 0) result = "fizz";
+        else if (number % 5 == 0) result = "Buzz";
+        else result = "" + number;
+return result;
+    }
