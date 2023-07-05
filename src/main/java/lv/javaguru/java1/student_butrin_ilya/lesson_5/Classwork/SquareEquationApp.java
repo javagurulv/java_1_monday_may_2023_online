@@ -11,9 +11,10 @@ public class SquareEquationApp {
         int a = scan.nextInt();
         int b = scan.nextInt();
         int c = scan.nextInt();
-        System.out.println(squareEquation.isRoot(a,b,c));
+
         System.out.println(squareEquation.firstRoot(a,b,c));
         System.out.println(squareEquation.secondRoot(a,b,c));
+
 
     }
 }

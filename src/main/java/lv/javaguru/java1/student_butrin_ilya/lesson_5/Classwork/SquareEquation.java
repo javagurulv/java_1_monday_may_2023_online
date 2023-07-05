@@ -12,11 +12,11 @@ public class SquareEquation {
     }
 
     public double firstRoot (int a, int b, int c){
-        double firstRoot = (-b + Math.sqrt((b * b) - (4 * a * c))) / 2 * a;
+        double firstRoot = (-b + (Math.sqrt((b * b) - (4 * a * c)))) / (2d * a);
         return firstRoot;
     }
     public double secondRoot (int a, int b, int c){
-        double secondRoot = (-b - Math.sqrt((b * b) - (4 * a * c))) / 2 * a;
+        double secondRoot = (-b - Math.sqrt((b * b) - (4 * a * c))) / (2d * a);
         return secondRoot;
     }
 }
