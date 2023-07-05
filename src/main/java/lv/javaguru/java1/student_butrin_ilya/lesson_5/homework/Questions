@@ -8,3 +8,8 @@
         else result = "" + number;
 return result;
     }
+
+    2) в 6-м дне дз получилось найти сумму массива через
+    int sum = Arrays.stream(mark).sum(); , но не получилось сразу найти
+    среднее орифметическое через  double avarage = Arrays.stream(mark).avarage()
+    среда разработки просит тип данных OptionalDouble, с которым я не знаком(
