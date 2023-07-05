@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_alexey_kosmachev.lesson_5.homework;
+package lv.javaguru.java1.student_alexey_kosmachev.lesson_5.homework.day_1;
 
 class EvenNumberToString {
     public String yournumber1 (int number1) {  // метод деления на три
