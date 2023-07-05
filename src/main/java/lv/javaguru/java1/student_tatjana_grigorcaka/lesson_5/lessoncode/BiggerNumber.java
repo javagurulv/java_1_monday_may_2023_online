@@ -36,4 +36,12 @@ class BiggerNumber {
         return (number1 > number2) ? number1 : number2;
     }
 
+
+    public int findMax(int number1, int number2, int number3) {
+        int max = findBiggerNumber(number1, number2);
+        max = findBiggerNumber(max, number3);
+        return max;
+    }
 }
+
+
