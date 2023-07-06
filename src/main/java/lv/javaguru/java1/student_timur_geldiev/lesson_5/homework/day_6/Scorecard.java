@@ -23,4 +23,5 @@ class Scorecard {
     public double findAverage(int mathMark, int literatureMark, int geographyMark, int physicsMark) {
         return (mathMark + literatureMark + geographyMark + physicsMark) / (double) 4;
     }
+
 }
