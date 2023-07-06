@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_ainars_belinskis.lesson_5.homework;
+package lv.javaguru.java1.student_ainars_belinskis.lesson_5.homework.day_1;
 
 class NumberToString {
     public String numberDivedThree(int number) {
