@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_5.homework.day_6;
 
-public class SchooleReportCardApp {
+class SchooleReportCardApp {
     public static void main(String[] args) {
         SchooleReportCard student1 = new SchooleReportCard("Ainars", "Belinskis", 5, 4,5,4,5);
         SchooleReportCard student2 = new SchooleReportCard("Robert", "Hupenia", 4, 5, 3, 4,3);
