@@ -4,25 +4,25 @@ import java.io.Serializable;
 
 class IntToStringConverter {
 
-    public String convertIntToStringV1(int number1) {
+    public String convertIntToStringV1(int number) {
         String result = "FizzBuzz";
-        if (number1 % 3 == 0 && number1 % 5 == 0) {
+        if (number % 3 == 0 && number % 5 == 0) {
             result = "FizzBuzz";
         }
         return result;
     }
 
-    public String convertIntToStringV2(int number2) {
+    public String convertIntToStringV2(int number) {
         String result = "Buzz";
-        if ((number2 % 5) == 0) {
+        if ((number % 5) == 0) {
             result = "Buzz";
         }
         return result;
     }
 
-    public String convertIntToStringV3(int number3) {
+    public String convertIntToStringV3(int number) {
         String result = "Frizz";
-        if ((number3 % 3) == 0) {
+        if ((number % 3) == 0) {
             result = "Frizz";
         }
         return result;
