@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_5.homework.day_4;
 
-public class CirclePerimetrAreaCalculator {
+class CirclePerimetrAreaCalculator {
     public double CircleArea(double radius){
         double area = Math.PI * radius * radius;
         return area;

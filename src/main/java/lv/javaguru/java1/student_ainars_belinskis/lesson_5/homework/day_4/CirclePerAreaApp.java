@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_5.homework.day_4;
 
-public class CirclePerAreaApp {
+class CirclePerAreaApp {
     public static void main(String[] args) {
         CirclePerimetrAreaCalculator circlePerimetrAreaCalculator = new CirclePerimetrAreaCalculator();
         System.out.println("Circle Perimetr = " + circlePerimetrAreaCalculator.CirclePerimetr(33));

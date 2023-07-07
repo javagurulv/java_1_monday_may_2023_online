@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_5.homework.day_1;
 
-public class ColourWaveApp {
+class ColourWaveApp {
     public static void main(String[] args) {
         ColourWaveDetector colorWave1 = new ColourWaveDetector();
         System.out.println("Colour: " + colorWave1.colourWave(345));

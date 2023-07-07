@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_ainars_belinskis.lesson_5.homework.day_1;
 
-public class NumberDivedApp {
+class NumberDivedApp {
     public static void main(String[] args) {
         NumberToString number1 = new NumberToString();
         System.out.println(number1.numberDivedThree(9));
