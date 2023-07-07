@@ -5,14 +5,14 @@ class WaveLengthToColorApp {
     public static void main(String[] args) {
         WaveLengthToColor waveLengthToColor = new WaveLengthToColor();
 
-        System.out.println(waveLengthToColor.convertWaveLenghtToColor(380));
-        System.out.println(waveLengthToColor.convertWaveLenghtToColor(494));
-        System.out.println(waveLengthToColor.convertWaveLenghtToColor(568));
-        System.out.println(waveLengthToColor.convertWaveLenghtToColor(570));
-        System.out.println(waveLengthToColor.convertWaveLenghtToColor(588));
-        System.out.println(waveLengthToColor.convertWaveLenghtToColor(590));
-        System.out.println(waveLengthToColor.convertWaveLenghtToColor(619));
-        System.out.println(waveLengthToColor.convertWaveLenghtToColor(621));
-        System.out.println(waveLengthToColor.convertWaveLenghtToColor(751));
+        System.out.println(waveLengthToColor.convertWaveLengthToColor(380));
+        System.out.println(waveLengthToColor.convertWaveLengthToColor(494));
+        System.out.println(waveLengthToColor.convertWaveLengthToColor(568));
+        System.out.println(waveLengthToColor.convertWaveLengthToColor(570));
+        System.out.println(waveLengthToColor.convertWaveLengthToColor(588));
+        System.out.println(waveLengthToColor.convertWaveLengthToColor(590));
+        System.out.println(waveLengthToColor.convertWaveLengthToColor(619));
+        System.out.println(waveLengthToColor.convertWaveLengthToColor(621));
+        System.out.println(waveLengthToColor.convertWaveLengthToColor(751));
     }
 }
