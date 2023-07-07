@@ -34,11 +34,9 @@ class IntToStringConverter {
         {
         if ((number % 3 == 0) && (number % 5 == 0))  {
             result = "FizzBuzz";
-        }
-        else if (number % 5 == 0) {
+        } else if (number % 5 == 0) {
             result = "Buzz";
-        }
-        else if (number % 3 == 0) {
+        } else if (number % 3 == 0) {
                 result = "Fizz";
         } else {
             result = String.valueOf(number);
