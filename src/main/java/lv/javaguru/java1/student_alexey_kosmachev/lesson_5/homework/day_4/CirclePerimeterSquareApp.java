@@ -6,13 +6,16 @@ public class CirclePerimeterSquareApp {
 
         CirclePerimeterSquare newdefinition = new CirclePerimeterSquare();
 
-        System.out.println("The Perimeter is: " + newdefinition.perimeter(6));
-        System.out.println("The Square is: " + newdefinition.square(6));
-        System.out.println("The Perimeter is: " + newdefinition.perimeter(35));
-        System.out.println("The Square is: " + newdefinition.square(35));
-        System.out.println("The Perimeter is: " + newdefinition.perimeter(12));
-        System.out.println("The Square is: " + newdefinition.square(12));
-        System.out.println("The Perimeter is: " + newdefinition.perimeter(18));
-        System.out.println("The Square is: " + newdefinition.square(18));
+        System.out.printf("The Perimeter is: " + "%.2f", newdefinition.perimeter(6));
+        System.out.printf("The Square is: " + "%.2f", newdefinition.square(6));
+        System.out.println();
+        System.out.printf("The Perimeter is: " + "%.2f", newdefinition.perimeter(35));
+        System.out.printf("The Square is: " + "%.2f", newdefinition.square(35));
+        System.out.println();
+        System.out.printf("The Perimeter is: " + "%.2f", newdefinition.perimeter(12));
+        System.out.printf("The Square is: " + "%.2f", newdefinition.square(12));
+        System.out.println();
+        System.out.printf("The Perimeter is: " + "%.2f", newdefinition.perimeter(18));
+        System.out.printf("The Square is: " + "%.2f", newdefinition.square(18));
     }
 }
