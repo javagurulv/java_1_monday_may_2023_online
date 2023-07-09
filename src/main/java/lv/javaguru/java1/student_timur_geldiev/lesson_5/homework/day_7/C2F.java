@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 public class C2F {
 
-    public double convertC2F (double input){
+    public double convertC2F(double input) {
         return (input * 9 / 5) + 32;
     }
-    public double convertF2C(double input){
-        return (input - 32) * ((double) 5/9);
+
+    public double convertF2C(double input) {
+        return (input - 32) * ((double) 5 / 9);
 
     }
 
