@@ -1,14 +1,14 @@
 Изучите следующие методы, определите что они делают и как.
 
 
-public static boolean isPalindrome(String text) {
+public boolean isPalindrome(String text) {
     String reversed = new StringBuilder(text).reverse().toString();
     return text.equalsIgnoreCase(reversed);
 }
 
 
 
-public static int sumNumbers(int number) {
+public int sumNumbers(int number) {
     if (number <= 0) {
         throw new IllegalArgumentException("Число должно быть положительным");
     }
@@ -19,7 +19,7 @@ public static int sumNumbers(int number) {
 }
 
 
-public static int countDigits(int number) {
+public int countDigits(int number) {
     if (number < 0) {
         number = -number;  // Учитываем отрицательные числа
     }
@@ -33,7 +33,7 @@ public static int countDigits(int number) {
 
 import java.util.Random;
 
-public static int generateRandomNumber(int min, int max) {
+public int generateRandomNumber(int min, int max) {
     Random random = new Random();
     return random.nextInt(max - min + 1) + min;
 }
