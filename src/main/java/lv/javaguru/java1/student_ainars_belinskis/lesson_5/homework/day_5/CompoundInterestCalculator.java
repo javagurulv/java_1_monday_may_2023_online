@@ -5,8 +5,7 @@ package lv.javaguru.java1.student_ainars_belinskis.lesson_5.homework.day_5;
 // P — процентная ставка с учетом капитализации n — количество периодов, в которые банк начисляет проценты.
 class CompoundInterestCalculator {
     public double CompoundInterest(double summa, double interest, double year){
-        double summaPr = summa * Math.pow((1 + interest / 100), year);
-                return  summaPr;
+                return  summa * Math.pow((1 + interest / 100), year);
     }
 }
 
