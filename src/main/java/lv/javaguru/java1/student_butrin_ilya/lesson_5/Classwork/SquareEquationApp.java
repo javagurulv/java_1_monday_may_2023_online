@@ -15,6 +15,5 @@ public class SquareEquationApp {
         System.out.println(squareEquation.firstRoot(a,b,c));
         System.out.println(squareEquation.secondRoot(a,b,c));
 
-
     }
 }
