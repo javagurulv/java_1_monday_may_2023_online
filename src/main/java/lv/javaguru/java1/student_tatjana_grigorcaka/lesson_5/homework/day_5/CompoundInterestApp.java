@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class CompoundInterestApp {
     public static void main(String[] args) {
         CompoundInterest compoundInterest1 = new CompoundInterest();
-        System.out.println("Total amount is: " + compoundInterest1.calculateCompoundInterest(10000, 8, 10, 4));
-        System.out.println("Total amount is: " + compoundInterest1.calculateCompoundInterest(15000, 8, 10, 12));
+        System.out.println("Total amount is: " + compoundInterest1.calculateCompoundInterest(1200, 5.4, 2));
+        System.out.println("Total amount is: " + compoundInterest1.calculateCompoundInterest(100000, 5, 3));
        }
 }
