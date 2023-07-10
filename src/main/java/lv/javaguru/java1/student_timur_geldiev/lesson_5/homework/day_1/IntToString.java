@@ -4,15 +4,23 @@ import java.util.Scanner;
 
 public class IntToString {
     public String intToString(int number) {
-        if (number % 3 == 0 && number % 5 == 0) {
+        if (isDividedBy3(number) && isDividedBy5(number)) {
             return "Fizz" + "Buzz";
-        } else if (number % 5 == 0) {
+        } else if (isDividedBy5(number)) {
             return "Buzz";
-        } else if (number % 3 == 0) {
+        } else if (isDividedBy3(number)) {
             return "Fizz";
         } else {
             return Integer.toString(number);
         }
+    }
+
+    private static boolean isDividedBy5(int number) {
+        return number % 5 == 0;
+    }
+
+    private static boolean isDividedBy3(int number) {
+        return number % 3 == 0;
     }
 
     public static void main(String[] args) {
