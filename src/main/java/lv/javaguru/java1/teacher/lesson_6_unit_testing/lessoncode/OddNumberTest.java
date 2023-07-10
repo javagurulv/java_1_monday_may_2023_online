@@ -12,21 +12,23 @@ class OddNumberTest {
         int number = 5;
         OddNumber oddNumber = new OddNumber();
         boolean result = oddNumber.isOdd(number);
-        if (result == true) {
-            System.out.println("TEST OK!");
-        } else {
-            System.out.println("TEST FAIL!");
-        }
+        checkResult(result, true, "testIsOddNumber");
     }
 
     public void testIsEvenNumber() {
         int number = 4;
         OddNumber oddNumber = new OddNumber();
         boolean result = oddNumber.isOdd(number);
-        if (result == false) {
-            System.out.println("TEST OK!");
+        checkResult(result, false, "testIsEvenNumber");
+    }
+
+    private void checkResult(boolean realResult,
+                             boolean expectedResult,
+                             String testScenarioName) {
+        if (realResult == expectedResult) {
+            System.out.println(testScenarioName + ": TEST OK!");
         } else {
-            System.out.println("TEST FAIL!");
+            System.out.println(testScenarioName + ": TEST FAIL!");
         }
     }
 
