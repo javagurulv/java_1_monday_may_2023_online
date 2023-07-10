@@ -1,6 +1,12 @@
 package lv.javaguru.java1.teacher.lesson_5_methods.lessoncode;
 
+import java.math.BigDecimal;
+import java.math.BigInteger;
+
 class FizzBuzz {
+
+    public static final int NUMBER_5 = 5;
+    public static final int NUMBER_3 = 3;
 
     public String translateNumberToString(int number) {
         String result;
@@ -16,11 +22,11 @@ class FizzBuzz {
     }
 
     private boolean isDevidedBy5(int number) {
-        return number % 5 == 0;
+        return number % NUMBER_5 == 0;
     }
 
     private boolean isDevidedBy3(int number) {
-        return number % 3 == 0;
+        return number % NUMBER_3 == 0;
     }
 
 }
