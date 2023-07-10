@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_timur_geldiev.lesson_5.homework.day_1;
 
 import java.util.Scanner;
 
-class IntToString {
+public class IntToString {
     public String intToString(int number) {
         if (number % 3 == 0 && number % 5 == 0) {
             return "Fizz" + "Buzz";
