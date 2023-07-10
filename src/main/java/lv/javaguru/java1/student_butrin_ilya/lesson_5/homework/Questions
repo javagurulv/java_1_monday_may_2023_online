@@ -19,7 +19,7 @@ return result;
     значения a, b, c)
 
 
-  5 6) почему присоздания создании переменной класса BigInteger мы не указываем слово new?
+  5 gjпочему присоздания создании переменной класса BigInteger мы не указываем слово new?
     BigInteger result = BigInteger.ONE;
      в чем разница между
       if (number <= 0) {
@@ -27,3 +27,6 @@ return result;
        и
           if (number <= 0) {
           System.out.println("Число должно быть положительным");
+
+          почему с int studentCount = Integer.parseInt(scanner.nextLine()); работает,
+          а с int studentCount = canner.nextInt()); не работает?
