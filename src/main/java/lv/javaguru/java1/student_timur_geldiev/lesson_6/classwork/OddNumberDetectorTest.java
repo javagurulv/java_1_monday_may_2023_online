@@ -10,24 +10,29 @@ public class OddNumberDetectorTest {
         test1.shouldNotBeOdd();
     }
 
-    public void shouldBeOdd(){
+    public void shouldBeOdd() {
         int number = 11;
         OddNumberDetector check = new OddNumberDetector();
         boolean isOdd = check.isOdd(number);
-        if (isOdd){
+        if (isOdd) {
             System.out.println("Test PASS");
-        }else{
+        } else {
             System.out.println("Test FAIL");
         }
     }
-    public void shouldNotBeOdd(){
+
+    public void shouldNotBeOdd() {
         int number = 10;
         OddNumberDetector check = new OddNumberDetector();
         boolean notOdd = check.isOdd(number);
-        if(!notOdd){
-            System.out.println("Test PASS");
-        } else{
-            System.out.println("Test FAIL");
+        checkResult(notOdd, false, "shouldNotBeOdd");
+    }
+
+    public void checkResult(boolean actualResult, boolean expectedResult, String testName) {
+        if (actualResult == expectedResult) {
+            System.out.println(testName + "Test PASS");
+        } else {
+            System.out.println(testName + "Test FAIL");
         }
     }
 }
