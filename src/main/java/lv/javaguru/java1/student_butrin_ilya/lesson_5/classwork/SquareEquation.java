@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_butrin_ilya.lesson_5.Classwork;
+package lv.javaguru.java1.student_butrin_ilya.lesson_5.classwork;
 
 public class SquareEquation {
 
