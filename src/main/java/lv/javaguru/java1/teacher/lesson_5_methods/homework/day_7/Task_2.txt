@@ -6,7 +6,7 @@ PS: если вы хотите вызывать метод напрямую из
 
 import java.util.Scanner;
 
-public class AverageMarkApp {
+class AverageMarkApp {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

@@ -1,13 +1,14 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_5.classwork;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Factorial {
 
-    public int findFactorial(int number){
-        int factorial = 1;
+    public BigInteger findFactorial(int number){
+        BigInteger factorial = BigInteger.ONE;
         for (int i = 1; i <= number; i++){
-            factorial *= i;
+            factorial = factorial.multiply(BigInteger.valueOf(i));
 
         }return factorial;
     }

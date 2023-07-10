@@ -43,6 +43,12 @@
 **Лекция 4 - if statement**
 * [day_1](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_4_if_statement/homework/day_1), [day_2](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_4_if_statement/homework/day_2), [day_3](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_4_if_statement/homework/day_3), [day_4](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_4_if_statement/homework/day_4), [day_5](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_4_if_statement/homework/day_5), [day_6](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_4_if_statement/homework/day_6), [day_7](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_4_if_statement/homework/day_7)
 
+**Лекция 5 - methods**
+* [day_1](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_5_methods/homework/day_1), [day_2](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_5_methods/homework/day_2), [day_3](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_5_methods/homework/day_3), [day_4](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_5_methods/homework/day_4), [day_5](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_5_methods/homework/day_5), [day_6](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_5_methods/homework/day_6), [day_7](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_5_methods/homework/day_7)
+
+**Лекция 6 - unit testing**
+* [day_1](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_6_unit_testing/homework/day_1), [day_2](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_6_unit_testing/homework/day_2), [day_3](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_6_unit_testing/homework/day_3), [day_4](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_6_unit_testing/homework/day_4), [day_5](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_6_unit_testing/homework/day_5), [day_6](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_6_unit_testing/homework/day_6), [day_7](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_6_unit_testing/homework/day_7)
+
 
 #### Сертификат
 
@@ -71,6 +77,7 @@
 * [Лекция 2](https://www.youtube.com/watch?v=EF4aFwWm1GM)
 * [Лекция 3](https://www.youtube.com/watch?v=AEHLhbQE_lY)
 * [Лекция 4](https://www.youtube.com/watch?v=B1Hh0feJe5Y)
+* [Лекция 5](https://www.youtube.com/watch?v=cGbaro4O3hk)
 
 ---
 
