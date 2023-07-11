@@ -1,15 +1,12 @@
 Написать автоматические тесты на класс CompoundInterestCalculator
-в котором реализован метод расчета формулы сложно процента:
+в котором реализован метод расчета формулы сложно процента.
 
-class CompoundInterestCalculator {
+Класс CompoundInterestCalculator лежит рядом с этим файлом задания.
 
-    public double CompoundInterest(double sum, double interest, double year){
-        return sum * Math.pow((1 + interest / 100), year);
-    }
+Для выполнения задания скопируйте класс CompoundInterestCalculator
+к себе в пакет.
 
-}
-
-Для этого создайте класс CompoundInterestCalculatorTest и добавьте в него
+Создайте класс CompoundInterestCalculatorTest и добавьте в него
 необходимые тестовые методы.
 
 Цели:
