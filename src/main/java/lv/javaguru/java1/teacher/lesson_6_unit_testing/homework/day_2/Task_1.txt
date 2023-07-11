@@ -1,28 +1,6 @@
 Написать автоматические тесты на класс SquareEquation
-в котором реализованы методы расчёта корней квадратного уравнения:
-
-class SquareEquation {
-
-    public double discriminant(int a, int b, int c) {
-        return b * b - 4 * a * c;
-
-    }
-
-    public boolean isSquareRoot(int a, int b, int c) {
-        return discriminant(a, b, c) >= 0;
-    }
-
-    public double firstRoot(int a, int b, int c) {
-        double D = discriminant(a, b, c);
-        return (-b - Math.sqrt(D)) / (2 * a);
-    }
-
-    public double secondRoot(int a, int b, int c) {
-        double D = discriminant(a, b, c);
-        return (-b + Math.sqrt(D)) / (2 * a);
-    }
-
-}
+в котором реализованы методы расчёта корней квадратного уравнения.
+Класс SquareEquation лежит рядом с этим файлом задания.
 
 Для этого создайте класс SquareEquationTest и добавьте в него
 необходимые тестовые методы.
