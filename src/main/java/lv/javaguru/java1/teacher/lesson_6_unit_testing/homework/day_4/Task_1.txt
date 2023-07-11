@@ -1,17 +1,6 @@
 Написать автоматические тесты на класс FactorialCalculator
-в котором реализован метод вычисления факториала:
-
-class FactorialCalculator {
-
-    public int factorial(int n) {
-        int result = 1;
-        for (int i = 1; i <= n; i++) {
-            result = result * i;
-        }
-        return result;
-    }
-
-}
+в котором реализован метод вычисления факториала.
+Класс FactorialCalculator лежит рядом с этим файлом задания.
 
 Для этого создайте класс FactorialCalculatorTest и добавьте в него
 необходимые тестовые методы.
