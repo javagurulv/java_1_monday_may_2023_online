@@ -1,8 +1,5 @@
 package lv.javaguru.java1.teacher.lesson_5_methods.lessoncode;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
-
 class FizzBuzz {
 
     public static final int NUMBER_5 = 5;
