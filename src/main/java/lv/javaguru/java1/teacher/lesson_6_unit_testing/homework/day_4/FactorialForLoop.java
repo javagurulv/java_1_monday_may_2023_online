@@ -1,6 +1,6 @@
 package lv.javaguru.java1.teacher.lesson_6_unit_testing.homework.day_4;
 
-class FactorialCalculator {
+class FactorialForLoop {
 
     public int factorial(int n) {
         int result = 1;
