@@ -5,7 +5,6 @@ import java.util.Scanner;
 class SquareEquationApp {
 
     public static void main(String[] args) {
-        int secondRoot = 0, firstRoot = 0;
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the value of a: ");
         int a = in.nextInt();
