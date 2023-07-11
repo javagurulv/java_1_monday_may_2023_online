@@ -1,22 +1,22 @@
-Написать автоматические тесты на класс Calculator методы:
+Написать автоматические тесты на класс OddNumber методы:
 
     boolean isOdd(int number) {...}
 
-Для этого создайте класс CalculatorTest.
+Для этого создайте класс OddNumberTest.
 
 Набросок решения:
 
-class CalculatorTest {
+class OddNumberTest {
 
     public static void main(String[] args) {
-        CalculatorTest test = new CalculatorTest();
+        OddNumberTest test = new OddNumberTest();
         test.shouldBeOdd();
         test.shouldNotBeOdd();
     }
 
     public void shouldBeOdd() {
-        Calculator calculator = new Calculator();
-        boolean isOdd = calculator.isEven(11);
+        OddNumber oddNumber = new OddNumber();
+        boolean isOdd = oddNumber.isEven(11);
         if (isOdd) {
             System.out.println("TEST IS OK!");
         } else {
@@ -25,8 +25,8 @@ class CalculatorTest {
     }
 
     public void shouldNotBeOdd() {
-        Calculator calculator = new Calculator();
-        boolean notOdd = calculator.isEven(12);
+        OddNumber oddNumber = new OddNumber();
+        boolean notOdd = oddNumber.isEven(12);
         if (notOdd) {
             System.out.println("TEST IS OK!");
         } else {

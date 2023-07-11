@@ -1,22 +1,22 @@
-Написать автоматические тесты на класс Calculator метод:
+Написать автоматические тесты на класс EvenNumber метод:
 
     boolean isEven(int number) {...}
 
-Для этого создайте класс CalculatorTest.
+Для этого создайте класс EvenNumberTest.
 
 Набросок решения:
 
-class CalculatorTest {
+class EvenNumberTest {
 
     public static void main(String[] args) {
-        CalculatorTest test = new CalculatorTest();
+        EvenNumberTest test = new EvenNumberTest();
         test.shouldBeEven();
         test.shouldNotBeEven();
     }
 
     public void shouldBeEven() {
-        Calculator calculator = new Calculator();
-        boolean isEven = calculator.isEven(10);
+        EvenNumber evenNumber = new EvenNumber();
+        boolean isEven = evenNumber.isEven(10);
         if (isEven) {
             System.out.println("TEST IS OK!");
         } else {
@@ -25,8 +25,8 @@ class CalculatorTest {
     }
 
     public void shouldNOtBeEven() {
-        Calculator calculator = new Calculator();
-        boolean notEven = calculator.isEven(11);
+        EvenNumber evenNumber = new EvenNumber();
+        boolean notEven = evenNumber.isEven(11);
         if (notEven) {
             System.out.println("TEST IS OK!");
         } else {
