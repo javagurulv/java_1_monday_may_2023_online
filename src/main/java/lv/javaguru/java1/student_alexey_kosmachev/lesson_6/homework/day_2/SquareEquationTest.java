@@ -15,6 +15,7 @@ public class SquareEquationTest {
         test.test3();
         test.test4();
         test.test5();
+        test.test6();
     }
 
     public void test1 () {
@@ -40,15 +41,24 @@ public class SquareEquationTest {
             System.out.println("test3: TEST FAIL!");
         }
     }
+
     public void test4 () {
-        SquareEquation firstRoot = new SquareEquation();
-        double result = firstRoot.firstRoot(2,3,1);
-        checkResult(result, -1, "test4");
+        SquareEquation isSquareRoot2 = new SquareEquation();
+        boolean result = isSquareRoot2.isSquareRoot(5,7,10);
+        if (result == false) {
+            System.out.println("test4: TEST OK!");
+        } else {
+            System.out.println("test4: TEST FAIL!");}
     }
     public void test5 () {
+        SquareEquation firstRoot = new SquareEquation();
+        double result = firstRoot.firstRoot(2,3,1);
+        checkResult(result, -1, "test5");
+    }
+    public void test6 () {
         SquareEquation secondRoot = new SquareEquation();
         double result = secondRoot.secondRoot(2,3,1);
-        checkResult(result, -0.5,"test5");
+        checkResult(result, -0.5,"test6");
     }
 
     private void checkResult(double realResult,
