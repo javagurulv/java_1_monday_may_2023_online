@@ -11,7 +11,7 @@ public class StudentReportCardApp {
         System.out.println("Average mark is: " + student1.calculateAverageMark(student1.algebraMark, student1.biologyMark, student1.englishMark, student1.geographyMark));
 
         System.out.println("Student 2 : " + student2.name + student2.lastName);
-        System.out.println("Average mark is: " + student2.calculateAverageMark(student2.algebraMark, student2.biologyMark, student2.englishMark, student2.geographyMark));
+        System.out.println("Average mark is: " + student2.calculateAverageMarkFor(student2.algebraMark, student2.biologyMark, student2.englishMark, student2.geographyMark));
     }
 
 }
