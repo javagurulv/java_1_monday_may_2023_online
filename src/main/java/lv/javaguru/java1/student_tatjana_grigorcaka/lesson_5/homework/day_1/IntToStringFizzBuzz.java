@@ -1,8 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_5.homework.day_1;
 
-import java.io.Serializable;
-
-class IntToStringConverter {
+class IntToStringFizzBuzz {
 
     public String convertIntToStringV1(int number) {
         String result = "FizzBuzz";
@@ -32,11 +30,11 @@ class IntToStringConverter {
     public String convertIntToString(int number) {
         String result;
         {
-        if ((number % 3 == 0) && (number % 5 == 0))  {
+        if (isDividedBy15(number))  {
             result = "FizzBuzz";
-        } else if (number % 5 == 0) {
+        } else if (isDividedBy5(number)) {
             result = "Buzz";
-        } else if (number % 3 == 0) {
+        } else if (isDividedBy3(number)) {
                 result = "Fizz";
         } else {
             result = String.valueOf(number);
@@ -44,6 +42,18 @@ class IntToStringConverter {
         return result;
         }
 
+    }
+
+    private boolean isDividedBy15(int number) {
+        return isDividedBy3(number) && isDividedBy5(number);
+    }
+
+    private boolean isDividedBy5(int number) {
+        return number % 5 == 0;
+    }
+
+    private boolean isDividedBy3(int number) {
+        return number % 3 == 0;
     }
 
 }
