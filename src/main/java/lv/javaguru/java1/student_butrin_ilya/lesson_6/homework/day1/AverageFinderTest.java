@@ -1,18 +1,22 @@
-package lv.javaguru.java1.student_butrin_ilya.lesson_6.homework.day2;
+package lv.javaguru.java1.student_butrin_ilya.lesson_6.homework.day1;
 
 public class AverageFinderTest {
     public static void main(String[] args) {
         AverageFinderTest averageFinderTest = new AverageFinderTest();
-        averageFinderTest.averageTest();
+        averageFinderTest.averageTestIntRezult();
+        averageFinderTest.averageTestDoubleRezult();
     }
-    public void averageTest () {
+    public void averageTestIntRezult () {
         AverageFinder averageFinder = new AverageFinder();
-        int realRezultOne = 1;
-        double realRezultTwo = 5.5;
+        int realRezult = 1;
         double expectedRezultOne = averageFinder.findAverage(-3, 5);
-        double expectedRezultTwo = averageFinder.findAverage(6, 5);
-        checkRezult(realRezultOne , expectedRezultOne , "1");
-        checkRezult(realRezultTwo, expectedRezultTwo , "2");
+        checkRezult(realRezult , expectedRezultOne , "averageTestIntRezult");
+    }
+    public void averageTestDoubleRezult () {
+        AverageFinder averageFinder = new AverageFinder();
+        double realRezult = 4.5;
+        double expectedRezultOne = averageFinder.findAverage(3, 6);
+        checkRezult(realRezult , expectedRezultOne , "averageTestDoubleRezult");
     }
     public void checkRezult(double realRezult,
                             double expectedRezult,

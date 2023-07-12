@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_butrin_ilya.lesson_6.homework.day2;
+package lv.javaguru.java1.student_butrin_ilya.lesson_6.homework.day1;
 
 class AverageFinder {
 
