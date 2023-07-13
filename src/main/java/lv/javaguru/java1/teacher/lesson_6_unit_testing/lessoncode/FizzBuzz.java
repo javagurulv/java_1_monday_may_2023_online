@@ -13,22 +13,22 @@ class FizzBuzz {
 
     public String detect(int number) {
         String result;
-        if (isDevidedBy15(number)) result = "FizzBuzz";
-        else if (isDevidedBy3(number)) result = "Fizz";
-        else if (isDevidedBy5(number)) result = "Buzz";
+        if (isDividedBy15(number)) result = "FizzBuzz";
+        else if (isDividedBy3(number)) result = "Fizz";
+        else if (isDividedBy5(number)) result = "Buzz";
         else result = "" + number;
         return result;
     }
 
-    private boolean isDevidedBy15(int number) {
-        return isDevidedBy3(number) && isDevidedBy5(number);
+    private boolean isDividedBy15(int number) {
+        return isDividedBy3(number) && isDividedBy5(number);
     }
 
-    private boolean isDevidedBy5(int number) {
+    private boolean isDividedBy5(int number) {
         return number % NUMBER_5 == 0;
     }
 
-    private boolean isDevidedBy3(int number) {
+    private boolean isDividedBy3(int number) {
         return number % NUMBER_3 == 0;
     }
 
