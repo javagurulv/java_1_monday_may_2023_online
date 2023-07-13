@@ -23,7 +23,7 @@ public class CompoundInterestCalculatorTest {
         if (actualResult == expectedResult) {
             System.out.println(testName + " Test PASS");
         } else {
-            System.out.println(testName + " Test FAIL");
+            System.out.println(testName + " Test FAIL." + " Reason: " + "actualResult: " + actualResult + " not equal expected result: " + expectedResult );
         }
     }
 }
