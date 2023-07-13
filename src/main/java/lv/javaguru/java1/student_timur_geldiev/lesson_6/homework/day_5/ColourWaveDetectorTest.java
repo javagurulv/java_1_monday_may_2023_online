@@ -72,14 +72,14 @@ public class ColourWaveDetectorTest {
         int wave = 1;
         ColourWaveDetector test8 = new ColourWaveDetector();
         String actual = test8.colourWave(wave);
-        checkResult(actual, "Invisible Light", "Check invisible Light low");
+        checkResult(actual, "Invisible Ligh", "Check invisible Light low");
     }
 
     public void checkResult(String actualResult, String expectedResult, String testName) {
         if (actualResult.equals(expectedResult)) {
             System.out.println(testName + " Test PASS");
         } else {
-            System.out.println(testName + " Test FAIL");
+            System.out.println(testName + " Test FAIL." + " Reason: " + "actualResult: " + actualResult + " not equal expected result: " + expectedResult );
         }
     }
 }
