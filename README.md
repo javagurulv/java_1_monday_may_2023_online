@@ -76,9 +76,9 @@
 * [Лекция 1 - Introduction](https://www.youtube.com/watch?v=E7chrow6b9s)
 * [Лекция 2 - Variables](https://www.youtube.com/watch?v=EF4aFwWm1GM)
 * [Лекция 3 - OOP First Look](https://www.youtube.com/watch?v=AEHLhbQE_lY)
-* [Лекция 4 - if statement](https://www.youtube.com/watch?v=B1Hh0feJe5Y)
-* [Лекция 5 - methods](https://www.youtube.com/watch?v=cGbaro4O3hk)
-* [Лекция 6 - unit testing](https://www.youtube.com/watch?v=UlteyfuXG_w)
+* [Лекция 4 - If statement](https://www.youtube.com/watch?v=B1Hh0feJe5Y)
+* [Лекция 5 - Methods](https://www.youtube.com/watch?v=cGbaro4O3hk)
+* [Лекция 6 - Unit testing](https://www.youtube.com/watch?v=UlteyfuXG_w)
 
 ---
 
