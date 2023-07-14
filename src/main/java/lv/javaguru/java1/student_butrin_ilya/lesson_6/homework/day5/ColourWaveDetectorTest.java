@@ -15,13 +15,7 @@ public class ColourWaveDetectorTest {
     }
 
     public void violetTest() {
-        String realRezultOne = "Violet";
-        String realRezultTwo = "Violet";
-        String realRezultThree = "Violet";
-        String realRezultFor = "Violet";
-        String realRezultFive = "Violet";
-        String realRezultSix = "Violet";
-        String realRezultSeven = "Violet";
+        String realRezult = "Violet";
         String expectedRezultOne = colourWaveDetector.colourWave(379);
         String expectedRezultTwo = colourWaveDetector.colourWave(380);
         String expectedRezultThree = colourWaveDetector.colourWave(381);
@@ -29,13 +23,13 @@ public class ColourWaveDetectorTest {
         String expectedRezultFive = colourWaveDetector.colourWave(448);
         String expectedRezultSix = colourWaveDetector.colourWave(449);
         String expectedRezultSeven = colourWaveDetector.colourWave(450);
-        changeRezultFalse(realRezultOne, expectedRezultOne, "violeteTest 1 ");
-        changeRezultTrue(realRezultTwo, expectedRezultTwo, "violeteTest 2 ");
-        changeRezultTrue(realRezultThree, expectedRezultThree, "violeteTest 3 ");
-        changeRezultTrue(realRezultFor, expectedRezultFor, "violeteTest 4 ");
-        changeRezultTrue(realRezultFive, expectedRezultFive, "violeteTest 5 ");
-        changeRezultTrue(realRezultSix, expectedRezultSix, "violeteTest 6 ");
-        changeRezultFalse(realRezultSeven, expectedRezultSeven, "violeteTest 7 ");
+        changeRezultFalse(realRezult, expectedRezultOne, "violeteTest 1 ");
+        changeRezultTrue(realRezult, expectedRezultTwo, "violeteTest 2 ");
+        changeRezultTrue(realRezult, expectedRezultThree, "violeteTest 3 ");
+        changeRezultTrue(realRezult, expectedRezultFor, "violeteTest 4 ");
+        changeRezultTrue(realRezult, expectedRezultFive, "violeteTest 5 ");
+        changeRezultTrue(realRezult, expectedRezultSix, "violeteTest 6 ");
+        changeRezultFalse(realRezult, expectedRezultSeven, "violeteTest 7 ");
 
     }
 
