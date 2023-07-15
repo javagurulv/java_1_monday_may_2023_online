@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.homework.day_4;
 
-public class Patient {
+class Patient {
     String firstNameLastName;
     String diagnose;
     String price;

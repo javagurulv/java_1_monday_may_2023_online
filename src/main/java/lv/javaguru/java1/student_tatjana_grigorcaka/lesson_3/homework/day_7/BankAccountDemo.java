@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.homework.day_7;
 
-public class BankAccountDemo {
+class BankAccountDemo {
 
     public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount("Viktor", 100000);

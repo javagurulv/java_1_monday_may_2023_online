@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.homework.day_3;
 
-public class BookApp {
+class BookApp {
 
     public static void main(String[] args) {
         Book bookOne = new Book("The Little Prince", "Antoine de Saint-Exupery","1943", "Book 1 Chapter 1", "Book 1 Chapter 2");

@@ -4,7 +4,7 @@ import java.sql.Time;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class DoctorVisit {
+class DoctorVisit {
 
     private String name;
     private String speciality;

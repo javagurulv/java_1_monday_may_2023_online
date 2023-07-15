@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.homework.day_3;
 
-public class Book {
+class Book {
 
     private String name;
     private String author;

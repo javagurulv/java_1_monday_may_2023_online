@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.homework.day_1;
 
-public class RobotApp {
+class RobotApp {
 
     public static void main(String[] args) {
         Robot robotOne = new Robot("Alpha-1");

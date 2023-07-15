@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.homework.day_2;
 
-public class Car {
+class Car {
 
     private String brand;
     private String color;

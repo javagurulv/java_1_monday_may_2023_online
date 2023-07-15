@@ -3,7 +3,7 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.homework.day_4;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class DocDayVisitApp {
+class DocDayVisitApp {
 
         public static void main(String[] args) {
 
