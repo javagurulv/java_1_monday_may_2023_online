@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_5.lessoncode;
 
-public class FactorialApp {
+class FactorialApp {
     public static void main(String[] args) {
         Factorial factorial = new Factorial();
         int num = 7;

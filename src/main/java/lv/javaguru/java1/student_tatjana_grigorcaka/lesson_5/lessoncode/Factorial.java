@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_5.lessoncode;
 
-public class Factorial {
+class Factorial {
 
     public static int factorialCycleFor(int num) {
         int factorial = 1;
