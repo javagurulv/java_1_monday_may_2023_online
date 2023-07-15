@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_4.lessoncode;
 
 import java.util.Scanner;
 
-public class TaxCalculator {
+class TaxCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter annual income: ");

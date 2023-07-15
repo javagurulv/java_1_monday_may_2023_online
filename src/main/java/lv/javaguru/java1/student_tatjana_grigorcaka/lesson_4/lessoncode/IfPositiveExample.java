@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_4.lessoncode;
 
 import java.util.Scanner;
 
-public class IfPositiveExample {
+class IfPositiveExample {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

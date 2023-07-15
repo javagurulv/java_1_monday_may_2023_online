@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_4.lessoncode;
 
-public class BooleanExample {
+class BooleanExample {
 
     public static void main(String[] args) {
 
