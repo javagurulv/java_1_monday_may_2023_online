@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_4.homework.day_1;
 
 import java.util.Scanner;
 
-public class DayOfWeek {
+class DayOfWeek {
 
     public static void main(String[] args)
     {

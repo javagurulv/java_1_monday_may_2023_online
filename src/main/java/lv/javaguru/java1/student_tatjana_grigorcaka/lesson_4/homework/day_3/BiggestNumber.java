@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_4.homework.day_3;
 
 import java.util.Scanner;
 
-public class BiggestNumber {
+class BiggestNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number 1: ");

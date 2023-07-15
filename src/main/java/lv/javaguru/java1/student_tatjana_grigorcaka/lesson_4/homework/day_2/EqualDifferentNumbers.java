@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_4.homework.day_2;
 
 import java.util.Scanner;
 
-public class EqualDifferentNumbers {
+class EqualDifferentNumbers {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
