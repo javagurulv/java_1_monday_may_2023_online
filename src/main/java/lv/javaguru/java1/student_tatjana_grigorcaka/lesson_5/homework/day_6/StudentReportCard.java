@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_5.homework.day_6;
 
-public class StudentReportCard {
+class StudentReportCard {
     String name;
     String lastName;
     int algebraMark;
