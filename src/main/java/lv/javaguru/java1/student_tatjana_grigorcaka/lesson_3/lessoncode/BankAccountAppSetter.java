@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.lessoncode;
 //task 6
-public class BankAccountAppSetter {
+class BankAccountAppSetter {
 
     public static void main(String[] args) {
         BankAccount alexBankAccount = new BankAccount("Alex Ivanov", 1000);

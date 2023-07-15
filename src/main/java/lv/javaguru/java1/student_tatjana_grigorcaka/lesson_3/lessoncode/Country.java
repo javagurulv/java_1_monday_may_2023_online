@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.lessoncode;
 
-public class Country {
+class Country {
 
     String name;
     String ISOCode;

@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.lessoncode;
 
-public class QuestionnaireApp {
+class QuestionnaireApp {
     public static void main(String[] args) {
         Question questionAboutYourself = new Question("All good?");
         Question questionAboutJavaGuru = new Question("All fine?");

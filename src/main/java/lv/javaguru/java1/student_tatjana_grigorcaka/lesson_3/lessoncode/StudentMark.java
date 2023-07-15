@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.lessoncode;
 
-public class StudentMark {
+class StudentMark {
 
     String firstName;
     String lastName;

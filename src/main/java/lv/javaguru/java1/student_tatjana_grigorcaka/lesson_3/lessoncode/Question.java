@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.lessoncode;
 
-public class Question {
+class Question {
 
     public String questionText;
     public boolean answer;

@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.lessoncode;
 
-public class FamilyApp {
+class FamilyApp {
     public static void main(String[] args) {
 
         Mother motherOne = new Mother("Anna", "Muller", 30);

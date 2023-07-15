@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.lessoncode;
 
-public class Questionnaire {
+class Questionnaire {
     String name;
     Question questionOne;
     Question questionTwo;

@@ -1,7 +1,7 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_3.lessoncode;
 
 //task 1-6
-public class BankAccount {
+class BankAccount {
     String owner;
     int moneyAmount;
 
