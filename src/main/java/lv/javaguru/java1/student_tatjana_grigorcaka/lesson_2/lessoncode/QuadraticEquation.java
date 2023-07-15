@@ -1,7 +1,7 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_2.lessoncode;
 
 import java.util.Scanner;
-public class QuadraticEquation {
+class QuadraticEquation {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_2.lessoncode;
 
 import java.util.Scanner;
 
-public class CheckEvenOdd {
+class CheckEvenOdd {
 
     public static void main(String[] args) {
         int num;

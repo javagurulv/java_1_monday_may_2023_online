@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_2.lessoncode;
 
-public class FirstNameApp {
+class FirstNameApp {
 
 
     public static void main(String[] args) {
