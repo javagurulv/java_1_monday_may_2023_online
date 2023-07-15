@@ -9,40 +9,40 @@ class SquareEquationTest {
 
     public static void main(String[] args) {
         SquareEquationTest test = new SquareEquationTest();
-        test.testDiscriminant1();
-        test.testIsSquareRootTrue2();
-        test.testFirstRoot3();
-        test.testSecondRoot4();
-        test.testIsSquareRootFalse5();
+        test.testDiscriminant();
+        test.testIsSquareRootTrue();
+        test.testFirstRoot();
+        test.testSecondRoot();
+        test.testIsSquareRootFalse();
     }
 
-    public void testDiscriminant1() {
+    public void testDiscriminant() {
         SquareEquation squareEquation = new SquareEquation();
         double result = squareEquation.discriminant(1, 5, 2);
-        checkResultDouble(result, 17, "testDiscriminant1");
+        checkResultDouble(result, 17, "testDiscriminant");
     }
 
-    public void testIsSquareRootTrue2() {
+    public void testIsSquareRootTrue() {
         SquareEquation squareEquation = new SquareEquation();
         boolean result = squareEquation.isSquareRoot(1, 5, 2);
-        checkResultBoolean(result, true, "testIsSquareRootTrue2");
+        checkResultBoolean(result, true, "testIsSquareRootTrue");
     }
 
-    public void testFirstRoot3() {
+    public void testFirstRoot() {
         SquareEquation squareEquation = new SquareEquation();
         double result = squareEquation.firstRoot(1, 5, 2);
-        checkResultDouble(result, -4.561552812808831, "testFirstRoot3");
+        checkResultDouble(result, -4.561552812808831, "testFirstRoot");
     }
 
-    public void testSecondRoot4() {
+    public void testSecondRoot() {
         SquareEquation squareEquation = new SquareEquation();
         double result = squareEquation.secondRoot(1, 5, 2);
-        checkResultDouble(result, -0.4384471871911697,"testSecondRoot4");
+        checkResultDouble(result, -0.4384471871911697,"testSecondRoot");
     }
-    public void testIsSquareRootFalse5() {
+    public void testIsSquareRootFalse() {
         SquareEquation squareEquation = new SquareEquation();
         boolean result = squareEquation.isSquareRoot(5, 1, 1);
-        checkResultBoolean(result, false, "testIsSquareRootFalse5");
+        checkResultBoolean(result, false, "testIsSquareRootFalse");
     }
 
     public void checkResultDouble(double realResult,

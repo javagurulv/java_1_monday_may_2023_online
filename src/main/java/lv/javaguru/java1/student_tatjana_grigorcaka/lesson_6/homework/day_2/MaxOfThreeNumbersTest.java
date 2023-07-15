@@ -8,34 +8,34 @@ class MaxOfThreeNumbersTest {
 
     public static void main(String[] args) {
         MaxOfThreeNumbersTest test = new MaxOfThreeNumbersTest();
-        test.testFindMaxFirstNumBigger1();
-        test.testFindMaxSecondNumBigger2();
-        test.testFindMaxThirdNumBigger3();
-        test.testFindMaxNumEqual4();
+        test.testFindMaxFirstNumBigger();
+        test.testFindMaxSecondNumBigger();
+        test.testFindMaxThirdNumBigger();
+        test.testFindMaxNumEqual();
     }
 
-    public void testFindMaxFirstNumBigger1() {
+    public void testFindMaxFirstNumBigger() {
         MaxOfThreeNumbers maxOfThreeNumbers = new MaxOfThreeNumbers();
         int result = maxOfThreeNumbers.findMax(15, 7, 2);
-        checkResult(result, 15, "testFindMaxFirstNumBigger1");
+        checkResult(result, 15, "testFindMaxFirstNumBigger");
     }
 
-    public void testFindMaxSecondNumBigger2() {
+    public void testFindMaxSecondNumBigger() {
         MaxOfThreeNumbers maxOfThreeNumbers = new MaxOfThreeNumbers();
         int result = maxOfThreeNumbers.findMax(2, 8, -14);
-        checkResult(result,8, "testFindMaxSecondNumBigger2");
+        checkResult(result,8, "testFindMaxSecondNumBigger");
     }
 
-    public void testFindMaxThirdNumBigger3() {
+    public void testFindMaxThirdNumBigger() {
         MaxOfThreeNumbers maxOfThreeNumbers = new MaxOfThreeNumbers();
         int result = maxOfThreeNumbers.findMax(0, 5, 11);
-        checkResult(result,11, "testFindMaxThirdNumBigger3");
+        checkResult(result,11, "testFindMaxThirdNumBigger");
     }
 
-    public void testFindMaxNumEqual4() {
+    public void testFindMaxNumEqual() {
         MaxOfThreeNumbers maxOfThreeNumbers = new MaxOfThreeNumbers();
         int result = maxOfThreeNumbers.findMax(14, 14, 14);
-        checkResult(result, 14, "testFindMaxNumEqual4");
+        checkResult(result, 14, "testFindMaxNumEqual");
     }
 
     private void checkResult(double realResult,

@@ -5,13 +5,13 @@ class AverageFinderTest {
 
     public static void main(String[] args) {
         AverageFinderTest test = new AverageFinderTest();
-        test.testAverageFinder1();
+        test.testAverageFinder();
     }
 
-    public void testAverageFinder1() {
+    public void testAverageFinder() {
         AverageFinder averageFinder = new AverageFinder();
         double result = averageFinder.findAverage(7, 8);
-        checkResult(result, 7.5, "testAverageFinder1");
+        checkResult(result, 7.5, "testAverageFinder");
     }
 
     private void checkResult(double realResult,

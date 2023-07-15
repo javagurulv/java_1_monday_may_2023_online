@@ -18,101 +18,101 @@ class ColourWaveDetectorTest {
 
     public static void main(String[] args) {
         ColourWaveDetectorTest test = new ColourWaveDetectorTest();
-        test.testColourWaveDetectorViolet1();
-        test.testColourWaveDetectorViolet2();
-        test.testColourWaveDetectorBlue3();
-        test.testColourWaveDetectorBlue4();
-        test.testColourWaveDetectorGreen5();
-        test.testColourWaveDetectorGreen6();
-        test.testColourWaveDetectorYellow7();
-        test.testColourWaveDetectorYellow8();
-        test.testColourWaveDetectorOrange9();
-        test.testColourWaveDetectorOrange10();
-        test.testColourWaveDetectorRed11();
-        test.testColourWaveDetectorRed12();
-        test.testColourWaveDetectorInvisibleLight13();
-        test.testColourWaveDetectorInvisibleLight14();
+        test.testColourWaveDetectorVioletV1();
+        test.testColourWaveDetectorVioletV2();
+        test.testColourWaveDetectorBlueV1();
+        test.testColourWaveDetectorBlueV2();
+        test.testColourWaveDetectorGreenV1();
+        test.testColourWaveDetectorGreenV2();
+        test.testColourWaveDetectorYellowV1();
+        test.testColourWaveDetectorYellowV2();
+        test.testColourWaveDetectorOrangeV1();
+        test.testColourWaveDetectorOrangeV2();
+        test.testColourWaveDetectorRedV1();
+        test.testColourWaveDetectorRedV2();
+        test.testColourWaveDetectorInvisibleLightV1();
+        test.testColourWaveDetectorInvisibleLightV2();
     }
-    public void testColourWaveDetectorViolet1() {
+    public void testColourWaveDetectorVioletV1() {
         ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
         String result = colourWaveDetector.colourWave(380);
-        checkResult(result, "Violet", "testColourWaveDetectorViolet1");
+        checkResult(result, "Violet", "testColourWaveDetectorVioletV1");
     }
 
-    public void testColourWaveDetectorViolet2() {
+    public void testColourWaveDetectorVioletV2() {
         ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
         String result = colourWaveDetector.colourWave(449);
-        checkResult(result, "Violet", "testColourWaveDetectorViolet2");
+        checkResult(result, "Violet", "testColourWaveDetectorVioletV2");
     }
 
-    public void testColourWaveDetectorBlue3() {
+    public void testColourWaveDetectorBlueV1() {
         ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
         String result = colourWaveDetector.colourWave(450);
-        checkResult(result, "Blue", "testColourWaveDetectorBlue3");
+        checkResult(result, "Blue", "testColourWaveDetectorBlueV1");
     }
 
-    public void testColourWaveDetectorBlue4() {
+    public void testColourWaveDetectorBlueV2() {
         ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
         String result = colourWaveDetector.colourWave(494);
-        checkResult(result, "Blue", "testColourWaveDetectorBlue4");
+        checkResult(result, "Blue", "testColourWaveDetectorBlueV2");
     }
 
-    public void testColourWaveDetectorGreen5() {
+    public void testColourWaveDetectorGreenV1() {
         ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
         String result = colourWaveDetector.colourWave(495);
-        checkResult(result, "Green", "testColourWaveDetectorGreen5");
+        checkResult(result, "Green", "testColourWaveDetectorGreenV1");
     }
-    public void testColourWaveDetectorGreen6() {
+    public void testColourWaveDetectorGreenV2() {
         ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
         String result = colourWaveDetector.colourWave(569);
-        checkResult(result, "Green", "testColourWaveDetectorGreen6");
+        checkResult(result, "Green", "testColourWaveDetectorGreenV2");
     }
 
-    public void testColourWaveDetectorYellow7() {
+    public void testColourWaveDetectorYellowV1() {
         ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
         String result = colourWaveDetector.colourWave(570);
-        checkResult(result, "Yellow", "testColourWaveDetectorYellow7");
+        checkResult(result, "Yellow", "testColourWaveDetectorYellowV1");
     }
-    public void testColourWaveDetectorYellow8() {
+    public void testColourWaveDetectorYellowV2() {
         ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
         String result = colourWaveDetector.colourWave(589);
-        checkResult(result, "Yellow", "testColourWaveDetectorYellow8");
+        checkResult(result, "Yellow", "testColourWaveDetectorYellowV2");
     }
 
-    public void testColourWaveDetectorOrange9() {
+    public void testColourWaveDetectorOrangeV1() {
         ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
         String result = colourWaveDetector.colourWave(590);
-        checkResult(result, "Orange", "testColourWaveDetectorOrange9");
+        checkResult(result, "Orange", "testColourWaveDetectorOrangeV1");
     }
 
-    public void testColourWaveDetectorOrange10() {
+    public void testColourWaveDetectorOrangeV2() {
         ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
         String result = colourWaveDetector.colourWave(619);
-        checkResult(result, "Orange", "testColourWaveDetectorOrange10");
+        checkResult(result, "Orange", "testColourWaveDetectorOrangeV2");
     }
 
-    public void testColourWaveDetectorRed11() {
+    public void testColourWaveDetectorRedV1() {
         ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
         String result = colourWaveDetector.colourWave(620);
-        checkResult(result, "Red", "testColourWaveDetectorRed11");
+        checkResult(result, "Red", "testColourWaveDetectorRedV1");
     }
 
-    public void testColourWaveDetectorRed12() {
+    public void testColourWaveDetectorRedV2() {
         ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
         String result = colourWaveDetector.colourWave(750);
-        checkResult(result, "Red", "testColourWaveDetectorRed12");
+        checkResult(result, "Red", "testColourWaveDetectorRedV2");
     }
 
-    public void testColourWaveDetectorInvisibleLight13() {
+    public void testColourWaveDetectorInvisibleLightV1() {
         ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
         String result = colourWaveDetector.colourWave(379);
-        checkResult(result, "Invisible Light", "testColourWaveDetectorInvisibleLight13");
+        checkResult(result, "Invisible Light", "testColourWaveDetectorInvisibleLightV1");
     }
 
-    public void testColourWaveDetectorInvisibleLight14() {
+    public void testColourWaveDetectorInvisibleLightV2() {
         ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
         String result = colourWaveDetector.colourWave(751);
-        checkResult(result, "Invisible Light", "testColourWaveDetectorInvisibleLight14");
+        checkResult(result, "Invisible Light", "testColourWaveDetectorInvisibleLightV2");
     }
 
     private void checkResult(String realResult,

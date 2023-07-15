@@ -6,20 +6,20 @@ class TriangleSquareTest {
 
     public static void main(String[] args) {
         TriangleSquareTest test = new TriangleSquareTest();
-        test.testSemiPerimeter1();
-        test.testSquare2();
+        test.testSemiPerimeter();
+        test.testSquare();
     }
 
-    public void testSemiPerimeter1() {
+    public void testSemiPerimeter() {
         TriangleSquare triangleSquare = new TriangleSquare();
         double result = triangleSquare.calculateSemiPerimeter(2, 3, 4);
-        checkResult(result, 4.5, "testSemiPerimeter1");
+        checkResult(result, 4.5, "testSemiPerimeter");
     }
 
-    public void testSquare2() {
+    public void testSquare() {
         TriangleSquare triangleSquare = new TriangleSquare();
         double result = triangleSquare.calculateSquare(2, 3, 4);
-        checkResult(result, 2.9047375096555625, "testSquare1");
+        checkResult(result, 2.9047375096555625, "testSquare");
     }
 
     private void checkResult(double realResult,

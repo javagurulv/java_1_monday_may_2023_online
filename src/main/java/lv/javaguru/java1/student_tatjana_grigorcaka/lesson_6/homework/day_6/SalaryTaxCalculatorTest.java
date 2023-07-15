@@ -2,49 +2,56 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_6.homework.day_6;
 
 class SalaryTaxCalculatorTest {
 
-    //Test Data 1: num1: 0.00; expected result: 0.00
-    //Test Data 2: num1: 10000.00; expected result: 3000.00
-    //Test Data 3: num1: 10001.00; expected result: 3000.40
-    //Test Data 4: num1: 50000.00; expected result: 19000.00
-    //Test Data 5: num1: 50001.00; expected result: 19000.50
+    //Test Data 1: salary: 0.00; expected result: 0.00
+    //Test Data 2: salary: 1.00; expected result: 0.30
+    //Test Data 3: salary: 10000.00; expected result: 3000.00
+    //Test Data 4: salary: 10001.00; expected result: 3000.40
+    //Test Data 5: salary: 50000.00; expected result: 19000.00
+    //Test Data 6: salary: 50001.00; expected result: 19000.50
 
     public static void main(String[] args) {
         SalaryTaxCalculatorTest test = new SalaryTaxCalculatorTest();
-        test.testSalaryTaxCalculatorZeroTax1();
-        test.testSalaryTaxCalculator30Tax2();
-        test.testSalaryTaxCalculator40Tax3();
-        test.testSalaryTaxCalculator40Tax4();
-        test.testSalaryTaxCalculator50Tax5();
+        test.testSalaryTaxCalculatorZero();
+        test.testSalaryTaxCalculator30TaxV1();
+        test.testSalaryTaxCalculator30TaxV2();
+        test.testSalaryTaxCalculator40TaxV1();
+        test.testSalaryTaxCalculator40TaxV2();
+        test.testSalaryTaxCalculator50Tax();
     }
 
-    public void testSalaryTaxCalculatorZeroTax1(){
+    public void testSalaryTaxCalculatorZero(){
         SalaryTaxCalculator salaryTaxCalculator = new SalaryTaxCalculator();
-        double result = salaryTaxCalculator.calculateZeroTax1(0.00);
-        checkResult(result, 0.00, "testSalaryTaxCalculatorZeroTax1");
+        double result = salaryTaxCalculator.calculateZero(0.00);
+        checkResult(result, 0.00, "testSalaryTaxCalculatorZero");
+    }
+    public void testSalaryTaxCalculator30TaxV1(){
+        SalaryTaxCalculator salaryTaxCalculator = new SalaryTaxCalculator();
+        double result = salaryTaxCalculator.calculate30Tax(1.00);
+        checkResult(result, 0.30, "testSalaryTaxCalculator30TaxV1");
     }
 
-    public void testSalaryTaxCalculator30Tax2(){
+    public void testSalaryTaxCalculator30TaxV2(){
         SalaryTaxCalculator salaryTaxCalculator = new SalaryTaxCalculator();
-        double result = salaryTaxCalculator.calculate30Tax2(10000.00);
-        checkResult(result, 3000.00, "testSalaryTaxCalculator30Tax2");
+        double result = salaryTaxCalculator.calculate30Tax(10000.00);
+        checkResult(result, 3000.00, "testSalaryTaxCalculator30TaxV2");
     }
 
-    public void testSalaryTaxCalculator40Tax3(){
+    public void testSalaryTaxCalculator40TaxV1(){
         SalaryTaxCalculator salaryTaxCalculator = new SalaryTaxCalculator();
-        double result = salaryTaxCalculator.calculate40Tax3(10001.00);
-        checkResult(result, 3000.40, "testSalaryTaxCalculator40Tax3");
+        double result = salaryTaxCalculator.calculate40Tax(10001.00);
+        checkResult(result, 3000.40, "testSalaryTaxCalculator40TaxV1");
     }
 
-    public void testSalaryTaxCalculator40Tax4(){
+    public void testSalaryTaxCalculator40TaxV2(){
         SalaryTaxCalculator salaryTaxCalculator = new SalaryTaxCalculator();
-        double result = salaryTaxCalculator.calculate40Tax3(50000.00);
-        checkResult(result, 19000.00, "testSalaryTaxCalculator40Tax4");
+        double result = salaryTaxCalculator.calculate40Tax(50000.00);
+        checkResult(result, 19000.00, "testSalaryTaxCalculator40TaxV2");
     }
 
-    public void testSalaryTaxCalculator50Tax5(){
+    public void testSalaryTaxCalculator50Tax(){
         SalaryTaxCalculator salaryTaxCalculator = new SalaryTaxCalculator();
-        double result = salaryTaxCalculator.calculate50Tax4(50001.00);
-        checkResult(result, 19000.50, "testSalaryTaxCalculator50Tax5");
+        double result = salaryTaxCalculator.calculate50Tax(50001.00);
+        checkResult(result, 19000.50, "testSalaryTaxCalculator50Tax");
     }
 
     private void checkResult(double realResult,
