@@ -3,9 +3,16 @@ package lv.javaguru.java1.student_timur_geldiev.lesson_6.homework.day_6;
 public class SalaryTaxCalculatorTest {
     public static void main(String[] args) {
         SalaryTaxCalculatorTest test = new SalaryTaxCalculatorTest();
+        test.tax0check();
         test.tax30check();
         test.tax40check();
         test.tax50check();
+    }
+    public void tax0check(){
+        double salary = 0;
+        SalaryTaxCalculator test0 = new SalaryTaxCalculator();
+        double actual = test0.calculate(salary);
+        checkResult(actual, 0, "0% check");
     }
     public void tax30check(){
         double salary = 9500;
