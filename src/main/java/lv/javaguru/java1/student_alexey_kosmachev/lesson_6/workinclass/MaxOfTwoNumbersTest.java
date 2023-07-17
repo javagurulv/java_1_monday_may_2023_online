@@ -28,14 +28,15 @@ class MaxOfTwoNumbersTest{
             checkResult(result, 5, "test3");
         }
 
+
         private void checkResult(int realResult,
-        int expectedResult,
-        String testScenarioName) {
-            if (realResult == expectedResult) {
-                System.out.println(testScenarioName + ": TEST OK!");
-            } else {
-                System.out.println(testScenarioName + ": TEST FAIL!");
-            }
+                                  int expectedResult,
+                                  String testScenarioName) {
+        if (realResult == expectedResult) {
+            System.out.println(testScenarioName + ": TEST OK!");
+        } else {
+            System.out.println(testScenarioName + ": TEST FAIL!");
+        }
         }
 
     }
