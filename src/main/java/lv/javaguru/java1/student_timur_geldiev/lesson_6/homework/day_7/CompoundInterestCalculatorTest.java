@@ -6,6 +6,8 @@ public class CompoundInterestCalculatorTest {
     public static void main(String[] args) {
         CompoundInterestCalculatorTest test = new CompoundInterestCalculatorTest();
         test.compoundInterestCheck();
+        test.sumIsZero();
+        test.interestIsNegative();
     }
 
     public void compoundInterestCheck(){
@@ -18,6 +20,28 @@ public class CompoundInterestCalculatorTest {
         String roundedNumber = df.format(number);
         double roundedValue = Double.parseDouble(roundedNumber);
         checkResult(roundedValue, 35816.95, "Compound interest check" );
+    }
+    public void sumIsZero(){
+        double sum = 0;
+        double interest = 6;
+        double year = 10;
+        CompoundInterestCalculator test1 = new CompoundInterestCalculator();
+        DecimalFormat df = new DecimalFormat("#.##");
+        double number = test1.CompoundInterest(sum, interest, year);
+        String roundedNumber = df.format(number);
+        double roundedValue = Double.parseDouble(roundedNumber);
+        checkResult(roundedValue, 0, "Compound interest check" );
+    }
+    public void interestIsNegative(){
+        double sum = 20000;
+        double interest = -5;
+        double year = 10;
+        CompoundInterestCalculator test1 = new CompoundInterestCalculator();
+        DecimalFormat df = new DecimalFormat("#.##");
+        double number = test1.CompoundInterest(sum, interest, year);
+        String roundedNumber = df.format(number);
+        double roundedValue = Double.parseDouble(roundedNumber);
+        checkResult(roundedValue, 11974.74, "Compound interest check" );
     }
     public void checkResult(double actualResult, double expectedResult, String testName) {
         if (actualResult == expectedResult) {
