@@ -15,6 +15,9 @@ class ColourWaveDetectorTest {
     // Test data 12: num1 = 750 expected result = Red
     // Test data 13: num1 = 379; expected result = Invisible Light
     // Test data 14: num1 = 751; expected result = Invisible Light
+    // Test data 15: num1 = 10; expected result = Invisible Light
+    // Test data 16: num1 = 5; expected result = XXX
+    // Test data 17: num1 = -1; expected result = YYY
 
     public static void main(String[] args) {
         ColourWaveDetectorTest test = new ColourWaveDetectorTest();
@@ -32,6 +35,9 @@ class ColourWaveDetectorTest {
         test.testColourWaveDetectorRedV2();
         test.testColourWaveDetectorInvisibleLightV1();
         test.testColourWaveDetectorInvisibleLightV2();
+        test.testColourWaveDetectorInvisibleLightV3();
+        test.testColourWaveDetectorV1();
+        test.testColourWaveDetectorV2();
     }
     public void testColourWaveDetectorVioletV1() {
         ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
@@ -113,6 +119,23 @@ class ColourWaveDetectorTest {
         ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
         String result = colourWaveDetector.colourWave(751);
         checkResult(result, "Invisible Light", "testColourWaveDetectorInvisibleLightV2");
+    }
+    public void testColourWaveDetectorInvisibleLightV3() {
+        ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
+        String result = colourWaveDetector.colourWave(10);
+        checkResult(result, "Invisible Light", "testColourWaveDetectorInvisibleLightV3");
+    }
+
+    public void testColourWaveDetectorV1() {
+        ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
+        String result = colourWaveDetector.colourWave(5);
+        checkResult(result, "XXX", "testColourWaveDetectorV1");
+    }
+
+    public void testColourWaveDetectorV2() {
+        ColourWaveDetector colourWaveDetector = new ColourWaveDetector();
+        String result = colourWaveDetector.colourWave(-1);
+        checkResult(result, "YYY", "testColourWaveDetectorV2");
     }
 
     private void checkResult(String realResult,
