@@ -1,15 +1,13 @@
 package lv.javaguru.java1.student_alexey_kosmachev.lesson_7.homework.day_1;
 
-//Найти ошибку в коде
+//Найдите ошибку в программе и исправить её:
 //public static void main(String[] args) {
 //        int numbers = new int[];
 //    }
+public class ArrayDefinition1 {
 
-
-class ArrayDefinition1 {
-
-    public int [] ArrayDefinition() {
-        int [] numbers = new int[3];
-        return numbers;
+    public static void main(String[] args) {
+        int [] numbers = new int[10]; // добавить длину массива и квадратные скобки
     }
+
 }
