@@ -49,6 +49,9 @@
 **Лекция 6 - Unit testing**
 * [day_1](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_6_unit_testing/homework/day_1), [day_2](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_6_unit_testing/homework/day_2), [day_3](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_6_unit_testing/homework/day_3), [day_4](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_6_unit_testing/homework/day_4), [day_5](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_6_unit_testing/homework/day_5), [day_6](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_6_unit_testing/homework/day_6), [day_7](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_6_unit_testing/homework/day_7)
 
+**Лекция 7 - Arrays Lists For**
+* [day_1](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_7_arrays_lists_fors/homework/day_1), [day_2](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_7_arrays_lists_fors/homework/day_2), [day_3](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_7_arrays_lists_fors/homework/day_3), [day_4](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_7_arrays_lists_fors/homework/day_4), [day_5](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_7_arrays_lists_fors/homework/day_5), [day_6](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_7_arrays_lists_fors/homework/day_6), [day_7](https://github.com/javagurulv/java_1_monday_may_2023_online/tree/main/src/main/java/lv/javaguru/java1/teacher/lesson_7_arrays_lists_fors/homework/day_7)
+
 
 #### Сертификат
 
@@ -79,6 +82,7 @@
 * [Лекция 4 - If statement](https://www.youtube.com/watch?v=B1Hh0feJe5Y)
 * [Лекция 5 - Methods](https://www.youtube.com/watch?v=cGbaro4O3hk)
 * [Лекция 6 - Unit testing](https://www.youtube.com/watch?v=UlteyfuXG_w)
+* [Лекция 7 - Arrays Lists For](https://www.youtube.com/watch?v=cD25AJiLIpE)
 
 ---
 

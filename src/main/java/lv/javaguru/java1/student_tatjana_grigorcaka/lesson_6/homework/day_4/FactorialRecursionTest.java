@@ -3,6 +3,8 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_6.homework.day_4;
 class FactorialRecursionTest {
 
     // Test data 1: num1 = 8, expected result = 40320
+
+
     public static void main(String[] args) {
         FactorialRecursionTest test = new FactorialRecursionTest();
         test.testFactorialRecursion();
@@ -14,6 +16,7 @@ class FactorialRecursionTest {
         checkResult(result, 40320, "testFactorialRecursion");
     }
 
+
     private void checkResult(int realResult,
                              int expectedResult,
                              String testScenarioName) {
@@ -23,5 +26,4 @@ class FactorialRecursionTest {
             System.out.println(testScenarioName + ": TEST FAIL!" + " Expected result = " + expectedResult + " but Real result = " + realResult);
         }
     }
-
 }

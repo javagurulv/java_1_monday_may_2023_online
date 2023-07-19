@@ -4,13 +4,20 @@ class PalindromeCheckerTest {
 
     public static void main(String[] args) {
         PalindromeCheckerTest test = new PalindromeCheckerTest();
-        test.testPalindromeChecker();
+        test.testPalindromeCheckerTrue();
+        test.testPalindromeCheckerFalse();
     }
 
-    public void testPalindromeChecker() {
+    public void testPalindromeCheckerTrue() {
         PalindromeChecker palindromeChecker = new PalindromeChecker();
         boolean result = palindromeChecker.isPalindrome("abba");
-        checkResult((result),true, "testPalindromeChecker");
+        checkResult((result),true, "testPalindromeCheckerTrue");
+    }
+
+    public void testPalindromeCheckerFalse() {
+        PalindromeChecker palindromeChecker = new PalindromeChecker();
+        boolean result = palindromeChecker.isPalindrome("abc");
+        checkResult((result),false, "testPalindromeCheckerFalse");
     }
 
     private void checkResult(boolean realResult,
