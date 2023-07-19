@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_7.classwork;
 
-public class MaxMarkFinderTest {
+class MaxMarkFinderTest {
     public static void main(String[] args) {
         MaxMarkFinderTest test = new MaxMarkFinderTest();
         test.checkMaxMark();

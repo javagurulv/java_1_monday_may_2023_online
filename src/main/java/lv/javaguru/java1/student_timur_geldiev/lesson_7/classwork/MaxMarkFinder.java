@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_7.classwork;
 
-public class MaxMarkFinder {
+class MaxMarkFinder {
 
     public int findMaxMark(int[] marks){
         int max = marks[0];
