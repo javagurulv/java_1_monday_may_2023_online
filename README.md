@@ -82,6 +82,7 @@
 * [Лекция 4 - If statement](https://www.youtube.com/watch?v=B1Hh0feJe5Y)
 * [Лекция 5 - Methods](https://www.youtube.com/watch?v=cGbaro4O3hk)
 * [Лекция 6 - Unit testing](https://www.youtube.com/watch?v=UlteyfuXG_w)
+* [Лекция 7 - Arrays Lists For](https://www.youtube.com/watch?v=cD25AJiLIpE)
 
 ---
 
