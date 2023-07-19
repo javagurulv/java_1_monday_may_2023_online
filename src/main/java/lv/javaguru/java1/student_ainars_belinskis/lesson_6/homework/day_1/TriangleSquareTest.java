@@ -26,6 +26,7 @@ class TriangleSquareTest {
     }
 //real result 13.99776...., поэтому тест Failed.
 
+
     private void checkResult(double realResult,
                              double expectedResult,
                              String testScenarioName) {
