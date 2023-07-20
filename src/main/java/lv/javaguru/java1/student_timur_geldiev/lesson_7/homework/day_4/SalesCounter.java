@@ -3,9 +3,8 @@ package lv.javaguru.java1.student_timur_geldiev.lesson_7.homework.day_4;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.zip.CheckedInputStream;
 
-public class SalesCounter {
+class SalesCounter {
 
     public static void main(String[] args) {
 
