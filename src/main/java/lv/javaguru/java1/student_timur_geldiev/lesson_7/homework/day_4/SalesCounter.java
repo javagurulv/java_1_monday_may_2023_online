@@ -21,6 +21,7 @@ class SalesCounter {
 
         List<Check> emptyChecksList = new ArrayList<>();
 
+
         SalesCounter test = new SalesCounter();
         test.findSumTest(checks);
         test.findAverageTest(checks);

@@ -2,132 +2,162 @@ package lv.javaguru.java1.student_timur_geldiev.lesson_7.homework.day_3;
 
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
-import java.util.Scanner;
 
 public class BookLibrary {
 
     public static void main(String[] args) {
 
         Book book1 = new Book("The Grapes of Wrath", "John Steinbeck", 1939);
+        Book book2 = new Book("Generation П", "Viktor Pelevin", 1999);
 
         List<Book> books = new ArrayList<>();
         books.add(book1);
+        books.add(book2);
 
-
-        for (int i = 0; i < books.size(); i++) {
-            Book book = books.get(i);
-
-        }
 
         BookLibrary test = new BookLibrary();
-        test.checkAmountOfList(books);
+        test.checkAmountOfBooks(books);
         test.checkFindBookName(books);
         test.checkFindAuthor(books);
-        test.checkDeleteBook(books);
+        test.checkDeleteBookByTitle(books);
+        test.checkDeleteBookByAuthor(books);
+
 
     }
-    public List<Book> findBookName(List<Book> bookList){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter title of book you want to find: ");
-        String title = sc.nextLine();
+
+    public List<Book> findBookName(List<Book> bookList, String bookTitle) {
         List<Book> foundBook = new ArrayList<>();
-        for (int i=0; i<bookList.size(); i++){
+        for (int i = 0; i < bookList.size(); i++) {
             Book book = bookList.get(i);
-            if(book.getTitle().equals(title)){
+            if (book.getTitle().equals(bookTitle)) {
                 foundBook.add(book);
 
             }
-        }return foundBook;
+        }
+        return foundBook;
 
     }
-    public List<Book> findBookByAuthor(List<Book> bookList){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter author you want to find: ");
-        String author = sc.nextLine();
+
+    public List<Book> findBookByAuthor(List<Book> bookList, String authorName) {
         List<Book> foundAuthor = new ArrayList<>();
-        for (int i=0; i<bookList.size(); i++){
+        for (int i = 0; i < bookList.size(); i++) {
             Book book = bookList.get(i);
-            if(book.getAuthor().equals(author)){
+            if (book.getAuthor().equals(authorName)) {
                 foundAuthor.add(book);
 
             }
-        }return foundAuthor;
+        }
+        return foundAuthor;
 
     }
-    public List<Book> deleteBook(List<Book> bookList){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter title you want to delete: ");
-        String title = sc.nextLine();
-        System.out.println("Enter author you want to delete: ");
-        String author = sc.nextLine();
-        System.out.println("Enter release year you want to delete: ");
-        int year = sc.nextInt();
-        List<Book> foundBook = new ArrayList<>();
-        for (int i=0; i<bookList.size(); i++){
-            Book book = bookList.get(i);
-            if(book.getAuthor().equals(author) || book.getTitle().equals(title) || book.getReleaseYear() == year){
-                foundBook.remove(book);
 
+    public List<Book> deleteBookByTitle(List<Book> bookList, String bookTitle) {
+        List<Book> deleteBooks = new ArrayList<>(bookList);
+        Iterator<Book> iterator = deleteBooks.iterator();
+
+        while (iterator.hasNext()) {
+            Book book = iterator.next();
+            if (book.getTitle().equals(bookTitle)) {
+                iterator.remove();
             }
-        }return foundBook;
-
+        }
+        return deleteBooks;
     }
-    public void checkAmountOfList(List<Book> books){
-        int expected = 1;
+
+    public List<Book> deleteBookByAuthor(List<Book> bookList, String authorName) {
+        List<Book> deleteBooks = new ArrayList<>(bookList);
+        Iterator<Book> iterator = deleteBooks.iterator();
+
+        while (iterator.hasNext()) {
+            Book book = iterator.next();
+            if (book.getAuthor().equals(authorName)) {
+                iterator.remove();
+            }
+        }
+        return deleteBooks;
+    }
+
+
+    public void checkAmountOfBooks(List<Book> books) {
+        int expected = 2;
         int actual = books.size();
-        if(actual == expected){
+        if (actual == expected) {
             System.out.println("Pass");
-        } else{
+        } else {
             System.out.println("Fail");
         }
     }
-    public void checkFindBookName(List<Book> books){
-        String  expected = "The Grapes of Wrath";
-        List<Book> foundBooks = findBookName(books);
+
+    public void checkFindBookName(List<Book> books) {
+        String expected = "Generation П";
+        List<Book> foundBooks = findBookName(books, "Generation П");
         boolean found = false;
-        for (Book book : foundBooks) {
+        for (int i = 0; i < foundBooks.size(); i++) {
+            Book book = foundBooks.get(i);
             if (book.getTitle().equals(expected)) {
                 found = true;
-                break;
             }
         }
-        if(found){
+        if (found) {
             System.out.println("Pass");
-        }else{
+        } else {
             System.out.println("Fail");
         }
     }
-    public void checkFindAuthor(List<Book> books){
-        String  expected = "John Steinbeck";
-        List<Book> foundAuthor = findBookByAuthor(books);
+
+    public void checkFindAuthor(List<Book> books) {
+        String expected = "John Steinbeck";
+        List<Book> foundAuthor = findBookByAuthor(books, "John Steinbeck");
         boolean found = false;
-        for (Book book : foundAuthor) {
+        for (int i = 0; i < foundAuthor.size(); i++) {
+            Book book = foundAuthor.get(i);
             if (book.getAuthor().equals(expected)) {
                 found = true;
-                break;
             }
         }
-        if(found){
+        if (found) {
             System.out.println("Pass");
-        }else{
+        } else {
             System.out.println("Fail");
         }
     }
-    public void checkDeleteBook(List<Book> books){
-        String  expected = "The Grapes of Wrath";
-        List<Book> foundBooks = deleteBook(books);
+
+    public void checkDeleteBookByTitle(List<Book> books) {
         boolean notFound = true;
-        for (Book book : foundBooks) {
-            if (book.getTitle().equals(expected)) {
+        List<Book> bookList = findBookName(books, "The Grapes of Wrath");
+        List<Book> updatedBooks = deleteBookByTitle(bookList, "The Grapes of Wrath");
+        for (int i = 0; i < updatedBooks.size(); i++) {
+            Book book = updatedBooks.get(i);
+            if (book.getTitle().equals("The Grapes of Wrath")) {
                 notFound = false;
-                break;
             }
         }
-        if(notFound){
+        if (notFound) {
             System.out.println("Pass");
-        }else{
+        } else {
             System.out.println("Fail");
         }
     }
+
+    public void checkDeleteBookByAuthor(List<Book> books) {
+        boolean notFound = true;
+        List<Book> bookList = findBookByAuthor(books, "John Steinbeck");
+        List<Book> updatedBooks = deleteBookByAuthor(bookList, "John Steinbeck");
+        for (int i = 0; i < updatedBooks.size(); i++) {
+            Book book = updatedBooks.get(i);
+            if (book.getAuthor().equals("John Steinbeck")) {
+                notFound = false;
+            }
+        }
+        if (notFound) {
+            System.out.println("Pass");
+        } else {
+            System.out.println("Fail");
+        }
+    }
+
 }
+
+
