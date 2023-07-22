@@ -22,5 +22,5 @@ class Sale {
 
     public int getUnitCount() {
         return unitCount;
-    } //
+    }
 }
