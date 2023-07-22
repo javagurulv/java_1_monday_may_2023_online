@@ -78,4 +78,4 @@ class SalesStats {
             System.out.println("Fail" + " actual result " + actual + " is not equal to expected " + expected);
         }
     }
-}
+}//
