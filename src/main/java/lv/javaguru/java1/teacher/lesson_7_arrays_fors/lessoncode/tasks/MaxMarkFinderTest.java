@@ -1,4 +1,4 @@
-package lv.javaguru.java1.teacher.lesson_7_arrays_lists_fors.lessoncode.tasks;
+package lv.javaguru.java1.teacher.lesson_7_arrays_fors.lessoncode.tasks;
 
 class MaxMarkFinderTest {
 

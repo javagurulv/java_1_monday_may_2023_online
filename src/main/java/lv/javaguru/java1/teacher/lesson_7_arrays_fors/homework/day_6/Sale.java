@@ -1,4 +1,4 @@
-package lv.javaguru.java1.teacher.lesson_7_arrays_lists_fors.homework.day_6;
+package lv.javaguru.java1.teacher.lesson_7_arrays_fors.homework.day_6;
 
 class Sale {
 

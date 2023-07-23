@@ -1,4 +1,4 @@
-package lv.javaguru.java1.teacher.lesson_7_arrays_lists_fors.homework.day_7;
+package lv.javaguru.java1.teacher.lesson_7_arrays_fors.homework.day_7;
 
 class Stock {
 
