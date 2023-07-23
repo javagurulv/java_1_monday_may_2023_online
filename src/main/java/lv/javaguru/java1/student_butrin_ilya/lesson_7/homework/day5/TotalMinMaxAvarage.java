@@ -37,7 +37,7 @@ public class TotalMinMaxAvarage {
             massiv[i] = squareOfTheDifference;}
         double averageMassiv = average(massiv);
         double sigma = Math.sqrt(averageMassiv);
-        return round(sigma*100.0) / 100.0;
+            return round(sigma*100.0) / 100.0;
 
 
     }
