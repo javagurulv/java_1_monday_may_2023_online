@@ -9,10 +9,13 @@ class BookLibraryTest {
         BookLibrary bookLibrary = new BookLibrary();
         bookLibrary.addBook(allBooks,"The Little Prince", "Antoine de Saint-Exupery", 1943, 50);
         bookLibrary.addBook(allBooks,"The Alchemist", "Paulo Coelho", 1988, 100);
+        bookLibrary.addBook(allBooks,"Reach dad poor dad", "Robert Kiyosaki", 1998, 175);
         BookLibraryTest test = new  BookLibraryTest();
         test.testFindBookByTitle(allBooks);
         test.testFindBookByAuthor(allBooks);
         test.testSumPage(allBooks);
+        test.testCountBooks(allBooks);
+        test.testRemoveBook(allBooks);
     }
 
     public void testFindBookByTitle(List<Book> allBooks) {
@@ -51,6 +54,31 @@ class BookLibraryTest {
             System.out.println(": TEST FAIL!");
         }
     }
+    public void testCountBooks(List<Book> allBooks) {
+        int BooksCount = 3;
+        BookLibrary bookLibrary = new BookLibrary();
+        int result = bookLibrary.countBooks(allBooks);
+        System.out.println("RESULT: " + result);
+        if (result == BooksCount) {
+            System.out.println(": TEST OK!");
+        } else {
+            System.out.println(": TEST FAIL!");
+        }
+    }
+
+    public void testRemoveBook(List<Book> allBooks) {
+        BookLibrary bookLibrary = new BookLibrary();
+        bookLibrary.removeBook(allBooks, "The Alchemist", "Paulo Coelho", 1988);
+        List<Book> result = bookLibrary.findBookByTitle(allBooks, "The Alchemist");
+        if (result.size() == 0)
+        {
+            System.out.println(": TEST OK!");
+        } else {
+            System.out.println(": TEST FAIL!");
+        }
+    }
+
+
 }
 
 
