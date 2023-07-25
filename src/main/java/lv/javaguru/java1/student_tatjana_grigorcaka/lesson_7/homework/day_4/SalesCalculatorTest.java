@@ -3,7 +3,7 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_7.homework.day_4;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SalesCalculatorTest {
+class SalesCalculatorTest {
 
     public static void main(String[] args) {
 
