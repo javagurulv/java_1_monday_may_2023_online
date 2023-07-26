@@ -40,7 +40,21 @@ class Salary {
         double average = sum / salary.length;
         return average;
     }
+
+    public double sigma(double[] salary) {
+        double sum = 0.0, standard_deviation = 0.0;
+        for(double num : salary) {
+            sum += num;
+        }
+        double average = sum/salary.length;
+        for(double num: salary) {
+            standard_deviation += Math.pow(num - average, 2);
+        }
+        double result = Math.sqrt(standard_deviation/salary.length);
+        return result;
+    }
 }
+
 
 
 

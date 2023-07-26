@@ -3,23 +3,26 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_7.homework.day_5;
 
 class SalaryTest {
     public static void main(String[] args) {
-        double[] salary = new double[]{2500.0, 3200.0, 1800.0, 4000.0, 2900.0};
+        double[] salary = new double[] {2500.0, 3200.0, 1800.0, 4000.0, 2900.0};
 
         Salary salary1 = new Salary();
         salary1.totalSumOfSalary(salary);
         salary1.maxSumOfSalary(salary);
         salary1.minSumOfSalary(salary);
         salary1.averageSumOfSalary(salary);
+        salary1.sigma(salary);
         System.out.println("RESULT: " + salary1.totalSumOfSalary(salary));
         System.out.println("RESULT: " + salary1.maxSumOfSalary(salary));
         System.out.println("RESULT: " + salary1.minSumOfSalary(salary));
         System.out.println("RESULT: " + salary1.averageSumOfSalary(salary));
+        System.out.println("RESULT: " + salary1.sigma(salary));
 
         SalaryTest test = new SalaryTest();
         test.testTotalSumOfSalary(salary);
         test.testMaxSumOfSalary(salary);
         test.testMinSumOfSalary(salary);
         test.testAverageSumOfSalary(salary);
+        test.testSigma(salary);
     }
 
     public void testTotalSumOfSalary(double[] salary) {
@@ -70,5 +73,16 @@ class SalaryTest {
         }
     }
 
-
+    public void testSigma(double[] salary) {
+        double sigma = 730.479294709987;
+        Salary salary1 = new Salary();
+        double result = salary1.sigma(salary);
+        System.out.println("TEST RESULT (SIGMA): " + result);
+        if (result == sigma) {
+            System.out.println("TEST RESULT: OK!");
+        } else {
+            System.out.println("TEST TEST: FAIL!");
+        }
+    }
 }
+
