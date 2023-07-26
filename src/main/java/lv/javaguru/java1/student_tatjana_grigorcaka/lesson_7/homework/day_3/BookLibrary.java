@@ -11,8 +11,9 @@ class BookLibrary {
         Book book2 = new Book("The Alchemist ", "Paulo Coelho", 1988, 100);
 
         List<Book> allBooks = new ArrayList<>();
+        //count books
         int size = allBooks.size();
-
+        //add book
         allBooks.add(book1);
         allBooks.add(book2);
 
@@ -32,6 +33,7 @@ class BookLibrary {
             Book book = allBooks.get(i);
             if (book.getTitle().equals(title))
             {
+                System.out.println("RESULT: " + book.getTitle() + " " + title);
                 findTitle.add(book);
             }
         }
@@ -44,6 +46,7 @@ class BookLibrary {
             Book book = allBooks.get(i);
             if (book.getAuthor().equals(author))
             {
+                System.out.println("RESULT: " + book.getAuthor() + " " + author);
                 findAuthor.add(book);
             }
         }
@@ -56,17 +59,22 @@ class BookLibrary {
             Book book = allBooks.get(i);
             if (book.getAuthor().equals(author))
             {
-                System.out.println(book.getAuthor() + " " + author);
+                System.out.println("RESULT: " + book.getAuthor() + " " + author);
                 sum = sum + book.getPage();
             }
         }
         return sum;
     }
 
+    public int countBooks(List<Book> allBooks) {
+        int count = allBooks.size();
+        return count;
+    }
+
     public void removeBook(List<Book> allBooks, String title, String author, int year) {
         for (int i = 0; i < allBooks.size(); i++) {
             Book book = allBooks.get(i);
-            if ((book.getYear() == year) && (book.getTitle().equals(title)) && (book.getAuthor().equals(author)));
+            if ((book.getYear() == year) && (book.getTitle().equals(title)) && (book.getAuthor().equals(author)))
             {
                 allBooks.remove(book);
             }
