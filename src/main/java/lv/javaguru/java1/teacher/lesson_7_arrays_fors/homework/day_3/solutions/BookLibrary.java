@@ -27,4 +27,16 @@ class BookLibrary {
         return foundBooks;
     }
 
+    public List<Book> findBooksByAuthor(String bookAuthorToSearch) {
+        List<Book> foundBooks = new ArrayList<>();
+        for (int i = 0; i < books.size(); i++) {
+            Book book = books.get(i);
+            String author = book.getAuthor();
+            if (author.equals(bookAuthorToSearch)) {
+                foundBooks.add(book);
+            }
+        }
+        return foundBooks;
+    }
+
 }

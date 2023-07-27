@@ -8,9 +8,12 @@ class BookLibraryTest {
         BookLibraryTest test = new BookLibraryTest();
         test.shouldReturnZeroWhenLibraryIsEmpty();
         test.shouldReturnBookCountWhenLibraryIsNotEmpty();
-        test.shouldFoundZeroBooksWhenLibraryIsEmpty();
-        test.shouldFoundOneBook();
-        test.shouldFoundBooks();
+        test.shouldFoundZeroBooksByTitle();
+        test.shouldFoundOneBookByTitle();
+        test.shouldFoundBooksByTitle();
+        test.shouldFoundZeroBooksByAuthor();
+        test.shouldFoundOneBookByAuthor();
+        test.shouldFoundBooksByAuthor();
     }
 
     public void shouldReturnZeroWhenLibraryIsEmpty() {
@@ -27,28 +30,52 @@ class BookLibraryTest {
         checkResult(bookCount, 1, "shouldReturnBookCountWhenLibraryIsNotEmpty");
     }
 
-    public void shouldFoundZeroBooksWhenLibraryIsEmpty() {
+    public void shouldFoundZeroBooksByTitle() {
         BookLibrary bookLibrary = new BookLibrary();
         List<Book> foundBooks = bookLibrary.findBooksByTitle("War");
-        checkResult(foundBooks.size(), 0, "shouldFoundZeroBooksWhenLibraryIsEmpty");
+        checkResult(foundBooks.size(), 0, "shouldFoundZeroBooksByTitle");
     }
 
-    public void shouldFoundOneBook() {
+    public void shouldFoundOneBookByTitle() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book = new Book("War and peace", "Dostoevsky", 1820);
         bookLibrary.addBook(book);
         List<Book> foundBooks = bookLibrary.findBooksByTitle("War and peace");
-        checkResult(foundBooks.size(), 1, "shouldFoundOneBook");
+        checkResult(foundBooks.size(), 1, "shouldFoundOneBookByTitle");
     }
 
-    public void shouldFoundBooks() {
+    public void shouldFoundBooksByTitle() {
         BookLibrary bookLibrary = new BookLibrary();
         Book book1 = new Book("War and peace", "Dostoevsky", 1820);
         bookLibrary.addBook(book1);
         Book book2 = new Book("War and peace", "Dostoevsky", 1820);
         bookLibrary.addBook(book2);
         List<Book> foundBooks = bookLibrary.findBooksByTitle("War and peace");
-        checkResult(foundBooks.size(), 2, "shouldFoundBooks");
+        checkResult(foundBooks.size(), 2, "shouldFoundBooksByTitle");
+    }
+
+    public void shouldFoundZeroBooksByAuthor() {
+        BookLibrary bookLibrary = new BookLibrary();
+        List<Book> foundBooks = bookLibrary.findBooksByAuthor("Dostoevsky");
+        checkResult(foundBooks.size(), 0, "shouldFoundZeroBooksByAuthor");
+    }
+
+    public void shouldFoundOneBookByAuthor() {
+        BookLibrary bookLibrary = new BookLibrary();
+        Book book = new Book("War and peace", "Dostoevsky", 1820);
+        bookLibrary.addBook(book);
+        List<Book> foundBooks = bookLibrary.findBooksByAuthor("Dostoevsky");
+        checkResult(foundBooks.size(), 1, "shouldFoundOneBookByAuthor");
+    }
+
+    public void shouldFoundBooksByAuthor() {
+        BookLibrary bookLibrary = new BookLibrary();
+        Book book1 = new Book("War and peace", "Dostoevsky", 1820);
+        bookLibrary.addBook(book1);
+        Book book2 = new Book("War and peace", "Dostoevsky", 1820);
+        bookLibrary.addBook(book2);
+        List<Book> foundBooks = bookLibrary.findBooksByAuthor("Dostoevsky");
+        checkResult(foundBooks.size(), 2, "shouldFoundBooksByAuthor");
     }
 
 
