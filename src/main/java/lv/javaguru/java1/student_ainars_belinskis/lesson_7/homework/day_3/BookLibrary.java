@@ -75,5 +75,31 @@ class BookLibrary {
         return pageSum;
     }
 
+    public int calculateAuthorPageCount(List<Book> books,
+                                        String author) {
+        List<Book> authorBooks = findBooksByAuthor(books, author);
+        return calculatePageCount(authorBooks);
+    }
+
+    private List<Book> findBooksByAuthor(List<Book> books,
+                                         String author) {
+        List<Book> authorBooks = new ArrayList<>();
+        for (int i = 0; i < books.size(); i++) {
+            Book book = books.get(i);
+            if (book.getBookAuthor().equals(author)) {
+                authorBooks.add(book);
+            }
+        }
+        return authorBooks;
+    }
+
+    private int calculatePageCount(List<Book> books) {
+        int pageCount = 0;
+        for (int i = 0; i < books.size(); i++) {
+            Book book = books.get(i);
+            pageCount += book.getNumberOfPages();
+        }
+        return pageCount;
+    }
 
 }
