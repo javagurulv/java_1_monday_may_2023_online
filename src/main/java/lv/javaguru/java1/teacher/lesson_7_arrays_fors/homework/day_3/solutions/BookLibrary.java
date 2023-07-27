@@ -39,4 +39,16 @@ class BookLibrary {
         return foundBooks;
     }
 
+    public int countPagesByAuthor(String bookAuthorToSearch) {
+        int pageCountByAuthor = 0;
+        for (int i = 0; i < books.size(); i++) {
+            Book book = books.get(i);
+            String author = book.getAuthor();
+            if (author.equals(bookAuthorToSearch)) {
+                pageCountByAuthor += book.getPageCount();
+            }
+        }
+        return pageCountByAuthor;
+    }
+
 }

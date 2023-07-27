@@ -14,6 +14,8 @@ class BookLibraryTest {
         test.shouldFoundZeroBooksByAuthor();
         test.shouldFoundOneBookByAuthor();
         test.shouldFoundBooksByAuthor();
+        test.shouldReturnZeroPagesWhenBooksNotFoundByAuthor();
+        test.shouldCountPagesByAuthor();
     }
 
     public void shouldReturnZeroWhenLibraryIsEmpty() {
@@ -76,6 +78,22 @@ class BookLibraryTest {
         bookLibrary.addBook(book2);
         List<Book> foundBooks = bookLibrary.findBooksByAuthor("Dostoevsky");
         checkResult(foundBooks.size(), 2, "shouldFoundBooksByAuthor");
+    }
+
+    public void shouldReturnZeroPagesWhenBooksNotFoundByAuthor() {
+        BookLibrary bookLibrary = new BookLibrary();
+        int pageCount = bookLibrary.countPagesByAuthor("Dostoevsky");
+        checkResult(pageCount, 0, "shouldReturnZeroPagesWhenBooksNotFoundByAuthor");
+    }
+
+    public void shouldCountPagesByAuthor() {
+        BookLibrary bookLibrary = new BookLibrary();
+        Book book1 = new Book("War and peace", "Dostoevsky", 1000);
+        bookLibrary.addBook(book1);
+        Book book2 = new Book("War and peace", "Dostoevsky", 1000);
+        bookLibrary.addBook(book2);
+        int pageCount = bookLibrary.countPagesByAuthor("Dostoevsky");
+        checkResult(pageCount, 2000, "shouldCountPagesByAuthor");
     }
 
 

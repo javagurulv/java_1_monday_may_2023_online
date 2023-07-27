@@ -4,12 +4,12 @@ class Book {
 
     private String title;
     private String author;
-    private int yearOfIssue;
+    private int pageCount;
 
-    public Book(String title, String author, int yearOfIssue) {
+    public Book(String title, String author, int pageCount) {
         this.title = title;
         this.author = author;
-        this.yearOfIssue = yearOfIssue;
+        this.pageCount = pageCount;
     }
 
     public String getTitle() {
@@ -18,5 +18,9 @@ class Book {
 
     public String getAuthor() {
         return author;
+    }
+
+    public int getPageCount() {
+        return pageCount;
     }
 }
