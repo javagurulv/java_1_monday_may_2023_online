@@ -6,6 +6,6 @@
 
 class BookLibrary {
 
-    private List books = new ArrayList();
+    private List<Book> books = new ArrayList();
 
 }
