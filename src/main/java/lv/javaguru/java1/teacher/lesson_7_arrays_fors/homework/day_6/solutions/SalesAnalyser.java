@@ -2,20 +2,24 @@ package lv.javaguru.java1.teacher.lesson_7_arrays_fors.homework.day_6.solutions;
 
 class SalesAnalyser {
 
-    public String findBestSellingProduct(Sale[] sales) {
-        if ((sales == null) || (sales.length == 0)) {
-            return null;
-        } else {
-            String bestSellingProduct = sales[0].getProduct();
-            int salesCount = calculateSalesUnitCount(sales, bestSellingProduct);
-            for (int i = 0; i < sales.length; i++) {
-                if (calculateSalesUnitCount(sales, sales[i].getProduct()) > salesCount) {
-                    bestSellingProduct = sales[i].getProduct();
-                    salesCount = calculateSalesUnitCount(sales, bestSellingProduct);
-                }
+    public String findBestSellingProductByCount(Sale[] sales) {
+        return isNullOrEmpty(sales) ? null : findBestSellingProductByCountForNotNullSales(sales);
+    }
+
+    public String findBestSellingProductByCountForNotNullSales(Sale[] sales) {
+        String bestSellingProduct = sales[0].getProduct();
+        int salesCount = calculateSalesUnitCount(sales, bestSellingProduct);
+        for (int i = 0; i < sales.length; i++) {
+            if (calculateSalesUnitCount(sales, sales[i].getProduct()) > salesCount) {
+                bestSellingProduct = sales[i].getProduct();
+                salesCount = calculateSalesUnitCount(sales, bestSellingProduct);
             }
-            return bestSellingProduct;
         }
+        return bestSellingProduct;
+    }
+
+    private boolean isNullOrEmpty(Sale[] sales) {
+        return (sales == null) || (sales.length == 0);
     }
 
     private int calculateSalesUnitCount(Sale[] sales, String product) {
