@@ -11,4 +11,8 @@ class BookLibrary {
         books.add(book);
     }
 
+    public int getBookCount() {
+        return books.size();
+    }
+
 }
