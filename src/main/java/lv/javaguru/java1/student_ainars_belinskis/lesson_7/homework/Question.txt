@@ -1,0 +1,19 @@
+//Lesson_6 homework Day_2 SquareEquationTest
+//Последние два теста Faild, как сделать, чтоб реальный результат показывал не больше 5 чисел посли запетой.
+
+//Lesson_6 homework Day_7
+// можно ещё раз вернутся к этому заданию, как правельно тестировать разные нестандартные значения вводимых данных,
+//если ПРАВЕЛЬНЫЙ ОЖИДАЕМЫЙ результат нам не известе (как провести сравнительный анализ)
+// например одна из переменных interest = -10
+    public void interestMin10Test(){
+        CompoundInterestCalculator compoundInterestCalculator = new CompoundInterestCalculator();
+        double interest = -10;
+        double sum = 1000;
+        double year = 2;
+        double result = compoundInterestCalculator.compoundInterest(sum,interest,year);
+        System.out.println("interestMin10Test result is: " + result);
+        checkResult(result, 0,"interestMin10Test");
+    }
+    result:
+ //   interestMin10Test result is: 810.0
+ //   interestMin10Test: TEST FAIL!
