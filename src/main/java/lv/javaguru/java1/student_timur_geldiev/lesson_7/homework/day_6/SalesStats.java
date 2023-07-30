@@ -3,6 +3,7 @@ package lv.javaguru.java1.student_timur_geldiev.lesson_7.homework.day_6;
 import java.util.ArrayList;
 import java.util.List;
 
+// А где тесты ?
 class SalesStats {
 
     public static void main(String[] args) {
