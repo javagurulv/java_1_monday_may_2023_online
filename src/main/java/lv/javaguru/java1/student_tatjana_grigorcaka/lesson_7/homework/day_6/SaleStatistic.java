@@ -17,14 +17,14 @@ class SaleStatistic {
         }
 
         private int calculateSalesUnitCount(Sale[] sales, String product) {
-            int count = 0;
+            int sum = 0;
             for (int i = 0; i < sales.length; i++) {
                Sale sale = sales[i];
                 if (product.equals(sale.getProduct())) {
-                    count += sale.getUnitCount();
+                    sum += sale.getUnitCount();
                 }
             }
-            return count;
+            return sum;
         }
 
         public String findMostProfitableProductBySalesIncomeSum (Sale[]sales){
