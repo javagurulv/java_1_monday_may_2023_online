@@ -18,10 +18,12 @@ class SalaryTaxCalculator {
         return tax;
     }
 
+    // почему этот метод static ?
     private static boolean isSalaryMore50k(double salary) {
         return salary >= 50000;
     }
 
+    // а этот метод не static ?  (я бы предпочёл оба метода не статик)
     private boolean isSalaryUnder50k(double salary) {
         return salary < 50000;
     }
