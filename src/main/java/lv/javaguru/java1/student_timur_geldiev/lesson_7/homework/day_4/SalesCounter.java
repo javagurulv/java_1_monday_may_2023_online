@@ -4,6 +4,10 @@ package lv.javaguru.java1.student_timur_geldiev.lesson_7.homework.day_4;
 import java.util.ArrayList;
 import java.util.List;
 
+
+// Напоминаю, что код и тесты должны быть в разных классах!!!!!!
+// Продакшн код и тесты это две разные вещи и вместе в одном классе они не должны быть!
+// Иначе ваши тесты будут доставлены на прод!
 class SalesCounter {
 
     public static void main(String[] args) {
