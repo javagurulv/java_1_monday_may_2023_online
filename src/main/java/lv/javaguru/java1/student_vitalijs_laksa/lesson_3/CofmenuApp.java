@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_vitalijs_laksa.lesson_3.homework;
+package lv.javaguru.java1.student_vitalijs_laksa.lesson_3;
 
 public class CofmenuApp {
 
@@ -19,7 +19,6 @@ public class CofmenuApp {
         System.out.println(mocha.name + " " + mocha.size + "ml - " + mocha.price + " eur");
         System.out.println(white.name + " " + white.size + "ml - " + white.price + " eur");
         System.out.println(irish.name + " " + irish.size + "ml - " + irish.price + " eur");
-        System.out.println("Привет Жан!");
 
 
     }
