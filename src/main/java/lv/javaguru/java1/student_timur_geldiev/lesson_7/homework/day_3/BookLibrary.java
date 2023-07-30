@@ -27,6 +27,7 @@ public class BookLibrary {
 
     }
 
+    // Лучше public List<Book> findBooksByTitle(List<Book> bookList, String bookTitle) {
     public List<Book> findBookName(List<Book> bookList, String bookTitle) {
         List<Book> foundBook = new ArrayList<>();
         for (int i = 0; i < bookList.size(); i++) {

@@ -5,20 +5,20 @@ class Book {
     private String title;
     private String author;
     private int year;
-    private int page;
+    private int pageCount;
 
-    public Book(String title, String author, int year, int page) {
+    public Book(String title, String author, int year, int pageCount) {
         this.title = title;
         this.author = author;
         this.year = year;
-        this.page = page;
+        this.pageCount = pageCount;
     }
 
     public String getTitle() { return title; }
     public String getAuthor() { return author; }
     public int getYear() { return year; }
 
-    public int getPage() { return page; }
+    public int getPageCount() { return pageCount; }
 
 
 }

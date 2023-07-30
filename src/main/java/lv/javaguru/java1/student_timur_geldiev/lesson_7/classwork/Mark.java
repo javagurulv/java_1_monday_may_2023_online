@@ -3,6 +3,7 @@ package lv.javaguru.java1.student_timur_geldiev.lesson_7.classwork;
 class Mark {
 
     private String subject;
+    private int mark;
 
     public Mark(String subject, int mark) {
         this.subject = subject;
@@ -13,7 +14,6 @@ class Mark {
         return mark;
     }
 
-    private int mark;
 
     public String getSubject() {
         return subject;

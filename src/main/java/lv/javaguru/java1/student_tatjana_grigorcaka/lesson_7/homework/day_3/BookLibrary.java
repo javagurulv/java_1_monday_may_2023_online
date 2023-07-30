@@ -5,78 +5,59 @@ import java.util.ArrayList;
 import java.util.List;
 
 class BookLibrary {
-    public static void main(String[] args) {
+    private List<Book> books = new ArrayList();
 
-        Book book1 = new Book("The Little Prince", "Antoine de Saint-Exupéry", 1943, 50);
-        Book book2 = new Book("The Alchemist ", "Paulo Coelho", 1988, 100);
+   public void addBook(Book book) { books.add(book); }
 
-        List<Book> allBooks = new ArrayList<>();
-        //count books
-        int size = allBooks.size();
-        //add book
-        allBooks.add(book1);
-        allBooks.add(book2);
-
-        for (int i = 0; i < allBooks.size(); i++) {
-            Book book = allBooks.get(i);
-        }
-    }
-
-    private List<Book> allBooks = new ArrayList<>();
-
-   public void addBook(List<Book> allBooks, String title, String author, int year, int page) {
-        allBooks.add(new Book(title, author, year, page)); }
-
-    public List<Book> findBookByTitle(List<Book> allBooks, String title) {
-        List<Book> findTitle = new ArrayList<>();
-        for (int i = 0; i < allBooks.size(); i++) {
-            Book book = allBooks.get(i);
-            if (book.getTitle().equals(title))
+    public List<Book> findBooksByTitle(String bookTitleToSearch) {
+        List<Book> foundBooks = new ArrayList<>();
+        for (int i = 0; i < books.size(); i++) {
+            Book book = books.get(i);
+            String title = book.getTitle();
+            if (title.equals(bookTitleToSearch))
             {
-                System.out.println("RESULT: " + book.getTitle() + " " + title);
-                findTitle.add(book);
+                foundBooks.add(book);
             }
         }
-        return findTitle;
+        return foundBooks;
     }
 
-    public List<Book> findBookByAuthor(List<Book> allBooks, String author) {
-        List<Book> findAuthor = new ArrayList<>();
-        for (int i = 0; i < allBooks.size(); i++) {
-            Book book = allBooks.get(i);
-            if (book.getAuthor().equals(author))
+    public List<Book> findBooksByAuthor(String bookAuthorToSearch) {
+        List<Book> foundBooks = new ArrayList<>();
+        for (int i = 0; i < books.size(); i++) {
+            Book book = books.get(i);
+            String author = book.getAuthor();
+            if (author.equals(bookAuthorToSearch))
             {
-                System.out.println("RESULT: " + book.getAuthor() + " " + author);
-                findAuthor.add(book);
+                foundBooks.add(book);
             }
         }
-        return findAuthor;
+        return foundBooks;
     }
 
-    public int sumPage(List<Book> allBooks, String author) {
-        int sum = 0;
-        for (int i = 0; i < allBooks.size(); i++) {
-            Book book = allBooks.get(i);
-            if (book.getAuthor().equals(author))
+    public int sumPagesByAuthor(String bookAuthorToSearch) {
+        int pageCountByAuthor = 0;
+        for (int i = 0; i < books.size(); i++) {
+            Book book = books.get(i);
+            String author = book.getAuthor();
+            if (author.equals(bookAuthorToSearch))
             {
-                System.out.println("RESULT: " + book.getAuthor() + " " + author);
-                sum = sum + book.getPage();
+               pageCountByAuthor += book.getPageCount();
             }
         }
-        return sum;
+        return pageCountByAuthor;
     }
 
-    public int countBooks(List<Book> allBooks) {
-        int count = allBooks.size();
-        return count;
+    public int getBookCount() {
+        return books.size();
     }
 
-    public void removeBook(List<Book> allBooks, String title, String author, int year) {
-        for (int i = 0; i < allBooks.size(); i++) {
-            Book book = allBooks.get(i);
+    public void removeBook(String title, String author, int year) {
+        for (int i = 0; i < books.size(); i++) {
+            Book book = books.get(i);
             if ((book.getYear() == year) && (book.getTitle().equals(title)) && (book.getAuthor().equals(author)))
             {
-                allBooks.remove(book);
+                books.remove(book);
             }
         }
     }
