@@ -35,6 +35,8 @@ public class PolicyCreatorExample {
                 objects
         );
 
+        System.out.println("sdsdfds");
+
 
     }
 

@@ -17,5 +17,15 @@ public class InsuredSubObject {
         this.risks = risks;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public BigDecimal getSum() {
+        return sum;
+    }
+
+    public List<RiskType> getRisks() {
+        return risks;
+    }
 }

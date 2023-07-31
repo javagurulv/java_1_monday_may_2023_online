@@ -13,5 +13,11 @@ public class InsuredObject {
         this.subObjects = subObjects;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public List<InsuredSubObject> getSubObjects() {
+        return subObjects;
+    }
 }
