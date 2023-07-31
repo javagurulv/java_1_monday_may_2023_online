@@ -45,6 +45,12 @@ public class PremiumCalculator {
         //3.  premium for one object = PREMIUM_FIRE + PREMIUM_THEFT
 
         //4. sum all object premiums
+        for (InsuredObject object : policy.getObjects()) {
+            BigDecimal premiumFire = calculatePremiumFire(object);
+            BigDecimal premiumTheft = calculatePremiumFire(object);
+            premium = premium.add(premiumFire).add(premiumTheft);
+        }
+
         return premium;
     }
 

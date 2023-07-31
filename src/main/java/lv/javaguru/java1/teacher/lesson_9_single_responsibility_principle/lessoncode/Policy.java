@@ -16,5 +16,15 @@ public class Policy {
         this.objects = objects;
     }
 
+    public String getNumber() {
+        return number;
+    }
 
+    public PolicyStatus getPolicyStatus() {
+        return policyStatus;
+    }
+
+    public List<InsuredObject> getObjects() {
+        return objects;
+    }
 }
