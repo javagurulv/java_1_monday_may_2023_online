@@ -3,6 +3,7 @@ package lv.javaguru.java1.student_timur_geldiev.lesson_7.homework.day_7;
 import java.util.ArrayList;
 import java.util.List;
 
+// Почему тесты не в отдельном классе?
 public class StockStats {
 
     public static void main(String[] args) {

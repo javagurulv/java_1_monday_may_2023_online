@@ -1,5 +1,6 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_7.homework.day_5;
 
+// А где тесты ?
 class Salaries {
     public static void main(String[] args) {
 
