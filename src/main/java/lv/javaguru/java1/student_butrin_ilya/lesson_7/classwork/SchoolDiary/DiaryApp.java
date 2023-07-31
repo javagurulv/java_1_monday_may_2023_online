@@ -3,7 +3,7 @@ package lv.javaguru.java1.student_butrin_ilya.lesson_7.classwork.SchoolDiary;
 import java.util.Scanner;
 
 public class DiaryApp {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         int choice;
         Scanner scan = new Scanner(System.in);
         Diary ilyaDiary = new Diary();
@@ -26,6 +26,8 @@ public class DiaryApp {
                         System.out.print("введите оценку ");
                         mark = Integer.parseInt(scan.nextLine());
                         ilyaDiary.addMark(object, mark);
+                        MarkFileSaver save = new MarkFileSaver();
+                        save.saveMarksInFile(ilyaDiary);
                     }
                 } while (!object.equals("exit"));
             }
