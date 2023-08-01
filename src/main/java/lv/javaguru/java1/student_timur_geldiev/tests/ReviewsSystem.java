@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_timur_geldiev.lesson_8.homework.day_5;
+package lv.javaguru.java1.student_timur_geldiev.tests;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,5 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_7.classwork;
 
-import java.util.Scanner;
-
 class SumFromOneToHundredTest {
 
     public static void main(String[] args) {
