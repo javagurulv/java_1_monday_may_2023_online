@@ -87,6 +87,7 @@
 * [Лекция 6 - Unit testing](https://www.youtube.com/watch?v=UlteyfuXG_w)
 * [Лекция 7 - Arrays For](https://www.youtube.com/watch?v=cD25AJiLIpE)
 * [Лекция 8 - Lists for each](https://www.youtube.com/watch?v=vuG5nj2_0lg)
+* [Лекция 9 - Single Responsibility Principle](https://youtu.be/1YIuKW0u-TM)
 
 ---
 
