@@ -35,7 +35,9 @@ public class PolicyCreatorExample {
                 objects
         );
 
-        System.out.println("sdsdfds");
+        PremiumCalculator premiumCalculator = new PremiumCalculator();
+
+        System.out.println(premiumCalculator.calculate(policy));
 
 
     }
