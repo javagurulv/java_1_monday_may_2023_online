@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_9;
+package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_9.lessoncode;
 
 
 import java.math.BigDecimal;
