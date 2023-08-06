@@ -25,7 +25,7 @@ public class PremiumCalculator {
         //4. sum all object premiums
         for (InsuredObject object : policy.getObjects()) {
             BigDecimal premiumFire = calculatePremiumFire(object);
-            BigDecimal premiumTheft = calculatePremiumFire(object);
+            BigDecimal premiumTheft = calculatePremiumTheft(object);
             premium = premium.add(premiumFire).add(premiumTheft);
         }
 
@@ -52,6 +52,28 @@ public class PremiumCalculator {
 
         // 1.3. PREMIUM_FIRE = SUM_INSURED_FIRE * COEFFICIENT_FIRE
         return sumInsuredFire.multiply(coefficientFire);
+    }
+
+    private BigDecimal calculatePremiumTheft(InsuredObject object) {
+        // 1.1. calculate SUM_INSURED_Theft -
+        // sum of all subObject sums what insured from Theft
+        BigDecimal sumInsuredTheft = BigDecimal.ZERO;
+        for (InsuredSubObject subObject : object.getSubObjects()) {
+            List<RiskType> subObjectRisks = subObject.getRisks();
+            if (subObjectRisks.contains(RiskType.THEFT)) {
+                sumInsuredTheft = sumInsuredTheft.add(subObject.getSum());
+            }
+        }
+
+        // 1.2. choice COEFFICIENT_THEFT (0.11 or 0.05)
+        BigDecimal coefficientTheft = new BigDecimal("0.11");
+        BigDecimal moreFifteen = new BigDecimal("15");
+        if (sumInsuredTheft.compareTo(moreFifteen) > 0) {
+            coefficientTheft = new BigDecimal("0.05");
+        }
+
+        // 1.3. PREMIUM_THEFT = SUM_INSURED_THEFT * COEFFICIENT_THEFT
+        return sumInsuredTheft.multiply(coefficientTheft);
     }
 
 
