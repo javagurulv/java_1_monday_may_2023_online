@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_8.day_2;
+package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_8.homework.day_2;
 
 import java.util.ArrayList;
 import java.util.List;
