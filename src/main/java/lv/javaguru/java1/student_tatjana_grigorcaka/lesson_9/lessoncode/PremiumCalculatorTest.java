@@ -12,6 +12,8 @@ class PremiumCalculatorTest {
         test.testCalculatePremiumOneSubObjectOneObjectV1();
         test.testCalculatePremiumTwoSubObjectsOneObjectV2();
         test.testCalculatePremiumFourSubObjectsTwoObjectsV3();
+        test.testCalculatePremiumTwoSubObjectsOneObjectAcceptanceCriteriaCaseOneV4();
+        test.testCalculatePremiumTwoSubObjectsOneObjectAcceptanceCriteriaCaseTwoV5();
     }
 
         public void testCalculatePremiumOneSubObjectOneObjectV1() {
@@ -37,7 +39,7 @@ class PremiumCalculatorTest {
             BigDecimal premium = premiumCalculator.calculate(new Policy("LV20-02-100000-5",
                     PolicyStatus.REGISTERED,
                     objects));
-            checkResult(premium, new BigDecimal( "24.01200"),"testCalculatePremiumOneSubObjectOneObjectV1");
+            checkResult(premium, new BigDecimal( "24.01"),"testCalculatePremiumOneSubObjectOneObjectV1");
         }
 
     public void testCalculatePremiumTwoSubObjectsOneObjectV2() {
@@ -70,7 +72,7 @@ class PremiumCalculatorTest {
         BigDecimal premium = premiumCalculator.calculate(new Policy("LV20-02-100000-5",
                 PolicyStatus.REGISTERED,
                 objects));
-        checkResult(premium, new BigDecimal( "61.01200"),"testCalculatePremiumTwoSubObjectsOneObjectV2");
+        checkResult(premium, new BigDecimal( "61.01"),"testCalculatePremiumTwoSubObjectsOneObjectV2");
     }
 
     public void testCalculatePremiumFourSubObjectsTwoObjectsV3() {
@@ -125,11 +127,78 @@ class PremiumCalculatorTest {
         BigDecimal premium = premiumCalculator.calculate(new Policy("LV20-02-100000-5",
                 PolicyStatus.REGISTERED,
                 objects));
-        checkResult(premium, new BigDecimal( "225.81200"),"testCalculatePremiumFourSubObjectsTwoObjectsV3");
+        checkResult(premium, new BigDecimal( "225.81"),"testCalculatePremiumFourSubObjectsTwoObjectsV3");
+    }
+
+    public void testCalculatePremiumTwoSubObjectsOneObjectAcceptanceCriteriaCaseOneV4() {
+        PremiumCalculator premiumCalculator = new PremiumCalculator();
+        InsuredSubObject blender = new InsuredSubObject(
+                "Blender",
+                new BigDecimal("100.00"),
+                List.of(RiskType.FIRE)
+        );
+
+        InsuredSubObject wallClock = new InsuredSubObject(
+                "Wall Clock",
+                new BigDecimal("8.00"),
+                List.of(RiskType.THEFT)
+        );
+
+        List<InsuredSubObject> subObjects = new ArrayList();
+        subObjects.add(blender);
+        subObjects.add(wallClock);
+
+        InsuredObject object1 = new InsuredObject(
+                "House1",
+                subObjects
+        );
+
+        List<InsuredObject> objects = new ArrayList();
+        objects.add(object1);
+
+
+        BigDecimal premium = premiumCalculator.calculate(new Policy("LV20-02-100000-5",
+                PolicyStatus.REGISTERED,
+                objects));
+        checkResult(premium, new BigDecimal( "2.28"),"testCalculatePremiumTwoSubObjectsOneObjectAcceptanceCriteriaCaseOneV4");
+    }
+
+    public void testCalculatePremiumTwoSubObjectsOneObjectAcceptanceCriteriaCaseTwoV5() {
+        PremiumCalculator premiumCalculator = new PremiumCalculator();
+        InsuredSubObject washingMachine = new InsuredSubObject(
+                "Washing Machine",
+                new BigDecimal("500.00"),
+                List.of(RiskType.FIRE)
+        );
+
+        InsuredSubObject blender = new InsuredSubObject(
+                "Blender",
+                new BigDecimal("102.51"),
+                List.of(RiskType.THEFT)
+        );
+
+        List<InsuredSubObject> subObjects = new ArrayList();
+        subObjects.add(washingMachine);
+        subObjects.add(blender);
+
+        InsuredObject object1 = new InsuredObject(
+                "House1",
+                subObjects
+        );
+
+        List<InsuredObject> objects = new ArrayList();
+        objects.add(object1);
+
+
+        BigDecimal premium = premiumCalculator.calculate(new Policy("LV20-02-100000-5",
+                PolicyStatus.REGISTERED,
+                objects));
+        checkResult(premium, new BigDecimal( "17.13"),"testCalculatePremiumTwoSubObjectsOneObjectAcceptanceCriteriaCaseTwoV5");
     }
 
 
-        private void checkResult (BigDecimal realResult,
+
+    private void checkResult (BigDecimal realResult,
                                   BigDecimal expectedResult,
         String testScenarioName) {
             if (realResult.equals(expectedResult)) {

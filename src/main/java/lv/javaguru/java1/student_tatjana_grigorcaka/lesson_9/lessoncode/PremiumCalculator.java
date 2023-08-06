@@ -2,6 +2,7 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_9.lessoncode;
 
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.List;
 
 class PremiumCalculator {
@@ -27,7 +28,10 @@ class PremiumCalculator {
             BigDecimal premiumFire = calculatePremiumFire(object);
             BigDecimal premiumTheft = calculatePremiumTheft(object);
             premium = premium.add(premiumFire).add(premiumTheft);
+            premium = new
+                    BigDecimal(String.valueOf(premium)).setScale(2, RoundingMode.HALF_UP);
         }
+
         return premium;
     }
 
