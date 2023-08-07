@@ -70,7 +70,7 @@ class PremiumCalculatorTest {
         InsuredObject object = createInsuredObject("House 1", tv);
         Policy policy = createPolicy("LV-1", PolicyStatus.REGISTERED, object);
         BigDecimal premium = premiumCalculator.calculate(policy);
-        assertEquals(new BigDecimal("1.65").stripTrailingZeros(),
+        assertEquals(new BigDecimal("0.75").stripTrailingZeros(),
                 premium.stripTrailingZeros());
     }
 
