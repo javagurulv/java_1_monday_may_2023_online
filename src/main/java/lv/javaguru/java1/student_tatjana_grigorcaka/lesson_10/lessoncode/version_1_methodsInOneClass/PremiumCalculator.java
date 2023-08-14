@@ -1,30 +1,26 @@
-package lv.javaguru.java1.teacher.lesson_11_interfaces.lessoncode;
+package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_10.lessoncode.version_1_methodsInOneClass;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.List;
+class PremiumCalculator {
 
-public class PremiumCalculator {
+    private static final  BigDecimal DEFAULT_COEFFICIENT_THEFT = new BigDecimal("0.11");
+    private static final  BigDecimal COEFFICIENT_THEFT = new BigDecimal("0.05");
+    private static final  BigDecimal SUM_INSURED_THEFT_THRESHOLD = new BigDecimal("15");
 
-    private static final BigDecimal DEFAULT_COEFFICIENT_THEFT = new BigDecimal("0.11");
-    private static final BigDecimal COEFFICIENT_THEFT = new BigDecimal("0.05");
-    private static final BigDecimal SUM_INSURED_THEFT_THRESHOLD = new BigDecimal("15");
-
-    private static final BigDecimal DEFAULT_COEFFICIENT_FIRE = new BigDecimal("0.014");
-    private static final BigDecimal COEFFICIENT_FIRE = new BigDecimal("0.024");
-    private static final BigDecimal SUM_INSURED_FIRE_THRESHOLD = new BigDecimal("100");
-
-
-    // new risk type
-    // coefficient change
-    // show client premium parts
-    // skindki
+    private static final  BigDecimal DEFAULT_COEFFICIENT_FIRE = new BigDecimal("0.014");
+    private static final  BigDecimal COEFFICIENT_FIRE = new BigDecimal("0.024");
+    private static final  BigDecimal SUM_INSURED_FIRE_THRESHOLD = new BigDecimal("100");
 
     public BigDecimal calculate(Policy policy) {
-        BigDecimal premium = BigDecimal.ZERO;
-        for (InsuredObject object : policy.getObjects()) {
-            BigDecimal insuredObjectPremium = calculateInsuredObjectPremium(object);
-            premium = premium.add(insuredObjectPremium);
-        }
+    BigDecimal premium = BigDecimal.ZERO;
+    for(InsuredObject object : policy.getObjects()) {
+        BigDecimal insuredObjectPremium = calculateInsuredObjectPremium(object);
+        premium = premium.add(insuredObjectPremium);
+        premium = new
+                BigDecimal(String.valueOf(premium)).setScale(2, RoundingMode.HALF_UP);
+    }
         return premium;
     }
 
@@ -40,17 +36,27 @@ public class PremiumCalculator {
         return sumInsuredFire.multiply(coefficientFire);
     }
 
+
+
     private BigDecimal selectCoefficientFire(BigDecimal sumInsuredFire) {
         return sumInsuredFire.compareTo(SUM_INSURED_FIRE_THRESHOLD) > 0
-                ?  COEFFICIENT_FIRE
-                :  DEFAULT_COEFFICIENT_FIRE;
+                ? COEFFICIENT_FIRE
+                : DEFAULT_COEFFICIENT_FIRE;
+/*
+        BigDecimal coefficientFire = new BigDecimal("0.014");
+        BigDecimal oneHundred = new BigDecimal ("100");
+        if (sumInsuredFire.compareTo(oneHundred) > 0 ) {
+            coefficientFire = new BigDecimal("0.024");
+        }
+        return coefficientFire;
+ */
     }
 
     private BigDecimal calculateSumInsuredFire(InsuredObject object) {
         BigDecimal sumInsuredFire = BigDecimal.ZERO;
         for (InsuredSubObject subObject : object.getSubObjects()) {
             List<RiskType> subObjectRisks = subObject.getRisks();
-            if (subObjectRisks.contains(RiskType.FIRE)) {
+            if(subObjectRisks.contains(RiskType.FIRE)) {
                 sumInsuredFire = sumInsuredFire.add(subObject.getSum());
             }
         }
@@ -65,15 +71,22 @@ public class PremiumCalculator {
 
     private BigDecimal selectCoefficientTheft(BigDecimal sumInsuredTheft) {
         return sumInsuredTheft.compareTo(SUM_INSURED_THEFT_THRESHOLD) >= 0
-                ?  COEFFICIENT_THEFT
-                :  DEFAULT_COEFFICIENT_THEFT;
+                ? COEFFICIENT_THEFT
+                : DEFAULT_COEFFICIENT_THEFT;
+/*
+        BigDecimal coefficientTheft = DEFAULT_COEFFICIENT_THEFT;
+        if (sumInsuredTheft.compareTo(SUM_INSURED_THEFT_THRESHOLD) >= 0 ) {
+            coefficientTheft = COEFFICIENT_THEFT;
+        }
+        return coefficientTheft;
+ */
     }
 
     private BigDecimal calculateSumInsuredTheft(InsuredObject object) {
         BigDecimal sumInsuredTheft = BigDecimal.ZERO;
         for (InsuredSubObject subObject : object.getSubObjects()) {
             List<RiskType> subObjectRisks = subObject.getRisks();
-            if (subObjectRisks.contains(RiskType.THEFT)) {
+            if(subObjectRisks.contains(RiskType.THEFT)) {
                 sumInsuredTheft = sumInsuredTheft.add(subObject.getSum());
             }
         }

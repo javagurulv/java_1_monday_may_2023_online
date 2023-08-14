@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_9.lessoncode;
+package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_10.lessoncode.version_1_methodsInOneClass;
 
 
 import java.math.BigDecimal;
@@ -9,18 +9,18 @@ class PremiumCalculatorTest {
     public static void main(String[] args) {
 
         PremiumCalculatorTest test = new PremiumCalculatorTest();
-        test.testCalculatePremiumOneObjectOneSubObjectFireSumInjuredUnder100();
-        test.testCalculatePremiumOneObjectOneSubObjectFireSumInjured100();
-        test.testCalculatePremiumOneObjectOneSubObjectFireSumInjuredOver100();
-        test.testCalculatePremiumOneObjectTwoSubObjectsFireSumInjuredOver100();
-        test.testCalculatePremiumOneObjectOneSubObjectTheftSumInjuredUnder15();
-        test.testCalculatePremiumOneObjectOneSubObjectTheftSumInjured15();
-        test.testCalculatePremiumOneObjectOneSubObjectTheftSumInjuredOver15();
-        test.testCalculatePremiumOneObjectTwoSubObjectsTheftSumInjuredOver15();
+        test.testCalculatePremiumOneObjectOneSubObjectFireSumInsuredUnder100();
+        test.testCalculatePremiumOneObjectOneSubObjectFireSumInsured100();
+        test.testCalculatePremiumOneObjectOneSubObjectFireSumInsuredOver100();
+        test.testCalculatePremiumOneObjectTwoSubObjectsFireSumInsuredOver100();
+        test.testCalculatePremiumOneObjectOneSubObjectTheftSumInsuredUnder15();
+        test.testCalculatePremiumOneObjectOneSubObjectTheftSumInsured15();
+        test.testCalculatePremiumOneObjectOneSubObjectTheftSumInsuredOver15();
+        test.testCalculatePremiumOneObjectTwoSubObjectsTheftSumInsuredOver15();
         test.testCalculatePremiumTwoObjectsTwoSubObjectsFireTheft();
     }
 
-    public void testCalculatePremiumOneObjectOneSubObjectFireSumInjuredUnder100() {
+    public void testCalculatePremiumOneObjectOneSubObjectFireSumInsuredUnder100() {
         PremiumCalculator premiumCalculator = new PremiumCalculator();
         InsuredSubObject tv = new InsuredSubObject("TV", new BigDecimal("99.50"), List.of(RiskType.FIRE));
         List<InsuredSubObject> subObjects = new ArrayList();
@@ -34,7 +34,7 @@ class PremiumCalculatorTest {
         checkResult(premium, new BigDecimal( "1.39"),"testCalculatePremiumOneObjectOneSubObjectFireSumInjuredUnder100");
         }
 
-    public void testCalculatePremiumOneObjectOneSubObjectFireSumInjured100() {
+    public void testCalculatePremiumOneObjectOneSubObjectFireSumInsured100() {
         PremiumCalculator premiumCalculator = new PremiumCalculator();
         InsuredSubObject tv = new InsuredSubObject("TV", new BigDecimal("100.00"), List.of(RiskType.FIRE));
         List<InsuredSubObject> subObjects = new ArrayList();
@@ -48,21 +48,21 @@ class PremiumCalculatorTest {
         checkResult(premium, new BigDecimal( "1.40"),"testCalculatePremiumOneObjectOneSubObjectFireSumInjured100");
     }
 
-    public void testCalculatePremiumOneObjectOneSubObjectFireSumInjuredOver100() {
+    public void testCalculatePremiumOneObjectOneSubObjectFireSumInsuredOver100() {
         PremiumCalculator premiumCalculator = new PremiumCalculator();
-        InsuredSubObject tv = new InsuredSubObject("TV", new BigDecimal("1000.50"), List.of(RiskType.FIRE));
+       InsuredSubObject tv = new InsuredSubObject("TV", new BigDecimal("1000.50"), List.of(RiskType.FIRE));
         List<InsuredSubObject> subObjects = new ArrayList();
         subObjects.add(tv);
 
-        InsuredObject object1 = new InsuredObject("House1", subObjects);
+       InsuredObject object1 = new InsuredObject("House1", subObjects);
         List<InsuredObject> objects = new ArrayList();
         objects.add(object1);
 
-        BigDecimal premium = premiumCalculator.calculate(new Policy("LV20-02-100000-5", PolicyStatus.REGISTERED, objects));
+        BigDecimal premium = premiumCalculator.calculate(new Policy("LV20-02-100000-5",PolicyStatus.REGISTERED, objects));
         checkResult(premium, new BigDecimal( "24.01"),"testCalculatePremiumOneObjectOneSubObjectFireSumInjuredOver100");
     }
 
-    public void testCalculatePremiumOneObjectTwoSubObjectsFireSumInjuredOver100() {
+    public void testCalculatePremiumOneObjectTwoSubObjectsFireSumInsuredOver100() {
         PremiumCalculator premiumCalculator = new PremiumCalculator();
         InsuredSubObject tv = new InsuredSubObject("TV", new BigDecimal("1000.50"), List.of(RiskType.FIRE));
         InsuredSubObject fridge = new InsuredSubObject("Fridge", new BigDecimal("500.00"), List.of(RiskType.FIRE));
@@ -79,8 +79,8 @@ class PremiumCalculatorTest {
     }
 
 
-    public void testCalculatePremiumOneObjectOneSubObjectTheftSumInjuredUnder15() {
-        PremiumCalculator premiumCalculator = new PremiumCalculator();
+    public void testCalculatePremiumOneObjectOneSubObjectTheftSumInsuredUnder15() {
+       PremiumCalculator premiumCalculator = new PremiumCalculator();
         InsuredSubObject wallClock = new InsuredSubObject("Wall Clock", new BigDecimal("8.00"), List.of(RiskType.THEFT));
         List<InsuredSubObject> subObjects = new ArrayList();
         subObjects.add(wallClock);
@@ -94,7 +94,7 @@ class PremiumCalculatorTest {
         checkResult(premium, new BigDecimal( "0.88"),"testCalculatePremiumOneObjectOneSubObjectTheftSumInjuredUnder15");
     }
 
-    public void testCalculatePremiumOneObjectOneSubObjectTheftSumInjured15() {
+    public void testCalculatePremiumOneObjectOneSubObjectTheftSumInsured15() {
         PremiumCalculator premiumCalculator = new PremiumCalculator();
         InsuredSubObject wallClock = new InsuredSubObject("Wall Clock", new BigDecimal("15.00"), List.of(RiskType.THEFT));
         List<InsuredSubObject> subObjects = new ArrayList();
@@ -106,10 +106,10 @@ class PremiumCalculatorTest {
 
 
         BigDecimal premium = premiumCalculator.calculate(new Policy("LV20-02-100000-5", PolicyStatus.REGISTERED, objects));
-        checkResult(premium, new BigDecimal( "1.65"),"testCalculatePremiumOneObjectOneSubObjectTheftSumInjured15");
+        checkResult(premium, new BigDecimal( "0.75"),"testCalculatePremiumOneObjectOneSubObjectTheftSumInjured15");
     }
 
-    public void testCalculatePremiumOneObjectOneSubObjectTheftSumInjuredOver15() {
+    public void testCalculatePremiumOneObjectOneSubObjectTheftSumInsuredOver15() {
         PremiumCalculator premiumCalculator = new PremiumCalculator();
         InsuredSubObject blender = new InsuredSubObject("Blender", new BigDecimal("50.51"), List.of(RiskType.THEFT));
         List<InsuredSubObject> subObjects = new ArrayList();
@@ -123,7 +123,7 @@ class PremiumCalculatorTest {
         checkResult(premium, new BigDecimal( "2.53"),"testCalculatePremiumOneObjectOneSubObjectTheftSumInjuredOver15");
     }
 
-    public void testCalculatePremiumOneObjectTwoSubObjectsTheftSumInjuredOver15() {
+    public void testCalculatePremiumOneObjectTwoSubObjectsTheftSumInsuredOver15() {
         PremiumCalculator premiumCalculator = new PremiumCalculator();
         InsuredSubObject wallClock = new InsuredSubObject("Wall Clock", new BigDecimal("35.00"), List.of(RiskType.THEFT));
         InsuredSubObject blender = new InsuredSubObject("Blender", new BigDecimal("50.51"), List.of(RiskType.THEFT));
