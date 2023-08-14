@@ -44,14 +44,6 @@ public class PremiumCalculator {
         return sumInsuredFire.compareTo(SUM_INSURED_FIRE_THRESHOLD) > 0
                 ?  COEFFICIENT_FIRE
                 :  DEFAULT_COEFFICIENT_FIRE;
-/*
-        BigDecimal oneHundred = new BigDecimal("100");
-        BigDecimal coefficentFire = new BigDecimal("0.014");
-        if (sumInsuredFire.compareTo(oneHundred) > 0) {
-            coefficentFire = new BigDecimal("0.024");
-        }
-        return coefficentFire;
-*/
     }
 
     private BigDecimal calculateSumInsuredFire(InsuredObject object) {
@@ -75,13 +67,6 @@ public class PremiumCalculator {
         return sumInsuredTheft.compareTo(SUM_INSURED_THEFT_THRESHOLD) >= 0
                 ?  COEFFICIENT_THEFT
                 :  DEFAULT_COEFFICIENT_THEFT;
-/*
-        BigDecimal coefficentTheft = DEFAULT_COEFFICIENT_THEFT;
-        if (sumInsuredTheft.compareTo(SUM_INSURED_THEFT_THRESHOLD) > 0) {
-            coefficentTheft = COEFFICIENT_THEFT;
-        }
-        return coefficentTheft;
-*/
     }
 
     private BigDecimal calculateSumInsuredTheft(InsuredObject object) {
