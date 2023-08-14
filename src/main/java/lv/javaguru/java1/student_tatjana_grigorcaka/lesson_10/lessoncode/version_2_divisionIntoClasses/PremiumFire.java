@@ -5,6 +5,7 @@ import java.util.List;
 
 class PremiumFire {
 
+/*
     private static final  BigDecimal DEFAULT_COEFFICIENT_FIRE = new BigDecimal("0.014");
     private static final  BigDecimal COEFFICIENT_FIRE = new BigDecimal("0.024");
     private static final  BigDecimal SUM_INSURED_FIRE_THRESHOLD = new BigDecimal("100");
@@ -20,6 +21,7 @@ class PremiumFire {
         return sumInsuredFire.compareTo(SUM_INSURED_FIRE_THRESHOLD) > 0
                 ? COEFFICIENT_FIRE
                 : DEFAULT_COEFFICIENT_FIRE;
+*/
 /*
         BigDecimal coefficientFire = new BigDecimal("0.014");
         BigDecimal oneHundred = new BigDecimal ("100");
@@ -27,7 +29,8 @@ class PremiumFire {
             coefficientFire = new BigDecimal("0.024");
         }
         return coefficientFire;
- */
+ *//*
+
     }
 
     private static BigDecimal calculateSumInsuredFire(InsuredObject object) {
@@ -40,5 +43,6 @@ class PremiumFire {
         }
         return sumInsuredFire;
     }
+*/
 
 }

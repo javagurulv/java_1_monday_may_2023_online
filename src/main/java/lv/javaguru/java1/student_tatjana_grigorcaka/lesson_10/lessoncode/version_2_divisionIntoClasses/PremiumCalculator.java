@@ -4,12 +4,15 @@ package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_10.lessoncode.versio
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+/*
 import static lv.javaguru.java1.student_tatjana_grigorcaka.lesson_10.lessoncode.version_2_divisionIntoClasses.PremiumFire.calculatePremiumFire;
 import static lv.javaguru.java1.student_tatjana_grigorcaka.lesson_10.lessoncode.version_2_divisionIntoClasses.PremiumTheft.calculatePremiumTheft;
+*/
 
 
 class PremiumCalculator {
 
+/*
     public BigDecimal calculate(Policy policy) {
         BigDecimal premium = BigDecimal.ZERO;
         for (InsuredObject object : policy.getObjects()) {
@@ -26,6 +29,7 @@ class PremiumCalculator {
             BigDecimal premiumTheft = calculatePremiumTheft(object);
             return premiumFire.add(premiumTheft);
         }
+*/
 
 }
 

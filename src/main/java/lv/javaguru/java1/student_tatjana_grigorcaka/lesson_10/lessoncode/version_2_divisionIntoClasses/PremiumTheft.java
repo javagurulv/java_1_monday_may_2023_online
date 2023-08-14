@@ -5,6 +5,7 @@ import java.util.List;
 
 class PremiumTheft {
 
+/*
     private static final BigDecimal DEFAULT_COEFFICIENT_THEFT = new BigDecimal("0.11");
     private static final  BigDecimal COEFFICIENT_THEFT = new BigDecimal("0.05");
     private static final  BigDecimal SUM_INSURED_THEFT_THRESHOLD = new BigDecimal("15");
@@ -21,13 +22,15 @@ class PremiumTheft {
         return sumInsuredTheft.compareTo(SUM_INSURED_THEFT_THRESHOLD) >= 0
                 ? COEFFICIENT_THEFT
                 : DEFAULT_COEFFICIENT_THEFT;
+*/
 /*
         BigDecimal coefficientTheft = DEFAULT_COEFFICIENT_THEFT;
         if (sumInsuredTheft.compareTo(SUM_INSURED_THEFT_THRESHOLD) >= 0 ) {
             coefficientTheft = COEFFICIENT_THEFT;
         }
         return coefficientTheft;
- */
+ *//*
+
     }
 
     private static BigDecimal calculateSumInsuredTheft(InsuredObject object) {
@@ -40,4 +43,5 @@ class PremiumTheft {
         }
         return sumInsuredTheft;
     }
+*/
 }
