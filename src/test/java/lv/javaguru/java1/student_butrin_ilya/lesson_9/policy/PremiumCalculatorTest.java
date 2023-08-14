@@ -16,7 +16,9 @@ class PremiumCalculatorTest {
         Object home1 = new Object("home", List.of(tv));
         Policy policy = new Policy("1 - lv - 456", StatusPolicy.ACTIVE, List.of(home1));
         BigDecimal premium = premiumCalculator.calculate(policy);
-        assertEquals(new BigDecimal(0.14), premium.setScale(2, RoundingMode.HALF_DOWN));
+        assertEquals(
+                new BigDecimal(0.14).setScale(2, RoundingMode.HALF_DOWN),
+                premium);
     }
     @Test
     public void test2 (){
