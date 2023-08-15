@@ -10,7 +10,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class PremiumCalculatorTest {
+class PremiumCalculatorImplTest {
     private static Policy policy;
 
     @BeforeEach

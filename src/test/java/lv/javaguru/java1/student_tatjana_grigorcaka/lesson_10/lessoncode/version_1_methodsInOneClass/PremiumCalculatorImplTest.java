@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PremiumCalculatorTest {
+class PremiumCalculatorImplTest {
 
     private PremiumCalculator premiumCalculator = new PremiumCalculator();
 

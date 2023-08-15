@@ -1,5 +1,7 @@
-package lv.javaguru.java1.teacher.lesson_11_interfaces.lessoncode;
+package lv.javaguru.java1.teacher.lesson_11_interfaces.lessoncode.v1;
 
+import lv.javaguru.java1.teacher.lesson_11_interfaces.lessoncode.*;
+import lv.javaguru.java1.teacher.lesson_11_interfaces.lessoncode.v1.PremiumCalculatorImpl;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
@@ -7,9 +9,9 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PremiumCalculatorTest {
+class PremiumCalculatorImplTest {
 
-    private PremiumCalculator premiumCalculator = new PremiumCalculator();
+    private PremiumCalculatorImpl premiumCalculator = new PremiumCalculatorImpl();
 
     // CI/CD - Continues Integration / Continues Delivery
 
