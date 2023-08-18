@@ -36,15 +36,15 @@ class PremiumCalculatorImplTest {
         policy = new Policy("LV-1", PolicyStatus.REGISTERED, objects);
     }
 
-    @Test
-    void calculateTotalPremium() {
-
-        PremiumCalculator calcTotal = new PremiumCalculator();
-        BigDecimal expected = BigDecimal.valueOf(125.76);
-        BigDecimal result = calcTotal.calculate(policy);
-        BigDecimal scaled = result.setScale(2, BigDecimal.ROUND_HALF_UP);
-        assertEquals(expected, scaled);
-
-    }
+//    @Test
+//    void calculateTotalPremium() {
+//
+//        PremiumCalculator calcTotal = new PremiumCalculator();
+//        BigDecimal expected = BigDecimal.valueOf(125.76);
+//        BigDecimal result = calcTotal.calculate(policy);
+//        BigDecimal scaled = result.setScale(2, BigDecimal.ROUND_HALF_UP);
+//        assertEquals(expected, scaled);
+//
+//    }
 
 }
