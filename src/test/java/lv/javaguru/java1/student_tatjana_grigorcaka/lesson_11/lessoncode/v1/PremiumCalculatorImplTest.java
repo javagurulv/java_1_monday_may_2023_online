@@ -1,6 +1,6 @@
-package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_10.lessoncode.version_2_divisionIntoClasses;
+package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_11.lessoncode.v1;
 
-
+import lv.javaguru.java1.student_tatjana_grigorcaka.lesson_11.lessoncode.*;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
@@ -8,10 +8,9 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PremiumCalculatorTest {
+class PremiumCalculatorImplTest {
 
-/*
-    private PremiumCalculator premiumCalculator = new PremiumCalculator();
+    private PremiumCalculatorImpl premiumCalculator = new PremiumCalculatorImpl();
 
     @Test
     public void oneObjectOneSubObjectFireSumInsuredUnder100() {
@@ -25,7 +24,7 @@ class PremiumCalculatorTest {
     }
     @Test
     public void oneObjectOneSubObjectFireSumInsured100() {
-        InsuredSubObject tv = createSubObject("TV", "100.00",RiskType.FIRE);
+        InsuredSubObject tv = createSubObject("TV", "100.00", RiskType.FIRE);
         InsuredObject object = createInsuredObject("House 1", tv);
         Policy policy = createPolicy("LV20-02-100000-5", PolicyStatus.REGISTERED, object);
         BigDecimal premium = premiumCalculator.calculate(policy);
@@ -96,7 +95,7 @@ class PremiumCalculatorTest {
 
     private static Policy createPolicy(String number,
                                        PolicyStatus status,
-                                       InsuredObject... objects) {
+                                       InsuredObject ... objects) {
         return new Policy(
                 number,
                 status,
@@ -104,7 +103,8 @@ class PremiumCalculatorTest {
         );
     }
 
-    private static InsuredObject createInsuredObject(String name, InsuredSubObject... subObjects) {
+    private static InsuredObject createInsuredObject(String name,
+                                                     InsuredSubObject ... subObjects) {
         return new InsuredObject(
                 name,
                 Arrays.stream(subObjects).toList()
@@ -113,12 +113,12 @@ class PremiumCalculatorTest {
 
     private static InsuredSubObject createSubObject(String name,
                                                     String sumInsured,
-                                                    RiskType... riskTypes) {
+                                                    RiskType ... riskTypes) {
         return new InsuredSubObject(
                 name,
                 new BigDecimal(sumInsured),
                 Arrays.stream(riskTypes).toList()
         );
     }
-*/
+
 }

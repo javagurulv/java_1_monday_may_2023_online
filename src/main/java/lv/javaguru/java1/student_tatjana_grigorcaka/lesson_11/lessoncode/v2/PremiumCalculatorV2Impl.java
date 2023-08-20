@@ -8,6 +8,9 @@ import java.util.List;
 
 public class PremiumCalculatorV2Impl implements PremiumCalculator {
 
+    private FireRiskPremiumCalculator fireRiskPremiumCalculator  = new FireRiskPremiumCalculator();
+    private TheftRiskPremiumCalculator theftRiskPremiumCalculator  = new TheftRiskPremiumCalculator();
+
     @Override
     public BigDecimal calculate(Policy policy) {
         BigDecimal premium = BigDecimal.ZERO;
@@ -21,9 +24,8 @@ public class PremiumCalculatorV2Impl implements PremiumCalculator {
     }
 
     private BigDecimal calculateInsuredObjectPremium(InsuredObject object) {
-        FireRiskPremiumCalculator fireRiskPremiumCalculator  = new FireRiskPremiumCalculator();
+
         BigDecimal premiumFire = fireRiskPremiumCalculator.calculatePremiumFire(object);
-        TheftRiskPremiumCalculator theftRiskPremiumCalculator  = new TheftRiskPremiumCalculator();
         BigDecimal premiumTheft = theftRiskPremiumCalculator.calculatePremiumTheft(object);
         return premiumFire.add(premiumTheft);
     }
