@@ -71,20 +71,15 @@ class BookLibraryTest {
         }
     }
     public void pageCountByAuthor(List<Book>books) {
-        public void pageCountByAuthor(List<Book>books) {
-            BookLibrary bookLibrary = new BookLibrary();
-            int realResult = 270;
-            int expectedResult = bookLibrary.pageCountByAuthor("");
-            if (realResult == expectedResult) {
-                System.out.println("Page count by author test = OK");
-            }
-            else {
-                System.out.println("Page count by author test = FAIL");
-            }
+        BookLibrary bookLibrary = new BookLibrary();
+        int realResult = 270;
+        int expectedResult = bookLibrary.pageCountByAuthor(books, "");
+        if (realResult == expectedResult) {
+            System.out.println("Page count by author test = OK");
         }
-
+        else {
+            System.out.println("Page count by author test = FAIL");
+        }
     }
-
-
 
 }
