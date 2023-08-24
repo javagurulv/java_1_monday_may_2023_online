@@ -16,9 +16,7 @@ public class PremiumCalculatorV2Impl implements PremiumCalculator {
         BigDecimal premium = BigDecimal.ZERO;
         for (InsuredObject object : policy.getObjects()) {
             BigDecimal insuredObjectPremium = calculateInsuredObjectPremium(object);
-            premium = premium.add(insuredObjectPremium);
-            premium = new
-                    BigDecimal(String.valueOf(premium)).setScale(2, RoundingMode.HALF_UP);
+            premium = premium.add(insuredObjectPremium).setScale(2, RoundingMode.HALF_DOWN);
         }
         return premium;
     }
