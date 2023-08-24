@@ -5,7 +5,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 class BookLibrary {
-    private List<Book> books = new ArrayList();
+    private List<Book> books;
+
+    public BookLibrary(List<Book> books) {
+        this.books = books;
+    }
+
+    public int booksQuantity() {
+        return books.size();
+    }
 
     public List<Book> bookSearchByTitle(String name) {
         List<Book> bookSearch = new ArrayList<>();
@@ -29,7 +37,7 @@ class BookLibrary {
         return bookSearch;
     }
 
-    public int pageCountByAuthor(List<Book>books, String author) {
+    public int pageCountByAuthor(String author) {
         int pageCount = 0;
         for (int i = 0; i < books.size(); i++) {
             Book book = books.get(i);

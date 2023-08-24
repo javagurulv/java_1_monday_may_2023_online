@@ -22,48 +22,34 @@ class BookLibraryTest {
         bookLibraryTest.pageCountByAuthor(book);
 
     }
-    public void booksQuantity(List<Book>books) {
-        int realdResult = 2;
-        int actualResult = books.size();
-        if (actualResult == realdResult) {
+    public void booksQuantity(List<Book> books) {
+        BookLibrary bookLibrary = new BookLibrary(books);
+        int realResult = 2;
+        int actualResult = bookLibrary.booksQuantity();
+        if (actualResult == realResult) {
             System.out.println("Book quantity test = OK");
         }
         else {
             System.out.println("Book quantity test = FAIL");
         }
-
-
     }
-    public void bookSearchByTitle(List<Book>books) {
-        BookLibrary bookLibrary = new BookLibrary();
-        String name = "Tom Sawyer abroad";
-        List<Book>book1 = bookLibrary.bookSearchByTitle("Tom Sawyer abroad");
-        boolean scan = false;
-        for (int i = 0; i < books.size(); i++) {
-            Book book = books.get(i);
-            if (book.getName().equals(name)) {
-                scan = true;
-            }
-        }
-        if (scan) {
+
+    public void bookSearchByTitle(List<Book> books) {
+        BookLibrary bookLibrary = new BookLibrary(books);
+        List<Book> foundBooks = bookLibrary.bookSearchByTitle("Tom Sawyer abroad");
+        if (foundBooks.size() == 1
+                && foundBooks.get(0).getName().equals("Tom Sawyer abroad")) {
             System.out.println("Book search by title test = OK");
         }
         else {
             System.out.println("Book search by title test = FAIL");
         }
     }
-    public void bookSearchByAuthor(List<Book>books) {
-        BookLibrary bookLibrary = new BookLibrary();
-        String author = "Edgar Rice Burroughs";
-        List<Book>book2 = bookLibrary.bookSearchByAuthor("Edgar Rice Burroughs");
-        boolean scan = false;
-        for (int i = 0; i < books.size(); i++) {
-            Book book = books.get(i);
-            if (book.getAuthor().equals(author)) {
-                scan = true;
-            }
-        }
-        if (scan) {
+    public void bookSearchByAuthor(List<Book> books) {
+        BookLibrary bookLibrary = new BookLibrary(books);
+        List<Book> foundBooks = bookLibrary.bookSearchByAuthor("Edgar Rice Burroughs");
+        if (foundBooks.size() == 1
+            && foundBooks.get(0).getAuthor().equals("Edgar Rice Burroughs")) {
             System.out.println("Book search by author test = OK");
         }
         else {
@@ -71,9 +57,9 @@ class BookLibraryTest {
         }
     }
     public void pageCountByAuthor(List<Book>books) {
-        BookLibrary bookLibrary = new BookLibrary();
+        BookLibrary bookLibrary = new BookLibrary(books);
         int realResult = 270;
-        int expectedResult = bookLibrary.pageCountByAuthor(books, "");
+        int expectedResult = bookLibrary.pageCountByAuthor("Mark Twain");
         if (realResult == expectedResult) {
             System.out.println("Page count by author test = OK");
         }

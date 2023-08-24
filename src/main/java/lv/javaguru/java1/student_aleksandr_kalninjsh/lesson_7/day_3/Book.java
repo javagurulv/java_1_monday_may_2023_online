@@ -2,10 +2,10 @@ package lv.javaguru.java1.student_aleksandr_kalninjsh.lesson_7.day_3;
 
 class Book {
 
-    String name;
-    String author;
-    int numberOfPages;
-    int yearOfIssue;
+    private String name;
+    private String author;
+    private int numberOfPages;
+    private int yearOfIssue;
 
     public Book(String name, String author, int numberOfPages, int yearOfIssue) {
         this.name = name;
