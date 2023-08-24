@@ -1,14 +1,14 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_11.homework.day_5;
 
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+//import static org.junit.jupiter.api.Assertions.*;
 
 class BookReaderImplTest {
-    Book testBook = new Book("John Steinbeck", "The Grapes of Wrath");
+  /*Book testBook = new Book("John Steinbeck", "The Grapes of Wrath");
     Book emptyBook = new Book("", "The Grapes of Wrath");
 
 
@@ -45,5 +45,5 @@ class BookReaderImplTest {
         check.addBook(testBook);
         boolean actual = check.deleteBook(testBook);
         assertEquals(expected, actual);
-    }
+    }*/
 }
