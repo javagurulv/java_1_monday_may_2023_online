@@ -1,16 +1,8 @@
 package lv.javaguru.java1.teacher.lesson_12_inheritance.lessoncode;
 
-public abstract class Car extends Object {
+public class Car {
 
-	private String model;
+    private String number;
 
-	public Car(String model) {
-		super();
-		this.model = model;
-	}
-
-	public abstract void start();
-
-	public abstract void stop();
 
 }

@@ -27,9 +27,7 @@ class PremiumCalculator {
         for (InsuredObject object : policy.getObjects()) {
             BigDecimal premiumFire = calculatePremiumFire(object);
             BigDecimal premiumTheft = calculatePremiumTheft(object);
-            premium = premium.add(premiumFire).add(premiumTheft);
-            premium = new
-                    BigDecimal(String.valueOf(premium)).setScale(2, RoundingMode.HALF_UP);
+            premium = premium.add(premiumFire).add(premiumTheft).setScale(2, RoundingMode.HALF_DOWN);
         }
 
         return premium;
