@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_12.homework.day_4;
 
-abstract class Shape {
+public abstract class Shape {
 
     private String title;
 
@@ -8,8 +8,8 @@ abstract class Shape {
         this.title = title;
     }
 
-    abstract double calculateArea();
+    public abstract double calculateArea();
 
-    abstract double calculatePerimeter();
+    public abstract double calculatePerimeter();
 
 }
