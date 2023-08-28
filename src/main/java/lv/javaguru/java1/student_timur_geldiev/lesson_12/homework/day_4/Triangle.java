@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_12.homework.day_4;
 
-class Triangle extends Shape{
+public class Triangle extends Shape{
 
     int a;
     int b;

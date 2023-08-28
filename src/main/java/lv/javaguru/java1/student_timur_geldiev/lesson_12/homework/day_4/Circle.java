@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_12.homework.day_4;
 
-class Circle extends Shape{
+public class Circle extends Shape{
 
     private double radius;
 

@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_12.homework.day_4;
 
-class Square extends Shape{
+public class Square extends Shape{
 
     int a;
 

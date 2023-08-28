@@ -49,13 +49,15 @@ class BookLibrary {
     }
 
 
-    public void bookDeleting(String name, String author, int yearOfIssue) {
+    public void removeBook(String name, String author, int yearOfIssue) {
         for (int i = 0; i < books.size(); i++) {
             Book book = books.get(i);
             if (book.getYearOfIssue() == yearOfIssue && (book.getName().equals(name)) && (book.getAuthor().equals(author))) {
 
+
+                books.remove(book);
             }
-            books.remove(book);
+
         }
     }
 }
