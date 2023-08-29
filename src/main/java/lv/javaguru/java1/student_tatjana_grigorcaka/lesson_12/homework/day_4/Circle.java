@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_12.homework.day_4;
 
-class Circle extends Shape {
+public class Circle extends Shape {
 
     private double radius;
 
@@ -12,9 +12,9 @@ class Circle extends Shape {
     }
 
     @Override
-    double calculateArea() { return Math.PI * radius * radius; }
+    public double calculateArea() { return Math.PI * radius * radius; }
 
     @Override
-    double calculatePerimeter() { return 2 * Math.PI * radius; }
+    public double calculatePerimeter() { return 2 * Math.PI * radius; }
 
 }

@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_12.homework.day_4;
 
-class Triangle extends Shape {
+public class Triangle extends Shape {
     private double a;
 
 
@@ -10,7 +10,7 @@ class Triangle extends Shape {
 
     }
     @Override
-    double calculateArea() {
+    public double calculateArea() {
         double s = calculateSemiPerimeter(a);
         return Math.sqrt(s * (s - a) * (s - a) * (s - a));
     }
@@ -20,7 +20,7 @@ class Triangle extends Shape {
     }
 
     @Override
-    double calculatePerimeter() { return a + a + a; }
+    public double calculatePerimeter() { return a + a + a; }
 }
 
 

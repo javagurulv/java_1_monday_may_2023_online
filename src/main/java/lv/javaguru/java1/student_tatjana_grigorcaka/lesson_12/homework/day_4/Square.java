@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_tatjana_grigorcaka.lesson_12.homework.day_4;
 
-class Square extends Shape {
+public class Square extends Shape {
 
 
     private double a;
@@ -11,8 +11,8 @@ class Square extends Shape {
     }
 
     @Override
-    double calculateArea() { return a * a; }
+    public double calculateArea() { return a * a; }
 
     @Override
-    double calculatePerimeter() { return 4 * a; }
+    public double calculatePerimeter() { return 4 * a; }
 }
