@@ -68,4 +68,41 @@ class AppleStorageTest {
     }
 
 
+    @Test
+    public void shouldReturnApplesByPredicatesAnd() {
+        List<Apple> apples = storage.findApplesByPredicatesAnd(
+                new RedApplePredicate(),
+                new GreenApplePredicate()
+        );
+        assertEquals(apples.size(), 0);
+
+        apples = storage.findApplesByPredicatesAnd(
+                new RedApplePredicate(),
+                new LigthWeightApplePredicate(150)
+        );
+        assertEquals(apples.size(), 1);
+
+        apples = storage.findApplesByPredicatesAnd(
+                new RedApplePredicate(),
+                new HeavyWeightApplePredicate(150)
+        );
+        assertEquals(apples.size(), 2);
+    }
+
+    @Test
+    public void shouldReturnApplesByPredicatesOr() {
+        List<Apple> apples = storage.findApplesByPredicatesOr(
+                new RedApplePredicate(),
+                new GreenApplePredicate()
+        );
+        assertEquals(apples.size(), 6);
+
+        apples = storage.findApplesByPredicatesOr(
+                new RedApplePredicate(),
+                new LigthWeightApplePredicate(150)
+        );
+        assertEquals(apples.size(), 6);
+    }
+
+
 }

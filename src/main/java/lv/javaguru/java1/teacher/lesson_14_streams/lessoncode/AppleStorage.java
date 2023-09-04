@@ -5,6 +5,46 @@ import java.util.List;
 
 class AppleStorage {
 
+    public List<Apple> findApplesByPredicatesOr(ApplePredicate ... predicates) {
+        List<Apple> apples = getAllApples();
+        List<Apple> foundApples = new ArrayList<>();
+        for (Apple apple : apples) {
+            // 1 - n - predicates
+            // 1 apple
+            // if any predicate = true -> add apple to list
+            for (ApplePredicate predicate : predicates) {
+                if (predicate.test(apple)) {
+                    foundApples.add(apple);
+                    break;
+                }
+            }
+        }
+        return foundApples;
+    }
+
+
+    public List<Apple> findApplesByPredicatesAnd(ApplePredicate ... predicates) {
+        List<Apple> apples = getAllApples();
+        List<Apple> foundApples = new ArrayList<>();
+        for (Apple apple : apples) {
+            // 1 - n - predicates
+            // 1 apple
+            // if all predicates = true -> add apple to list
+            boolean isOk = true;
+            for (ApplePredicate predicate : predicates) {
+                if (!predicate.test(apple)) {
+                    isOk = false;
+                    break;
+                }
+            }
+            if (isOk) {
+                foundApples.add(apple);
+            }
+        }
+        return foundApples;
+    }
+
+
     public List<Apple> findApplesByPredicate(ApplePredicate predicate) {
         List<Apple> apples = getAllApples();
         List<Apple> foundApples = new ArrayList<>();

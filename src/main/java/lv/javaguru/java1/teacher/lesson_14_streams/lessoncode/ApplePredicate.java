@@ -38,5 +38,19 @@ class LigthWeightApplePredicate implements ApplePredicate {
 }
 
 
+// apple.getWeight() > limitWeight
+class HeavyWeightApplePredicate implements ApplePredicate {
+
+    private int limitWeight;
+
+    public HeavyWeightApplePredicate(int limitWeight) {
+        this.limitWeight = limitWeight;
+    }
+
+    @Override
+    public boolean test(Apple apple) {
+        return apple.getWeight() > limitWeight;
+    }
+}
 
 
