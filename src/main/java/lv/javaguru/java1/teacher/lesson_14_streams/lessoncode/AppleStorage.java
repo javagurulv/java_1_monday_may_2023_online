@@ -1,7 +1,9 @@
 package lv.javaguru.java1.teacher.lesson_14_streams.lessoncode;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.sun.source.tree.Tree;
+
+import java.util.*;
+import java.util.stream.Collectors;
 
 class AppleStorage {
 
@@ -69,6 +71,15 @@ class AppleStorage {
         return foundApples;
     }
 
+    public List<Apple> getApplesByColorAndWeightUsingSteamApi(
+            String color, int weight) {
+        return getAllApples().stream()
+                .filter(apple -> apple.getColor().equals(color))
+                .filter(apple -> apple.getWeight() == weight)
+                .collect(Collectors.toList());
+    }
+
+
 
     public List<Apple> getHeavyApples(int limitWeight) {
         List<Apple> apples = getAllApples();
@@ -125,6 +136,58 @@ class AppleStorage {
         return redApples;
     }
 
+    public List<Apple> getRedApplesUsingStreamApi() {
+        List<Apple> apples = getAllApples();
+        return apples.stream()
+                .filter(apple -> apple.getColor().equals("red"))
+                .collect(Collectors.toList());
+    }
+
+
+    public List<String> findAppleColors() {
+        List<Apple> apples = getAllApples();
+        List<String> colors = new ArrayList<>();
+        for (Apple apple : apples) {
+            if (!colors.contains(apple.getColor())) {
+                colors.add(apple.getColor());
+            }
+        }
+        return colors;
+    }
+
+    public Set<String> findAppleColorsSet() {
+        List<Apple> apples = getAllApples();
+        Set<String> colors = new HashSet<>();
+        //Set<String> colors = new TreeSet<>();
+        for (Apple apple : apples) {
+            colors.add(apple.getColor());
+        }
+        return colors;
+    }
+
+    public Set<String> findAppleColorsSetUsingStreamApi() {
+        return getAllApples().stream()
+                .map(apple -> apple.getColor())
+                .collect(Collectors.toSet());
+    }
+
+    public Set<Integer> findAppleWeightsUsingStreamApi() {
+        return getAllApples().stream()
+                .map(apple -> apple.getWeight())
+                .collect(Collectors.toSet());
+    }
+
+    public List<String> findUniqueAppleColorsUsingStreamApi() {
+        return getAllApples().stream()
+                .map(apple -> apple.getColor())
+                .distinct()
+                .collect(Collectors.toList());
+    }
+
+    public Optional<Apple> findHeavistApple() {
+        return getAllApples().stream()
+                .max((o1, o2) -> Integer.compare(o1.getWeight(), o2.getWeight()));
+    }
 
     public List<Apple> getAllApples() {
         List<Apple> apples = new ArrayList<>();
