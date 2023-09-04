@@ -105,4 +105,58 @@ class AppleStorageTest {
     }
 
 
+    @Test
+    public void shouldReturnApplesByPredicateAnonimClass() {
+        List<Apple> yellowApples = storage.findApplesByPredicate(
+                new ApplePredicate() {
+                    @Override
+                    public boolean test(Apple apple) {
+                        return apple.getColor().equals("yellow");
+                    }
+                }
+        );
+        assertEquals(yellowApples.size(), 2);
+        assertEquals(yellowApples.get(0).getColor(), "yellow");
+        assertEquals(yellowApples.get(1).getColor(), "yellow");
+
+        List<Apple> redApples = storage.findApplesByPredicate(
+                new ApplePredicate() {
+                    @Override
+                    public boolean test(Apple apple) {
+                        return apple.getColor().equals("red");
+                    }
+                }
+        );
+
+    }
+
+
+    @Test
+    public void shouldReturnApplesByPredicateLambda() {
+        List<Apple> yellowApples = storage.findApplesByPredicate(
+                apple -> apple.getColor().equals("yellow")
+        );
+
+        yellowApples = storage.findApplesByPredicate(
+                apple -> {
+                    String color = apple.getColor();
+                    return color.equals("yellow");
+                }
+        );
+
+        assertEquals(yellowApples.size(), 2);
+        assertEquals(yellowApples.get(0).getColor(), "yellow");
+        assertEquals(yellowApples.get(1).getColor(), "yellow");
+
+        List<Apple> redApples = storage.findApplesByPredicate(
+                apple -> apple.getColor().equals("red")
+        );
+
+        List<Apple> heavyRedApples = storage.findApplesByPredicate(
+                apple -> apple.getColor().equals("red")
+                           && apple.getWeight() > 150
+        );
+    }
+
+
 }

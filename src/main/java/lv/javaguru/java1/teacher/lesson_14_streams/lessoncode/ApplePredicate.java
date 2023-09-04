@@ -1,9 +1,8 @@
 package lv.javaguru.java1.teacher.lesson_14_streams.lessoncode;
 
+@FunctionalInterface
 interface ApplePredicate {
-
     boolean test(Apple apple);
-
 }
 
 // apple.getColor().equals("green")
