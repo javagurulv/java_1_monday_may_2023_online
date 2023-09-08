@@ -3,6 +3,7 @@ package lv.javaguru.java1.student_timur_geldiev.lesson_14.homework.lvl_3;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 class TransactionAnalysisService {
@@ -35,5 +36,17 @@ class TransactionAnalysisService {
     public List<Transaction> sortTransactionsMadeInSpecifiedYearByValueFromMinToMax(int year) {
         return getAllTransactions().stream().filter(transaction -> transaction.getYear() == year).sorted(Comparator.comparing(Transaction::getValue)).collect(Collectors.toList());
 
+    }
+    public Set<Integer> findYearsTransactionsMade(){
+        return getAllTransactions().stream().map(Transaction::getYear).collect(Collectors.toSet());
+    }
+    public Set<String> findAllUniqueTradersNames(){
+        return getAllTransactions().stream().map(Trader -> Trader.getTrader().getName()).collect(Collectors.toSet());
+    }
+    public Set<String> findAllUniqueTradersCities(){
+        return getAllTransactions().stream().map(Trader -> Trader.getTrader().getCity()).collect(Collectors.toSet());
+    }
+    public Set<String> findAllTradesFromCambridge(String city){
+        return getAllTransactions().stream().filter(Trader -> Trader.getTrader().getCity().equals(city)).map(transaction -> transaction.getTrader().getName()).collect(Collectors.toSet());
     }
 }
