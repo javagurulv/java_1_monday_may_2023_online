@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class TransactionAnalysisServiceTest {
 
@@ -74,6 +75,7 @@ class TransactionAnalysisServiceTest {
         assertTrue(traderSet.contains("Cambridge"));
         assertTrue(traderSet.contains("Milan"));
     }
+
     @Test
     void shouldReturnAllTradersFromCambridge() {
         Set<String> traderSet = trans.findAllTradesFromCambridge("Cambridge");
@@ -81,5 +83,11 @@ class TransactionAnalysisServiceTest {
         assertTrue(traderSet.contains("Raoul"));
         assertTrue(traderSet.contains("Brian"));
         assertTrue(traderSet.contains("Alan"));
+    }
+
+    @Test
+    void shouldReturnTrue() {
+        assertTrue(trans.isTraderInSpecifiedCity("Milan"));
+        assertTrue(trans.isTraderInSpecifiedCity("Cambridge"));
     }
 }

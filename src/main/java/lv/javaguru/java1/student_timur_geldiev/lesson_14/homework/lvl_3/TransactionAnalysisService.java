@@ -49,4 +49,7 @@ class TransactionAnalysisService {
     public Set<String> findAllTradesFromCambridge(String city){
         return getAllTransactions().stream().filter(Trader -> Trader.getTrader().getCity().equals(city)).map(transaction -> transaction.getTrader().getName()).collect(Collectors.toSet());
     }
+    public boolean isTraderInSpecifiedCity(String city){
+        return getAllTransactions().stream().anyMatch(Trader -> Trader.getTrader().getCity().equals(city));
+    }
 }
