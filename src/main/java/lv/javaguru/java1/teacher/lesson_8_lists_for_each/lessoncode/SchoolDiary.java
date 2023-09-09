@@ -1,4 +1,4 @@
-package lv.javaguru.java1.teacher.lesson_7_arrays_fors.lessoncode.tasks;
+package lv.javaguru.java1.teacher.lesson_8_lists_for_each.lessoncode;
 
 import java.util.ArrayList;
 import java.util.List;
