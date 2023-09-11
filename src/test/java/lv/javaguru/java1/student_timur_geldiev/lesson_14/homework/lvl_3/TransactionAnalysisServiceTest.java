@@ -3,6 +3,7 @@ package lv.javaguru.java1.student_timur_geldiev.lesson_14.homework.lvl_3;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -89,5 +90,28 @@ class TransactionAnalysisServiceTest {
     void shouldReturnTrue() {
         assertTrue(trans.isTraderInSpecifiedCity("Milan"));
         assertTrue(trans.isTraderInSpecifiedCity("Cambridge"));
+    }
+
+    @Test
+    void shouldReturnMaxValue(){
+        int max = trans.getMaxValue();
+        assertEquals(1000, max);
+    }
+    @Test
+    void shouldReturnMinValue(){
+        Optional<Integer> min = trans.getMinValue();
+        assertEquals(300, min.orElse(0));
+    }
+    @Test
+    void shouldReturnTradersNamesSortedAlphabeticallyAndDelimitedByComma(){
+        String names = trans.getAllTradersNamesSortedAlphabetically();
+        assertEquals("Alan,Brian,Mario,Raoul", names);
+        
+    }
+    @Test
+    void shouldReturnTradersCitiesSortedAlphabeticallyAndDelimitedByComma(){
+        String cities = trans.getAllTradersCitiesSortedAlphabetically();
+        assertEquals("Cambridge,Milan", cities);
+
     }
 }
