@@ -1,9 +1,6 @@
 package lv.javaguru.java1.student_timur_geldiev.lesson_14.homework.lvl_3;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 class TransactionAnalysisService {
@@ -51,5 +48,18 @@ class TransactionAnalysisService {
     }
     public boolean isTraderInSpecifiedCity(String city){
         return getAllTransactions().stream().anyMatch(Trader -> Trader.getTrader().getCity().equals(city));
+    }
+
+    public int getMaxValue(){
+        return getAllTransactions().stream().map(Transaction::getValue).max(Integer::compareTo).orElse(0);
+    }
+    public Optional<Integer> getMinValue(){
+        return getAllTransactions().stream().map(Transaction::getValue).min(Integer::compareTo);
+    }
+    public String getAllTradersNamesSortedAlphabetically(){
+        return getAllTransactions().stream().map(transaction -> transaction.getTrader().getName()).distinct().sorted().collect(Collectors.joining(","));
+    }
+    public String getAllTradersCitiesSortedAlphabetically(){
+        return getAllTransactions().stream().map(transaction -> transaction.getTrader().getCity()).distinct().sorted().collect(Collectors.joining(","));
     }
 }
