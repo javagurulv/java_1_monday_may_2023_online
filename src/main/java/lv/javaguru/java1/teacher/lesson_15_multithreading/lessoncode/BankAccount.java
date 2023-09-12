@@ -10,11 +10,11 @@ public class BankAccount {
 
 	// synchronized
 
-	public  void add(int moneyToAdd) {
+	public synchronized void add(int moneyToAdd) {
 		this.money = this.money + moneyToAdd;
 	}
 
-	public  void remove(int moneyToRemove) {
+	public synchronized void remove(int moneyToRemove) {
 		this.money = this.money - moneyToRemove;
 	}
 
