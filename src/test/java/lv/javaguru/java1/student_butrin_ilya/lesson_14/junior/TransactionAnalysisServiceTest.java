@@ -92,5 +92,24 @@ class TransactionAnalysisServiceTest {
         Optional<Integer> optMax =  service.maxValue(new ArrayList<>());
         assertTrue(optMax.isEmpty());
     }
+    @Test
+    void minValue() {
+        assertEquals(service.minValue(allTransaction).get(), 300);
+    }
+    @Test
+    void minValueEmpty() {
+        Optional<Integer> optMax =  service.minValue(new ArrayList<>());
+        assertTrue(optMax.isEmpty());
+    }
 
+    @Test
+    void getAllNames() {
+        String s = service.getAllNames(allTransaction);
+        assertEquals(s, "Alan,Brian,Mario,Raoul");
+    }
+    @Test
+    void getAllCity() {
+        String s = service.getAllCity(allTransaction);
+        assertEquals(s, "Milan,Cambridge");
+    }
 }

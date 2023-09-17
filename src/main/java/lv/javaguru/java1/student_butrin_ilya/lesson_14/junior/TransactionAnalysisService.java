@@ -1,5 +1,6 @@
 package lv.javaguru.java1.student_butrin_ilya.lesson_14.junior;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -68,16 +69,27 @@ public class TransactionAnalysisService {
     }
 
     public Optional<Integer> maxValue(List<Transaction> transactions) {
-        //Integer maximum = transactions.stream().max((a1, a2) -> Integer.compare(a1.getValue(), a2.getValue())).get().getValue();
-        //return Optional.ofNullable(maximum);
 
-/*
         return transactions.stream()
                 .map(transaction -> transaction.getValue())
                 .max((a1, a2) -> Integer.compare(a1, a2));
-*/
+
+    }
+
+    public Optional<Integer> minValue(List<Transaction> transactions) {
         return transactions.stream()
-                .map(Transaction::getValue)
-                .max(Integer::compare);
+                .map(transaction -> transaction.getValue())
+                .min((a, b) -> Integer.compare(a, b));
+    }
+
+    public String getAllNames(List<Transaction> transactions) {
+        return transactions.stream()
+                .map(transaction -> transaction.getTrader().getName())
+                .sorted().distinct().collect(Collectors.joining(","));
+
+    }
+    public String getAllCity(List<Transaction> transactions) {
+        return transactions.stream().map(transaction -> transaction.getTrader().getCity())
+                .distinct().sorted(Comparator.reverseOrder()).collect(Collectors.joining(","));
     }
 }
