@@ -17,7 +17,7 @@ public class BankAccountThreadApp {
 			thread1.join();
 			thread2.join();
 		} catch (InterruptedException e) {
-
+			System.out.println(e);
 		}
 
 		long after = System.currentTimeMillis();
