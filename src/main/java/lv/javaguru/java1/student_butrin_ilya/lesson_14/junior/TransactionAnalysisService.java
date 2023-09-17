@@ -68,7 +68,16 @@ public class TransactionAnalysisService {
     }
 
     public Optional<Integer> maxValue(List<Transaction> transactions) {
-        Integer maximum = transactions.stream().max((a1, a2) -> Integer.compare(a1.getValue(), a2.getValue())).get().getValue();
-        return Optional.ofNullable(maximum);
+        //Integer maximum = transactions.stream().max((a1, a2) -> Integer.compare(a1.getValue(), a2.getValue())).get().getValue();
+        //return Optional.ofNullable(maximum);
+
+/*
+        return transactions.stream()
+                .map(transaction -> transaction.getValue())
+                .max((a1, a2) -> Integer.compare(a1, a2));
+*/
+        return transactions.stream()
+                .map(Transaction::getValue)
+                .max(Integer::compare);
     }
 }

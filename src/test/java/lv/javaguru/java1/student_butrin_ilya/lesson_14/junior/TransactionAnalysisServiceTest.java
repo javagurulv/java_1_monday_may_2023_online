@@ -93,4 +93,4 @@ class TransactionAnalysisServiceTest {
         assertTrue(optMax.isEmpty());
     }
 
-    }
+}
