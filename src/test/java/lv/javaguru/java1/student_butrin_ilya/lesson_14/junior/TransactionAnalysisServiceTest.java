@@ -87,5 +87,10 @@ class TransactionAnalysisServiceTest {
     void maxValue() {
         assertEquals(service.maxValue(allTransaction).get(), 1000);
     }
+    @Test
+    void maxValueEmpty() {
+        Optional<Integer> optMax =  service.maxValue(new ArrayList<>());
+        assertTrue(optMax.isEmpty());
+    }
 
     }
