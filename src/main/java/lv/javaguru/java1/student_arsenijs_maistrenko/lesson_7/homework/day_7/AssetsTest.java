@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_arsenijs_maistrenko.lesson_7.homework.day_7;
 
-public class AssetsTest {
+class AssetsTest {
 
     public static void main(String[] args) {
         AssetsTest test = new AssetsTest();

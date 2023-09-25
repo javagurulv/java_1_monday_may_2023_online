@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_arsenijs_maistrenko.lesson_7.homework.day_6;
 
-public class SaleAnalytics {
+class SaleAnalytics {
     public Sale mostSold (Sale[] product){
         int maxUnitCount = 0;
         Sale mostSold = product[0];

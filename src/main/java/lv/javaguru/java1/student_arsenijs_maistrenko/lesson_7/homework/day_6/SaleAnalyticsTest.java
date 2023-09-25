@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_arsenijs_maistrenko.lesson_7.homework.day_6;
 
-public class SaleAnalyticsTest {
+class SaleAnalyticsTest {
     public static void main(String[] args) {
         Sale item1 = new Sale("playstation 1",15.4, 44 );
         Sale item2 = new Sale("playstation 2",23.4, 111 );

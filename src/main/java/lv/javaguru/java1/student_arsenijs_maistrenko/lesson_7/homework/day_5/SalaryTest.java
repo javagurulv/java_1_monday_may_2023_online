@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_arsenijs_maistrenko.lesson_7.homework.day_5;
 
-public class SalaryTest {
+class SalaryTest {
     public static void main(String[] args) {
 
         SalaryTest test = new SalaryTest();
