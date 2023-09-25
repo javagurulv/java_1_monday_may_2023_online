@@ -1,7 +1,5 @@
 package lv.javaguru.java1.student_arsenijs_maistrenko.lesson_7.homework.day_4;
 
-import org.jetbrains.annotations.NotNull;
-
 class ReceiptCalc {
 
     public double TotalSum(Receipt @NotNull [] receipts) {
