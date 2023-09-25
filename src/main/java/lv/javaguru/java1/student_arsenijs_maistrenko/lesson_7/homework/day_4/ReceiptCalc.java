@@ -2,7 +2,7 @@ package lv.javaguru.java1.student_arsenijs_maistrenko.lesson_7.homework.day_4;
 
 class ReceiptCalc {
 
-    public double TotalSum(Receipt @NotNull [] receipts) {
+    public double TotalSum(Receipt [] receipts) {
         double totalSum = 0.0;
         for (int i = 0; i < receipts.length; i++) {
             Receipt receipt = receipts[i];
