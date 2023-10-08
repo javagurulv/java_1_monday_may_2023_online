@@ -3,9 +3,9 @@ package lv.javaguru.java1.student_aleksandr_kalninjsh.lesson_8.day_5;
 class ProductEvaluationTest {
 
     public static void main(String[] args) {
-        ProductEvaluationTest productEvaluationTest = new ProductEvaluationTest();
-        productEvaluationTest.shouldAddOneReview();
-
+        ProductEvaluationTest test = new ProductEvaluationTest();
+        test.shouldAddOneReview();
+        test.shouldAddTwoReviews();
     }
 
     public void shouldAddOneReview() {
