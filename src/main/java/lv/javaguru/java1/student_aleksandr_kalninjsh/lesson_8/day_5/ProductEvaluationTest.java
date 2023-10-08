@@ -18,6 +18,16 @@ class ProductEvaluationTest {
         }
     }
 
+    public void shouldAddTwoReviews() {
+        ProductEvaluation productEvaluation = new ProductEvaluation();
+        productEvaluation.addReview("Author1", "Leave a review", 1);
+        productEvaluation.addReview("Author2", "Leave a review", 2);
+        if (productEvaluation.getReviewsCount() == 2) {
+            System.out.println("Add review test = OK");
+        } else {
+            System.out.println("Add review test = FAIL");
+        }
+    }
 
 
 }

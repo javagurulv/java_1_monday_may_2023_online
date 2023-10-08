@@ -4,21 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 class ProductEvaluation {
-    private List<Review> review;
+    private List<Review> reviews = new ArrayList<>();
 
-    public ProductEvaluation(List<Review> review) {
-        this.review = review;
-    }
-
-    public List<Review> addReview(String nickName, String reviewText,int reviewMark) {
-        List<Review> review = new ArrayList<>();
-        for (int i = 0; i < this.review.size(); i++) {
-            Review review = review.get(i);
-            if (review.getReviewMark() == reviewMark && (review.getNickName().equals(nickName) && (review.getReviewText().equals(reviewText)))) {
-                review.add(review);
-            }
-        }
-
+    public void addReview(String nickName,
+                                  String reviewText,
+                                  int reviewMark) {
+        Review newReview = new Review(nickName, reviewText, reviewMark);
+        reviews.add(newReview);
     }
 
 
@@ -32,7 +24,7 @@ class ProductEvaluation {
         }
     }
 
-    public int refundOfAllProductReviews() {
+    public int getReviewsCount() {
         return reviews.size();
     }
 
