@@ -15,7 +15,7 @@ package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.homework.day_5;
 
 class JaZastavluTebjaRabotatj {
     public static void main(String[]args) {
-        System.out.println("Sorry, I have an errors."); //Ставим заглавную букву
-        System.out.println("Please fix me!"); // Ставим заглавную букву и кавычки
+        System.out.println("Sorry, I have an errors."); //Ставим заглавную букву в System
+        System.out.println("Please fix me!"); // Ставим заглавную букву в System и кавычки в конце
    }
 }
