@@ -4,29 +4,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 class ProductEvaluation {
+
     private List<Review> reviews = new ArrayList<>();
 
     public void addReview(String nickName,
-                                  String reviewText,
-                                  int reviewMark) {
+                          String reviewText,
+                          int reviewMark) {
         Review newReview = new Review(nickName, reviewText, reviewMark);
         reviews.add(newReview);
     }
 
+    public void removeReview(String nickName, String reviewText, int reviewMark) {
+        Review review = new Review(nickName, reviewText, reviewMark);
+        reviews.remove(review);
 
-
-    public void deletingReview(String nickName, String reviewText, int reviewMark) {
-        for (int i = 0; i < reviews.size(); i++){
-            Review review = reviews.get(i);
-            if (review.getReviewMark() == reviewMark && (review.getNickName().equals(nickName) && (review.getReviewText().equals(reviewText)))) {
-                reviews.remove(review);
-            }
-        }
     }
-
     public int getReviewsCount() {
         return reviews.size();
     }
+
+
 
     public int findMaxMark(List<Review> reviewMark) {
         int maxMark = reviewMark.get(0).getReviewMark();
@@ -62,3 +59,4 @@ class ProductEvaluation {
         return maxMark / reviewMark.size();
     }
 }
+

@@ -3,31 +3,40 @@ package lv.javaguru.java1.student_aleksandr_kalninjsh.lesson_8.day_5;
 class ProductEvaluationTest {
 
     public static void main(String[] args) {
+
         ProductEvaluationTest test = new ProductEvaluationTest();
-        test.shouldAddOneReview();
-        test.shouldAddTwoReviews();
+        test.addReview();
+        test.removeReview();
     }
 
-    public void shouldAddOneReview() {
+
+
+    public void addReview() {
         ProductEvaluation productEvaluation = new ProductEvaluation();
-        productEvaluation.addReview("Author", "Leave a review", 1);
-        if (productEvaluation.getReviewsCount() == 1) {
+        productEvaluation.addReview("Author1", "Leave a review", 1);
+        productEvaluation.addReview("Author2", "Leave a review", 2);
+        productEvaluation.addReview("Author3", "Leave a review", 3);
+        productEvaluation.addReview("Author4", "Leave a review", 4);
+        productEvaluation.addReview("Author5", "Leave a review", 5);
+        if (productEvaluation.getReviewsCount() == 5) {
             System.out.println("Add review test = OK");
         } else {
             System.out.println("Add review test = FAIL");
         }
     }
 
-    public void shouldAddTwoReviews() {
+    public void removeReview() {
         ProductEvaluation productEvaluation = new ProductEvaluation();
-        productEvaluation.addReview("Author1", "Leave a review", 1);
-        productEvaluation.addReview("Author2", "Leave a review", 2);
-        if (productEvaluation.getReviewsCount() == 2) {
-            System.out.println("Add review test = OK");
+        productEvaluation.removeReview("Author5", "Leave a review", 5);
+        if (productEvaluation.getReviewsCount() == 5) {
+            System.out.println("Remove review test = OK");
         } else {
-            System.out.println("Add review test = FAIL");
+            System.out.println("Remove review test = FAIL");
         }
     }
 
 
 }
+
+
+
