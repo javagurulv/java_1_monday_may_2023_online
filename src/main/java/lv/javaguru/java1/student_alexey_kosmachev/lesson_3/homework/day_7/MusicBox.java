@@ -1,5 +1,6 @@
 package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day_7;
 
+//Music box
 class MusicBox {
 
     private String model;
