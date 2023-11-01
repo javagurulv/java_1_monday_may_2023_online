@@ -15,7 +15,8 @@ package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.homework.day_6;
 //программный код с командами должен находиться внутри метода.
 class AttentionPlease {
     public static void main(String[] args) {
-        System.out.println("Code outside the method will not compile!"); //Командный код system.out помещен внутри
+        System.out.println("Code outside the method will not compile!");
+        //Командный код system.out помещен внутри метода main
 
     }
 }

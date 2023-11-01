@@ -6,6 +6,6 @@ package lv.javaguru.java1.student_alexey_kosmachev.lesson_2.homework.day_7;
 class NoSleepNoFocus {
     public static void main(String[] args) {
         System.out.println("I wanna coffee"); // вставил текст в кавычки
-        System.out.println("So bad");
+        System.out.println("So bad"); // добавил закрывающую кавычку
     }
 }
