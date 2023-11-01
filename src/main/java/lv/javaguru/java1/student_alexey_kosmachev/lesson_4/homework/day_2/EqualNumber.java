@@ -14,5 +14,6 @@ class EqualNumber {
         if (secondnumber == firstnumber) {System.out.println("Numbers are equals");}
         if (secondnumber != firstnumber) {System.out.println("Numbers are different");}
 
+
     }
 }
