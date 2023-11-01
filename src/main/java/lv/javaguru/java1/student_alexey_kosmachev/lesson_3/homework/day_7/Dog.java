@@ -10,7 +10,7 @@ class Dog {
          this.Age = Age;
      }
      String getNickname() {return this.Nickname; }
-    int getAge() {
+    int getNewAge() {
          int Birthsday = Age + 1;
     return Birthsday;
     }

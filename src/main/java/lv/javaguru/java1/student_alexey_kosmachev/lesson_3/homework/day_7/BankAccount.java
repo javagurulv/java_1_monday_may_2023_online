@@ -19,15 +19,10 @@ package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day_7;
             return this.owner;
         }
 
-        String getMoney() {
-            this.money = money;
+        String getMoney() { this.money = money;
                 String MoneyString = Integer.toString(money);
-            return MoneyString;
-        }
-
-
+                return MoneyString;}
     }
-
     class BankAccountDemo {
 
         public static void main(String[] args) {
@@ -39,4 +34,5 @@ package lv.javaguru.java1.student_alexey_kosmachev.lesson_3.homework.day_7;
         }
 
     }
+
 
