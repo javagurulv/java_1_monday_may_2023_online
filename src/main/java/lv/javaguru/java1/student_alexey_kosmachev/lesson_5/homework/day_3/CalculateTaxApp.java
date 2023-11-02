@@ -8,6 +8,6 @@ public class CalculateTaxApp {
         System.out.println("Enter annual income: ");
         int income = scanner.nextInt();
         CalculateTax newtax = new CalculateTax();
-        System.out.println(newtax.yourincome(income));
+        System.out.println("You have to pay " + newtax.yourincome(income) + " EUR as a tax.");
     }
 }

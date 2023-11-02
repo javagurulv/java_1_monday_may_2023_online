@@ -6,7 +6,6 @@ class ComplicatedPercent {
         double V = contribution; // Задаем размер вклада
         double P = percent; // Задаем годовой процент
         int n = term; // задаем срок вклада
-        double S = V * Math.pow((1 + P/100), n);
-        { return S;}
+        return V * Math.pow((1 + P/100), n);
     }
 }

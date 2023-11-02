@@ -8,14 +8,9 @@ public class ComplicatedPercentApp {
         ComplicatedPercent newsumm = new ComplicatedPercent();
 
         System.out.println("The amount of your money after defined term is: ");
-        System.out.printf(newsumm.investment(1200, 5.5, 10) + " EUR ");
-        System.out.println();
-        System.out.printf(newsumm.investment(500, 8.2, 7) + " EUR ");
-        System.out.println();
-        System.out.printf(newsumm.investment(50000, 2.2, 15) + " EUR ");
-        System.out.println();
-        System.out.printf(newsumm.investment(100000, 1.3, 20) + " EUR ");
-
-
+        System.out.println(newsumm.investment(200,10.1,3) + "EUR");
+        System.out.println(newsumm.investment(500, 8.2, 7) + " EUR ");
+        System.out.println(newsumm.investment(50000, 2.2, 15) + " EUR ");
+        System.out.println(newsumm.investment(100000, 1.3, 20) + " EUR ");
     }
 }
