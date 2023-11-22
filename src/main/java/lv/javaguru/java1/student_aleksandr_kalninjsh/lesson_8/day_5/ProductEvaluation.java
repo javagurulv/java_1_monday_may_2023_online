@@ -5,7 +5,11 @@ import java.util.List;
 
 class ProductEvaluation {
 
-    private List<Review> reviews = new ArrayList<>();
+    private List<Review> reviews;
+
+    public ProductEvaluation() {
+        reviews = new ArrayList<>();
+    }
 
     public void addReview(String nickName,
                           String reviewText,
@@ -14,21 +18,36 @@ class ProductEvaluation {
         reviews.add(newReview);
     }
 
-    public void removeReview(String nickName, String reviewText, int reviewMark) {
-        Review review = new Review(nickName, reviewText, reviewMark);
-        reviews.remove(review);
-
+    public void removeReview(String nickName,
+                             String reviewText,
+                             int reviewMark) {
+        Review newReview = new Review(nickName, reviewText, reviewMark);
+        reviews.remove(newReview);
     }
+
+    public void returnAllReviews(String nickName,
+                                 String reviewText,
+                                 int reviewMark) {
+        Review allReview = new Review(nickName, reviewText, reviewMark);
+        reviews.add(allReview);
+    }
+
+    public int getAllReviews() {
+        return reviews.size();
+    }
+
+
+
     public int getReviewsCount() {
         return reviews.size();
     }
 
 
 
-    public int findMaxMark(List<Review> reviewMark) {
-        int maxMark = reviewMark.get(0).getReviewMark();
-        for (int i = 0; i < reviewMark.size(); i++) {
-            Review review = reviewMark.get(i);
+    public int findMaxMark(int reviewMark) {
+        int maxMark = 0;
+        for (int i = 0; i < reviews.size(); i++) {
+            Review review = reviews.get(i);
             if (review.getReviewMark() > maxMark) {
                 maxMark = review.getReviewMark();
             }
@@ -36,10 +55,10 @@ class ProductEvaluation {
         return maxMark;
     }
 
-    public int findMinMark(List<Review> reviewMark) {
-        int minMark = reviewMark.get(0).getReviewMark();
-        for (int i = 0; i < reviewMark.size(); i++) {
-            Review review = reviewMark.get(i);
+    public int findMinMark(int reviewMark) {
+        int minMark = 1;
+        for (int i = 0; i < reviews.size(); i++) {
+            Review review = reviews.get(i);
             if (review.getReviewMark() < minMark) {
                 minMark = review.getReviewMark();
             }
@@ -47,16 +66,15 @@ class ProductEvaluation {
         return minMark;
     }
 
-    public int findAverageMark(List<Review> reviewMark) {
-        if (reviewMark.size() == 0) {
-            return 0;
+    public int findingAverageMark() {
+        int sum = 0;
+        for (int i = 0; i < reviews.size(); i++) {
+            Review review = reviews.get(i);
+            sum = sum + review.getReviewMark();
         }
-        int maxMark = 0;
-        for (int i = 0; i < reviewMark.size(); i++) {
-            Review review = reviewMark.get(i);
-            maxMark = review.getReviewMark();
-        }
-        return maxMark / reviewMark.size();
+        return sum / reviews.size();
     }
+
+
 }
 

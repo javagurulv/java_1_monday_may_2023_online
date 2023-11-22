@@ -1,6 +1,6 @@
 package lv.javaguru.java1.student_aleksandr_kalninjsh.lesson_8.day_5;
 
-class Review {
+public class Review {
 
     String nickName;
     String reviewText;
@@ -11,15 +11,16 @@ class Review {
         this.reviewText = reviewText;
         this.reviewMark = reviewMark;
     }
+
     String getNickName() {
         return nickName;
     }
+
     String getReviewText() {
         return reviewText;
     }
+
     int getReviewMark() {
         return reviewMark;
     }
-
 }
-
