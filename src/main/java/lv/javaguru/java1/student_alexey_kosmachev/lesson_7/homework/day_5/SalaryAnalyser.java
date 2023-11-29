@@ -48,4 +48,15 @@ class SalaryAnalyser {
         }
     }
 
+    public double calculateSigmafromAverage(double[] allSalary){
+        double averageSalary = calculateAverageSalary(allSalary);
+        double sigmaAverage = 0;
+        double averageDeviation = 0;
+        for (int i = 0; i < allSalary.length; i++){
+            averageDeviation += Math.pow((allSalary[i] - averageSalary),2);
+            sigmaAverage = Math.sqrt(averageDeviation/allSalary.length);
+        }
+        return sigmaAverage;
+    }
+
 }

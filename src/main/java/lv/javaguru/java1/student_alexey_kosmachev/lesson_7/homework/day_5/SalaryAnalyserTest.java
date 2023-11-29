@@ -13,6 +13,7 @@ public class SalaryAnalyserTest {
         test.ReturnMaxSalary();
         test.ReturnZeroAverageSalary();
         test.ReturnAverageSalary();
+        test.ReturnSigmaAverage();
     }
 
     public void ReturnZeroSalarySum() {
@@ -69,6 +70,13 @@ public class SalaryAnalyserTest {
         double[] allSalary = {2500.0, 3200.0, 1800.0, 4000.0, 2900.0};
         double averageSalary = salaryAnalyser.calculateAverageSalary(allSalary);
         checkResult(averageSalary, 2880.0, "Average Salary is " + averageSalary);
+    }
+
+    public void ReturnSigmaAverage() {
+        SalaryAnalyser salaryAnalyser = new SalaryAnalyser();
+        double[] allSalary = {2500.0, 3200.0, 1800.0, 4000.0, 2900.0};
+        double sigmaAverage = salaryAnalyser.calculateSigmafromAverage(allSalary);
+        checkResult(sigmaAverage,Math.sqrt(533600),"Sigma for Salary is " + sigmaAverage);
     }
 
 
