@@ -4,19 +4,49 @@ import java.util.ArrayList;
 import java.util.List;
 
 class BookLibrary {
-    public static void main(String[] args) {
-        Book book1 = new Book("Sherlock Holmes" , "Arthur Conan Doyle", 1887);
-        Book book2 = new Book("Master and Margarita" , "Mikhail Bulgakov", 1967);
-        Book book3 = new Book("Captain Blood" , "Rafael Sabatini", 1922);
 
 
-    List<Book> books = new ArrayList<>();
-        int size = books.size();
+    private List<Book> books = new ArrayList();
 
-        books.add(book1);
-        books.add(book2);
-        books.add(book3);
+    public void Add (Book newBook) {
+        books.add(newBook);
+    }
+
+    public int getBookCount (){
+        return books.size();
+    }
+
+    public List<Book> findBookByName (String newSearchByName) {
+        List<Book>foundBooks = new ArrayList<>();
+        for (int i = 0; i < books.size(); i++) {
+            Book newBook = books.get(i);
+            String bookName = newBook.getBookName();
+            if (bookName.equals(newSearchByName)) {foundBooks.add(newBook);}
+        }
+        return foundBooks;
+    }
+
+    public List<Book> findBookByAuthor (String newSearchByAuthor) {
+        List<Book>foundBooks = new ArrayList<>();
+        for (int i = 0; i < books.size(); i++) {
+            Book newBook = books.get(i);
+            String bookAuthor = newBook.getBookAuthor();
+            if (bookAuthor.equals(newSearchByAuthor)) {foundBooks.add(newBook);}
+        }
+        return foundBooks;
+    }
+
+    public int calculatePageCountByAuthor (String newPageCount) {
+        int pageCountByAuthor = 0;
+        for (int i = 0; i < books.size(); i++) {
+            Book newBook = books.get(i);
+            String bookAuthor = newBook.getBookAuthor();
+            if (bookAuthor.equals(newPageCount)) {pageCountByAuthor += newBook.getPageCount();}
+        }
+        return pageCountByAuthor;
     }
 }
+
+
 
 

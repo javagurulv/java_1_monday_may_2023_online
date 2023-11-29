@@ -4,17 +4,17 @@ class Book {
 
     String bookName;
     String bookAuthor;
-    int yearPublished;
+    int pageCount;
 
-    public Book (String bookName, String bookAuthor, int yearPublished) {
+    public Book (String bookName, String bookAuthor, int pageCount) {
         this.bookName = bookName;
         this.bookAuthor = bookAuthor;
-        this.yearPublished = yearPublished;
+        this.pageCount = pageCount;
     }
 
     public String getBookName() {return bookName;}
     public String getBookAuthor() {return bookAuthor;}
-    public int getYearPublished() {return yearPublished;}
+    public int getPageCount() {return pageCount;}
 
 
 
