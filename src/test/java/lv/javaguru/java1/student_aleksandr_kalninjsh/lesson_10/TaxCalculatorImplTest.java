@@ -1,12 +1,10 @@
 package lv.javaguru.java1.student_aleksandr_kalninjsh.lesson_10;
 
-import org.junit.jupiter.api.Test;
-
 import java.math.BigDecimal;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-public class TaxCalculatorImplTest {
+class TaxCalculatorImplTest {
 
     private TaxCalculator taxCalculator = new TaxCalculatorImpl();
 
