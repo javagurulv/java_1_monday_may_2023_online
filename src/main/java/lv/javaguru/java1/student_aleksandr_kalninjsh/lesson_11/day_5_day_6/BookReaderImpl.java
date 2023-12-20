@@ -15,9 +15,10 @@ public class BookReaderImpl implements BookReader {
 
     @Override
     public boolean addBook(Book book) {
-        if (book.getAuthor().isEmpty() || book.getTitle().isEmpty()) {
+        if (book.getAuthor().equals(" ") || book.getTitle().equals(" ")) {
             return false;
         }
+
         for (int i = 0; i < books.size(); i++) {
             if (book.getAuthor().equals(books.get(i).getAuthor()) && book.getTitle().equals(books.get(i).getTitle())) {
                 return false;
