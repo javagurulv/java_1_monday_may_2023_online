@@ -128,14 +128,5 @@ public class BookReaderImpl implements BookReader {
         }
         return null;
     }
-
-
-
-
-
-
-
-
-
-
 }
+

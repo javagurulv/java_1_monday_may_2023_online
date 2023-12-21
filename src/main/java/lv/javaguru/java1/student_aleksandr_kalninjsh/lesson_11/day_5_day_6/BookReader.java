@@ -7,7 +7,7 @@ interface BookReader {
     public boolean addBook(Book book);
     public boolean deleteBook(Book book);
     Book allBooksList();
-    List<Book>bookSearchByAuthor(String author);
+    List<Book> bookSearchByAuthor(String author);
     List<Book>bookSearchByAuthorPrefix(String prefix);
     List<Book>bookSearchByTitle(String title);
     List<Book>bookSearchByTitlePrefix(String titlePrefix);
@@ -15,7 +15,5 @@ interface BookReader {
     public boolean isNotRead(Book book);
     Book allReadBooksList();
     Book allNotReadBooksList();
-
-
 
 }

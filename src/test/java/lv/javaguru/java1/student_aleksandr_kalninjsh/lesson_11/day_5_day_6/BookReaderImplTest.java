@@ -3,11 +3,10 @@ package lv.javaguru.java1.student_aleksandr_kalninjsh.lesson_11.day_5_day_6;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
-import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class BookReaderImplTest {
+public class BookReaderImplTest {
 
     BookReaderImpl reader = new BookReaderImpl();
 
@@ -77,7 +76,7 @@ class BookReaderImplTest {
         reader.addBook(book2);
         Book book3 = new Book("Stephen King", "It");
         reader.addBook(book3);
-        List<Book>bookSearch = reader.bookSearchByAuthor("Mark Twain");
+        List<Book> bookSearch = reader.bookSearchByAuthor("Mark Twain");
         int result = bookSearch.size();
         assertEquals(result, 1);
     }
@@ -168,11 +167,4 @@ class BookReaderImplTest {
         int result = addBookList.length;
         assertEquals(result, 3);
     }
-
-
-
-
-
-
-
 }
