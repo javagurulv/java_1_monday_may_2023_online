@@ -1,12 +1,13 @@
 package lv.javaguru.java1.student_alexey_kosmachev.lesson_8.day2;
 
-import java.util.Collection;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class IntegerListDemo {
 
         public static boolean isEmpty(Collection<?> collection) {
+
             return collection == null || collection.isEmpty();
         }
     public static void main(String[] args) {

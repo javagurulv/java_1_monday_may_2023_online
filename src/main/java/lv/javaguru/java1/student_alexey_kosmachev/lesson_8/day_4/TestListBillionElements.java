@@ -14,5 +14,5 @@ class TestListBillionElements {
         System.out.println("Длина списка: " + billionList.size());
     }
 
-// Возникает ощибка Java heap space. Добавитьь миллиард элементов не вышло
+// Возникает ошибка Java heap space. Добавить миллиард элементов не вышло
 }
