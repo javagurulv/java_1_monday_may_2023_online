@@ -1,4 +1,4 @@
-package lv.javaguru.java1.student_aleksandr_kalninjsh.lesson_12.day_5.*;
+package lv.javaguru.java1.student_aleksandr_kalninjsh.lesson_12.day_5;
 
 
 import lv.javaguru.java1.student_aleksandr_kalninjsh.lesson_12.day_4.Circle;
@@ -12,14 +12,10 @@ class ShapeUtilTest {
 
     @Test
     public void createRandomCircle() {
-        Circle circle = new Circle("Circle", 9);
-        shapeUtil.createRandomCircle();
-        assertEquals(circle, 9);
-
-
-
-
-
+        Circle circle = shapeUtil.createRandomCircle();
+        assertEquals(circle.getTitle(), "Circle");
+        assertTrue(circle.calculateArea() > 0);
+        assertTrue(circle.calculatePerimeter() > 0);
     }
 
 }
